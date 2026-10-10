@@ -21,21 +21,20 @@ Konto GitHub nie jest potrzebne.
 W Claude w przeglądarce albo w aplikacji desktopowej:
 
 1. Customize → Plugins → „Add" → „Add marketplace".
-2. Adres repozytorium: `feuer-pl/claude-plugins` → dodaj.
-3. Na liście pluginów wybierz „Feuer (dev)" → „Add".
-4. Przy dodanym repozytorium włącz „Sync automatically" — nowe wersje pluginu będą docierać same.
+2. W polu „URL" wpisz `feuer-pl/claude-plugins`. Przełącznik „Sync automatically" zostaw włączony — nowe wersje pluginu będą docierać same. Zatwierdź przyciskiem „Sync".
+3. Zakładka „Discover", blok „New plugins": przy „Feuer (dev)" wybierz „+".
 
 ## Podłączenie konektora
 
-1. Customize → Plugins → „Feuer (dev)" → zakładka „Connectors".
-2. Przy konektorze wybierz dodanie i połączenie („Add", potem „Connect").
-3. Ekran logowania WordPressa: zaloguj się własnym kontem serwisu (na zalogowanie jest 60 sekund) → na ekranie zgody wybierz „Zezwól" → powrót do Claude.
+1. Otwórz plugin „Feuer (dev)" → zakładka „Connectors" → przy konektorze („Not added") wybierz „Connect".
+2. Okno „Add custom connector": nazwa i adres są już wpisane → „Continue". Na następnym ekranie zostaw zaznaczone „Sign in now" i „Use Claude's published identity" → „Add".
+3. Ekran logowania WordPressa: zaloguj się własnym kontem serwisu (na zalogowanie jest 60 sekund) → na ekranie zgody wybierz „Zezwól" → powrót do Claude. Konektor ma stan „Connected".
 
 Plugin i konektor dodane w przeglądarce działają także w aplikacji desktopowej i na telefonie, na tym samym koncie Claude.
 
 ## Użycie
 
-W nowej rozmowie opisz, co chcesz zrobić w serwisie — Claude sam sięgnie po skill i konektor. Skill można też wybrać ręcznie: wpisz `/` i wybierz `feuer-dev:cms`.
+W nowej rozmowie opisz, co chcesz zrobić w serwisie — Claude sam sięgnie po skill i konektor. Skill można też wybrać ręcznie: wpisz `/` i wybierz `cms`. Przy pierwszym użyciu konektora Claude prosi o zgodę („Allow once").
 
 ## Odłączenie
 
