@@ -13,14 +13,18 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 - **[4puy2z]** Przed zapisem agent sprawdza, czy zlecenie zawiera wszystkie dane wymagane przez operację.
 - **[mqpbgv]** O brakujące dane agent pyta użytkownika przed zapisem i uwzględnia odpowiedzi; brakujących wartości nie wymyśla.
+- **[su5pbj]** Gdy operacja odpowie listą brakujących i błędnych danych, agent pyta o nie użytkownika i po odpowiedzi ponawia operację.
 
 ## Operacje
 
 - **[tmcqsk]** Treść serwisu agent odczytuje i zmienia wyłącznie operacjami konektora. Gdy potrzebnej operacji nie ma, mówi o tym od razu i nie szuka innej drogi — REST, strony publicznej ani plików.
+- **[rhab87]** W operacji zapisu agent podaje treść zlecenia (pole `zlecenie`): o co poprosił użytkownik, jego słowami.
+- **[kgdtr6]** Zlecenie, którego nie da się wykonać — nie ma pasującej operacji albo konto nie ma uprawnień — agent zapisuje operacją „Zlecenie niewykonane": treść zlecenia słowami użytkownika i powód.
 
 ## Podpowiadanie operacji
 
 - **[ukucsm]** Agent podaje użytkownikowi, jakie operacje są dla niego dostępne — w granicach uprawnień zalogowanego konta — w dwóch sytuacjach: gdy użytkownik o to pyta oraz gdy zlecenia nie da się wykonać (nie ma takiej operacji albo konto nie ma uprawnień) — wtedy zamiast samej odmowy podaje, co jest dostępne.
+- **[3wyar5]** Listę operacji dostępnych dla konta agent bierze z operacji „Konto" — lista narzędzi konektora nie zależy od uprawnień konta.
 - **[66maq3]** Bez pytania użytkownika i bez odmowy agent listy operacji nie wypisuje.
 
 ## Dokumentacja
