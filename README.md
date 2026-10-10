@@ -21,7 +21,7 @@ Konto GitHub nie jest potrzebne.
 W Claude w przeglądarce albo w aplikacji desktopowej:
 
 1. Customize → Plugins → „Add" → „Add marketplace".
-2. W polu „URL" wpisz `feuer-pl/claude-plugins`. Przełącznik „Sync automatically" zostaw włączony — nowe wersje pluginu będą docierać same. Zatwierdź przyciskiem „Sync".
+2. W polu „URL" wpisz `feuer-pl/claude-plugins`. Przełącznik „Sync automatically" zostaw włączony. Zatwierdź przyciskiem „Sync".
 3. Zakładka „Discover", blok „New plugins": przy „Feuer (dev)" wybierz „+".
 
 ## Podłączenie konektora
@@ -35,6 +35,10 @@ Plugin i konektor dodane w przeglądarce działają także w aplikacji desktopow
 ## Użycie
 
 W nowej rozmowie opisz, co chcesz zrobić w serwisie — Claude sam sięgnie po skill i konektor. Skill można też wybrać ręcznie: wpisz `/` i wybierz `cms`. Przy pierwszym użyciu konektora Claude prosi o zgodę („Allow once").
+
+## Aktualizacja
+
+Nową wersję pluginu pobiera się ręcznie — samoczynna synchronizacja w Claude obecnie nie działa. W Claude w przeglądarce (w aplikacji desktopowej ta funkcja zgłasza błąd): Customize → Plugins → „Add" → „Manage marketplaces" → przy `claude-plugins` menu „⋮" → „Check for updates". Numer wersji widać na stronie pluginu, pod jego nazwą.
 
 ## Odłączenie
 
