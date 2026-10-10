@@ -27,9 +27,17 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[3wyar5]** Listę operacji dostępnych dla konta agent bierze z operacji „Konto" — lista narzędzi konektora nie zależy od uprawnień konta.
 - **[66maq3]** Bez pytania użytkownika i bez odmowy agent listy operacji nie wypisuje.
 
+## Wersja pluginu
+
+- **[jd752s]** Na pytanie o wersję pluginu agent podaje dane zapisane w skillu („Dane wersji"): numer wersji pluginu i commit dokumentacji, z której zbudowano skill — np. „Plugin feuer-dev 0.1.3, dokumentacja z commita 70985da".
+
 ## Dokumentacja
 
 - **[uhteek]** Działanie serwisu agent zna z dokumentów skilla: przed operacją otwiera dokument obiektu, którego dotyczy zlecenie, a przy treści blokowej — także README użytych bloków ([bloki.md](references/bloki.md), „Rejestr").
+
+## Dane wersji
+
+Plugin feuer-dev 0.1.3, dokumentacja z commita 22b1b47.
 
 ## Spis dokumentów
 
