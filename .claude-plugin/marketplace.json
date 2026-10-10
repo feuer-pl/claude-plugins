@@ -1,0 +1,14 @@
+{
+  "name": "feuer-pl",
+  "description": "Pluginy Claude serwisu Feuer.pl.",
+  "owner": {
+    "name": "Feuer.pl"
+  },
+  "plugins": [
+    {
+      "name": "feuer-dev",
+      "source": "./plugins/feuer-dev",
+      "description": "Obsługa treści serwisu Feuer.pl z czatu — serwer dev: dokumentacja serwisu (skill cms) i konektor „Feuer CMS (dev)\"."
+    }
+  ]
+}

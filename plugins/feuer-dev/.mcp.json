@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "feuer-cms-dev": {
+      "type": "http",
+      "url": "https://feuer-dev.duckdns.org/wp-json/mcp/mcp-oauth-server"
+    }
+  }
+}
