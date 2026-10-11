@@ -57,6 +57,7 @@ Typ wpisu `produkt` — produkty oferty: szkolenia i usługi. Pola, słowniki, m
 ## Edycja i uprawnienia
 
 - **[fn6cc9]** Pola produktu — jeden metaboks „Dane produktu" w głównej kolumnie edytora, pod treścią, nad innymi metaboksami; kolejność pól — jak wiersze tabeli „Pola" (na górze Rodzaj, Nazwa skrócona, Opis na karcie; dalej sekcje Kluczowe informacje, Warianty, Terminy, Powiązane produkty, Parametry). Taksonomie — panele boczne edytora: natywne (kategoria oferty, branże, grupy) i własna lista pól wyboru Oznaczeń ([taksonomie.md](taksonomie.md), [sa7hx9]). Wygląd standardowy WordPressa.
+- **[ecz3g8]** W edytorze blokowym metaboks leży w dolnym panelu „Metaboksy": u konta, które go jeszcze nie rozwijało, panel jest zwinięty do paska na dole edytora. Kliknięcie paska rozwija panel i zwija go; stan zapamiętują preferencje edytora konta.
 - **[djcwzm]** Nowe pole produktu — wpis w `feuer_meta_produktu()`: `'_feuer_<nazwa>' => array( 'schemat' => <schemat REST>, 'synchronizacja' => <tak / nie> )`; kod ze słownika — `$kod( '<słownik>' )`, słownik — klucz w `feuer_slowniki()`. Z wpisu powstają schemat REST, czyszczenie wartości i synchronizacja tłumaczeń.
 - **[bwfbje]** Pole w metaboksie dopisuje się osobno: wiersz w `$wiersze` funkcji `feuer_produkt_metaboks_tresc()`; element formularza z nazwą `feuer[<klucz>]` (lista — `feuer[<klucz>][]`) — zapis czyta wyłącznie te pola ([dyzwxw]).
 - **[ntvevk]** Pole w operacjach obsługi z czatu dopisuje się osobno: cms-z-czatu.md, [hkzgdn].
