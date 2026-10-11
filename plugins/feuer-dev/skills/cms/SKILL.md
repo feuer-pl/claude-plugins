@@ -33,6 +33,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[mubthw]** Nowy wpis powstaje jako szkic; publikacja — wyłącznie na wyraźne polecenie użytkownika. Po utworzeniu agent podaje link do podglądu i wymienia niewypełnione pola obowiązkowe z odpowiedzi operacji (`niewypelnione`): blok i pola, nazwami z README bloku ([bloki.md](references/bloki.md), [aast68]).
 - **[a8bfws]** Gdy operacja publikacji odpowie listą niewypełnionych pól obowiązkowych, agent podaje ją użytkownikowi i pyta, czy publikować ze znacznikami `<wprowadź dane>` na stronie; po potwierdzeniu ponawia operację z polem `ze_znacznikami`.
 - **[ak3dnf]** Pole z listą (np. branże, oznaczenia, warianty, powiązane produkty) operacja zastępuje w całości: przed zmianą agent odczytuje bieżącą listę operacją „Wpis", dopisuje albo usuwa pozycję i wysyła pełną listę.
+- **[gjx3mp]** Tekst formatowany sekcji (dane kontaktu, treść zgody RODO) operacja zastępuje w całości: przed zmianą agent odczytuje bieżący tekst operacją „Sekcje", zmienia w nim to, o co prosi użytkownik, i wysyła cały tekst — resztę zostawia bez zmian, razem z formatami.
 - **[c5hv9t]** Cofnięcie zmiany: agent wykonuje tę samą operację z wartością `przed` z jej odpowiedzi.
 
 ## Podpowiadanie operacji
@@ -60,7 +61,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.10, dokumentacja z commita 24b6509.
+Plugin feuer-dev 0.1.11, dokumentacja z commita 9306da6.
 
 ## Spis dokumentów
 
