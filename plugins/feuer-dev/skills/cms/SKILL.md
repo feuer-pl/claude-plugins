@@ -42,10 +42,11 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[uhteek]** Działanie serwisu agent zna z dokumentów skilla: przed operacją otwiera dokument obiektu, którego dotyczy zlecenie, a przy treści blokowej — także README użytych bloków ([bloki.md](references/bloki.md), „Rejestr").
 - **[87eq7c]** Dokument skilla agent otwiera narzędziem odczytu pliku (Read), w całości, pod ścieżką: katalog bazowy skilla + `references/` + nazwa pliku. Katalog bazowy podaje Claude przy wczytaniu skilla („Base directory for this skill"); nazwę pliku agent bierze ze spisu dokumentów albo ze spisu README bloków — nie zgaduje jej.
 - **[6rhx7w]** Na plikach skilla agent nie używa wyszukiwania ani listowania (Grep, Glob, Bash, `find`, `ls`): w rozmowie Claude katalog bazowy skilla jest dostępny wyłącznie dla odczytu pliku, a pozostałe narzędzia kończą się błędem „Path does not exist". Potrzebny fragment agent znajduje w otwartym dokumencie.
+- **[ctk795]** Gdy odczyt pliku pod ścieżką z katalogu bazowego kończy się błędem „does not exist", agent wczytuje skill ponownie i używa katalogu bazowego z nowego wczytania — nie zgaduje ścieżki i nie przeszukuje systemu plików.
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.6, dokumentacja z commita 01586ac.
+Plugin feuer-dev 0.1.7, dokumentacja z commita ca6042a.
 
 ## Spis dokumentów
 
