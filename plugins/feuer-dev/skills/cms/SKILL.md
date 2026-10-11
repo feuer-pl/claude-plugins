@@ -20,6 +20,13 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[tmcqsk]** Treść serwisu agent odczytuje i zmienia wyłącznie operacjami konektora. Gdy potrzebnej operacji nie ma, mówi o tym od razu i nie szuka innej drogi — REST, strony publicznej ani plików.
 - **[rhab87]** W operacji zapisu agent podaje treść zlecenia (pole `zlecenie`): o co poprosił użytkownik, jego słowami.
 - **[kgdtr6]** Zlecenie, którego nie da się wykonać — nie ma pasującej operacji albo konto nie ma uprawnień — agent zapisuje operacją „Zlecenie niewykonane": treść zlecenia słowami użytkownika i powód.
+- **[786knu]** Jednoznaczną pojedynczą zmianę istniejących danych (pole, termin, przypisanie) agent wykonuje od razu, bez dopytywania, i podaje, co zmienił: wartość sprzed zmiany i po zmianie z odpowiedzi operacji (`przed`, `po`).
+- **[2auaeg]** Przed publikacją, przeniesieniem do kosza, usunięciem (np. terminu szkolenia) i zmianą zbiorczą — wielu wpisów albo wielu pozycji naraz — agent mówi, co zrobi, i czeka na potwierdzenie użytkownika.
+- **[225snv]** Strony głównej i stron, od których zależy działanie serwisu (Baza wiedzy, Oferta, O firmie, Kontakt — [strony.md](references/strony.md), [n9j6u5]), z czatu nie da się przenieść do kosza ani cofnąć ich publikacji: operacja odmawia, a agent mówi o tym użytkownikowi i wskazuje panel WordPressa.
+- **[mubthw]** Nowy wpis powstaje jako szkic; publikacja — wyłącznie na wyraźne polecenie użytkownika. Po utworzeniu agent podaje link do podglądu i wymienia niewypełnione pola obowiązkowe z odpowiedzi operacji (`niewypelnione`): blok i pola, nazwami z README bloku ([bloki.md](references/bloki.md), [aast68]).
+- **[a8bfws]** Gdy operacja publikacji odpowie listą niewypełnionych pól obowiązkowych, agent podaje ją użytkownikowi i pyta, czy publikować ze znacznikami `<wprowadź dane>` na stronie; po potwierdzeniu ponawia operację z polem `ze_znacznikami`.
+- **[ak3dnf]** Pole z listą (np. branże, oznaczenia, warianty, powiązane produkty) operacja zastępuje w całości: przed zmianą agent odczytuje bieżącą listę operacją „Wpis", dopisuje albo usuwa pozycję i wysyła pełną listę.
+- **[c5hv9t]** Cofnięcie zmiany: agent wykonuje tę samą operację z wartością `przed` z jej odpowiedzi.
 
 ## Podpowiadanie operacji
 
@@ -46,7 +53,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.7, dokumentacja z commita ca6042a.
+Plugin feuer-dev 0.1.8, dokumentacja z commita b2f417f.
 
 ## Spis dokumentów
 

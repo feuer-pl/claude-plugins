@@ -22,6 +22,7 @@ Motyw blokowy `feuer-skorka`: szablony stron złożone z bloków (`templates/`),
 - **[6mg2dq]** Strony lądowania — zwykłe strony (`page`) najwyższego poziomu składane z bloków, z flagą „Strona lądowania" ([nawigacja.md](nawigacja.md)); np. `/orzeczeniabhp/`.
 - **[hs3kpp]** Strony prawne: „Polityka bezpieczeństwa" (`/polityka-bezpieczenstwa/`) i „Dane osobowe" (`/dane-osobowe/`) — zwykłe strony z blokami palety treści bezpośrednio w treści, bez top visualu (strona bez H1); linki w pasku prawnym stopki. Strona prywatności WordPressa nie jest wskazana (`wp_page_for_privacy_policy` = 0).
 - **[n9j6u5]** Kod zależy od stron rozpoznawanych po slugu (strony najwyższego poziomu): `kontakt` i `o-firmie` (formularz-kontaktu.md), `oferta` ([nawigacja.md](nawigacja.md)); strona główna i strona wpisów — z ustawień Czytania. Strony mają język polski i szablon domyślny (bez ręcznie wybranego).
+- **[m6tfab]** Strony z [n9j6u5] są chronione w obsłudze z czatu — bez kosza i bez cofnięcia publikacji; lista slugów powtórzona w kodzie serwera MCP (cms-z-czatu.md, [65c8kc]): nowa strona, od której zależy kod, wymaga dopisania tam.
 
 ## Rama strony
 

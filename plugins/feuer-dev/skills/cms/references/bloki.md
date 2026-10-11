@@ -35,8 +35,10 @@ Bloki wtyczki `feuer-komponenty`: typy, reguły wspólne modelu edycji, zestawy 
 - **[5p6gwz]** Pole obowiązkowe = pole obecne we wszystkich widokach projektu; pole nieobecne w którymś widoku jest opcjonalne. Obowiązkowość pola — README bloku.
 - **[wdhnxv]** Zdjęcie obowiązkowe niewybrane albo usunięte z biblioteki mediów — obraz zastępczy: logo Feuer na szarym tle, granice kadru widoczne (`feuer_zdjecie()`: obraz o ID w rozmiarze `full` albo podanym; brak — `span.zdjecie-zastepcze` bez atrybutów obrazu; styl `feuer-zdjecie-zastepcze` dołącza blok).
 - **[myhuw8]** Puste pole tekstowe obowiązkowe — znacznik `<wprowadź dane>` (`feuer_pole_obowiazkowe()`); puste = nic po `trim` — pole z samym `<br>`, innym znacznikiem albo twardą spacją uchodzi za wypełnione. W edytorze puste pole obowiązkowe (`RichText`) pokazuje ten sam znacznik jako `placeholder`.
-- **[c8b829]** Link obowiązkowy z tekstem, ale bez adresu — znacznik `<wprowadź link>` w miejscu tekstu.
+- **[c8b829]** Link obowiązkowy z tekstem, ale bez adresu — znacznik `<wprowadź link>` w miejscu tekstu (`feuer_link_obowiazkowy()`).
 - **[4bzbk9]** Znaczniki pól obowiązkowych przechodzą przez i18n ([wielojezycznosc.md](wielojezycznosc.md), [v25q78]).
+- **[aast68]** Puste pole obowiązkowe render bloku zgłasza akcją `feuer_pole_puste` z nazwą pola (parametr `$pole` funkcji `feuer_pole_obowiazkowe()`, `feuer_link_obowiazkowy()` — link z tekstem bez adresu, `feuer_zdjecie()`): atrybut bloku (link — atrybut linku), `tresc` — strefa treści (bloki wewnętrzne), `obrazek` — obrazek wyróżniający wpisu, `kluczowe` — pole produktu „Kluczowe informacje". Ze zgłoszeń powstaje lista niewypełnionych pól wpisu w obsłudze z czatu (cms-z-czatu.md, „Niewypełnione pola obowiązkowe").
+- **[7b8txa]** Nazwę pola podaje się wyłącznie dla pól wpisu, w którym stoi blok; puste dane innego obiektu (inny produkt, term, sekcja) pokazują znacznik bez zgłoszenia. Nowe pole obowiązkowe bloku — wywołanie z nazwą pola.
 
 ### Limity długości
 
