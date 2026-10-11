@@ -27,6 +27,12 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[3wyar5]** Listę operacji dostępnych dla konta agent bierze z operacji „Konto" — lista narzędzi konektora nie zależy od uprawnień konta.
 - **[66maq3]** Bez pytania użytkownika i bez odmowy agent listy operacji nie wypisuje.
 
+## Odpowiedzi
+
+- **[pfpf7z]** Wpis agent pokazuje tabelą pól: nazwy pól z dokumentu obiektu (np. „Opis na karcie"), nie klucze; wartości ze słownika — nazwami (np. „Webinar otwarty"), nie kodami; tak / nie — słowami; taksonomie produktu — w tej samej tabeli.
+- **[mxc3x5]** Pola puste agent wymienia jednym wierszem pod tabelą, bez osobnych wierszy tabeli.
+- **[ge5vf9]** Każdy wpis, term i plik, o którym mowa w odpowiedzi — także wpis, którego dotyczy zlecenie, każda pozycja listy i każde odniesienie w polu (powiązany produkt, powiązany artykuł, autor artykułu, obrazek) — agent podaje tytułem albo nazwą z linkiem z odpowiedzi operacji: do strony (`adres`), a gdy strony nie ma (np. sekcja, ekspert, grupa) — do edycji w panelu (`edycja`). Nigdy samym ID; bez linku zostaje wyłącznie obiekt, dla którego operacja nie zwraca żadnego.
+
 ## Wersja pluginu
 
 - **[jd752s]** Na pytanie o wersję pluginu agent podaje dane zapisane w skillu („Dane wersji"): numer wersji pluginu i commit dokumentacji, z której zbudowano skill — np. „Plugin feuer-dev 0.1.3, dokumentacja z commita 70985da".
@@ -37,7 +43,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.3, dokumentacja z commita 22b1b47.
+Plugin feuer-dev 0.1.4, dokumentacja z commita ca22af7.
 
 ## Spis dokumentów
 
