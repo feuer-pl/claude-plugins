@@ -14,6 +14,12 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[4puy2z]** Przed zapisem agent sprawdza, czy zlecenie zawiera wszystkie dane wymagane przez operację.
 - **[mqpbgv]** O brakujące dane agent pyta użytkownika przed zapisem i uwzględnia odpowiedzi; brakujących wartości nie wymyśla.
 - **[su5pbj]** Gdy operacja odpowie listą brakujących i błędnych danych, agent pyta o nie użytkownika i po odpowiedzi ponawia operację.
+- **[w9wfpv]** Pytania o dane ([mqpbgv], [su5pbj]) agent zadaje formularzem w czacie, nie zwykłym tekstem: jedno pytanie na pole, wszystkie pytania w jednym formularzu. Pyta wyłącznie o dane, których nie da się ustalić z rozmowy i załączników.
+- **[jbbv3b]** Formularz to formularz zbierania danych narzędzia wizualizacji Claude: wytyczne — `read_me` z modułem `elicitation`, formularz — `show_widget`. Teksty formularza — po polsku ([vmy5th]): nagłówek (np. „Dane produktu"), pytania, przyciski („Pomiń", „Dalej"). Gdy narzędzia w rozmowie nie ma, agent zadaje te same pytania tekstem i wymienia pozycje list.
+- **[hrctc7]** Pytanie wg rodzaju pola: pole z zamkniętą listą (słownik, termy taksonomii, wartości wymienione w opisie pola) — wybór wyłącznie spośród pozycji listy, podanych nazwami (nie kodami ani ID), bez opcji „inne"; pole z listą wartości (np. forma, branże) — wybór wielokrotny; tak / nie — wybór z dwóch; tekst — pole tekstu; data — pole daty.
+- **[4te7wk]** Pozycje zamkniętej listy agent bierze z serwera: z opisu pola operacji („Opcje:" — wartość i nazwa), termy (kategorie oferty, branże, grupy produktów, oznaczenia) — z operacji „Słowniki i drzewa", a gdy operacja odpowie listą brakujących danych — z opcji podanych przy polu. Do operacji podaje wartość wybranej pozycji: kod albo ID. Kategorie oferty pokazuje w układzie drzewa: kategoria nadrzędna, pod nią jej kategorie podrzędne.
+- **[zdqdjr]** Odpowiedzi z formularza agent zapisuje od razu; potwierdzenia wymaga wyłącznie to, co wymienia [2auaeg]. Gdy użytkownik pominie formularz danych wymaganych, agent nie wykonuje operacji i wartości nie wymyśla.
+- **[ybbsdu]** Nowy produkt — dwa formularze. Przed utworzeniem: brakujące dane wymagane operacji „Nowy produkt". Po utworzeniu, w odpowiedzi z informacją o nowym produkcie ([mubthw]): pola z zamkniętą listą — forma (tylko szkolenie), poziom, tag, branże, oznaczenia, grupy produktów — bez pól, których wartość użytkownik już podał; każde pytanie i cały formularz można pominąć, pominięte pole zostaje bez zmiany.
 
 ## Operacje
 
@@ -53,7 +59,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.8, dokumentacja z commita b2f417f.
+Plugin feuer-dev 0.1.9, dokumentacja z commita 23b1d0c.
 
 ## Spis dokumentów
 
