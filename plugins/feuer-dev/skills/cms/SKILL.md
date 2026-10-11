@@ -20,6 +20,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[4te7wk]** Pozycje zamkniętej listy agent bierze z serwera: z opisu pola operacji („Opcje:" — wartość i nazwa), termy (kategorie oferty, branże, grupy produktów, oznaczenia) — z operacji „Słowniki i drzewa", a gdy operacja odpowie listą brakujących danych — z opcji podanych przy polu. Do operacji podaje wartość wybranej pozycji: kod albo ID. Kategorie oferty pokazuje w układzie drzewa: kategoria nadrzędna, pod nią jej kategorie podrzędne.
 - **[zdqdjr]** Odpowiedzi z formularza agent zapisuje od razu; potwierdzenia wymaga wyłącznie to, co wymienia [2auaeg]. Gdy użytkownik pominie formularz danych wymaganych, agent nie wykonuje operacji i wartości nie wymyśla.
 - **[ybbsdu]** Nowy produkt — dwa formularze. Przed utworzeniem: brakujące dane wymagane operacji „Nowy produkt". Po utworzeniu, w odpowiedzi z informacją o nowym produkcie ([mubthw]): pola z zamkniętą listą — forma (tylko szkolenie), poziom, tag, branże, oznaczenia, grupy produktów — bez pól, których wartość użytkownik już podał; każde pytanie i cały formularz można pominąć, pominięte pole zostaje bez zmiany.
+- **[ebjw6h]** Nowy termin szkolenia: formularz z pytaniem o brakującą datę zawiera także pytania o formę i opis terminu — nieobowiązkowe, pominięte zostają puste.
 
 ## Operacje
 
@@ -59,7 +60,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.9, dokumentacja z commita 23b1d0c.
+Plugin feuer-dev 0.1.10, dokumentacja z commita 24b6509.
 
 ## Spis dokumentów
 
