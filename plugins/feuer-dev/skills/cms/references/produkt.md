@@ -47,6 +47,7 @@ Typ wpisu `produkt` — produkty oferty: szkolenia i usługi. Pola, słowniki, m
 - **[nahg3y]** Link do Moodle: adres z innym schematem niż http / https zapisuje się jako pusty, adres bez schematu dostaje `http://`.
 - **[d7jm2p]** Powiązany artykuł: ID wpisu innego typu niż `post` zapisuje się jako 0; artykuł w dowolnym statusie.
 - **[h53cz5]** Meta nieobecne w bazie ma wartość domyślną wg typu: lista — pusta, tak / nie — fałsz, liczba — 0, tekst — pusty.
+- **[6jdg7v]** Produkt ma też pola SEO — „Tytuł dla wyszukiwarek" (`_feuer_seo_tytul`) i „Opis dla wyszukiwarek" (`_feuer_seo_opis`): [seo.md](seo.md), „Pola nadpisania".
 
 ## Relacje
 
