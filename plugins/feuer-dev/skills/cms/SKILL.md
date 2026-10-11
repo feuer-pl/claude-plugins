@@ -40,10 +40,12 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 ## Dokumentacja
 
 - **[uhteek]** Działanie serwisu agent zna z dokumentów skilla: przed operacją otwiera dokument obiektu, którego dotyczy zlecenie, a przy treści blokowej — także README użytych bloków ([bloki.md](references/bloki.md), „Rejestr").
+- **[87eq7c]** Dokument skilla agent otwiera narzędziem odczytu pliku (Read), w całości, pod ścieżką: katalog bazowy skilla + `references/` + nazwa pliku. Katalog bazowy podaje Claude przy wczytaniu skilla („Base directory for this skill"); nazwę pliku agent bierze ze spisu dokumentów albo ze spisu README bloków — nie zgaduje jej.
+- **[6rhx7w]** Na plikach skilla agent nie używa wyszukiwania ani listowania (Grep, Glob, Bash, `find`, `ls`): w rozmowie Claude katalog bazowy skilla jest dostępny wyłącznie dla odczytu pliku, a pozostałe narzędzia kończą się błędem „Path does not exist". Potrzebny fragment agent znajduje w otwartym dokumencie.
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.5, dokumentacja z commita 9849c9f.
+Plugin feuer-dev 0.1.6, dokumentacja z commita 01586ac.
 
 ## Spis dokumentów
 
@@ -64,3 +66,50 @@ Plugin feuer-dev 0.1.5, dokumentacja z commita 9849c9f.
 - [strony-zbiorcze.md](references/strony-zbiorcze.md) — Strony zbiorcze: Strony, Karta produktu, Grupa produktów, Widoczność i kolejność, Strona „Oferta", Strona kategorii, Strona branży, Strony filarów, Wyszukiwarka katalogu
 - [baza-wiedzy.md](references/baza-wiedzy.md) — Baza wiedzy: Strona Bazy wiedzy, Lista artykułów, Wyszukiwarka listy, Strona artykułu, Link i CTA produktu artykułu, Spis treści
 - [wielojezycznosc.md](references/wielojezycznosc.md) — Wielojęzyczność: Stan, Mechanizm, Języki i adresy, Zakres tłumaczeń, Abstrakcja tłumaczeń, Przełącznik języka, Zasady redakcyjne, I18n
+
+## Spis README bloków
+
+- [blok-aktualnosci.md](references/blok-aktualnosci.md) — feuer/aktualnosci „Aktualności"
+- [blok-artykul.md](references/blok-artykul.md) — feuer/artykul „Artykuł"
+- [blok-baza-wiedzy.md](references/blok-baza-wiedzy.md) — feuer/baza-wiedzy „Strona Bazy wiedzy"
+- [blok-belka-info.md](references/blok-belka-info.md) — feuer/belka-info „Belka informacyjna"
+- [blok-belka-zapowiedzi.md](references/blok-belka-zapowiedzi.md) — feuer/belka-zapowiedzi „Belka zapowiedzi"
+- [blok-belka-zapowiedzi-dane.md](references/blok-belka-zapowiedzi-dane.md) — feuer/belka-zapowiedzi-dane „Belka zapowiedzi — treść"
+- [blok-branza.md](references/blok-branza.md) — feuer/branza „Strona branży"
+- [blok-cytat.md](references/blok-cytat.md) — feuer/cytat „Opinia klienta"
+- [blok-dane-kontaktu.md](references/blok-dane-kontaktu.md) — feuer/dane-kontaktu „Dane kontaktu"
+- [blok-dla-kogo.md](references/blok-dla-kogo.md) — feuer/dla-kogo „Dla kogo"
+- [blok-dla-kogo-pozycja.md](references/blok-dla-kogo-pozycja.md) — feuer/dla-kogo-pozycja „Pozycja"
+- [blok-dwie-kolumny.md](references/blok-dwie-kolumny.md) — feuer/dwie-kolumny „Dwie kolumny"
+- [blok-dwie-kolumny-kolumna.md](references/blok-dwie-kolumny-kolumna.md) — feuer/dwie-kolumny-kolumna „Kolumna"
+- [blok-faq.md](references/blok-faq.md) — feuer/faq „FAQ"
+- [blok-faq-pytanie.md](references/blok-faq-pytanie.md) — feuer/faq-pytanie „Pytanie"
+- [blok-kafelki-branz.md](references/blok-kafelki-branz.md) — feuer/kafelki-branz „Kafelki branż"
+- [blok-kafle-kategorii.md](references/blok-kafle-kategorii.md) — feuer/kafle-kategorii „Kafle kategorii"
+- [blok-kafle-produktowe.md](references/blok-kafle-produktowe.md) — feuer/kafle-produktowe „Kafle produktowe"
+- [blok-kalendarium.md](references/blok-kalendarium.md) — feuer/kalendarium „Kalendarium"
+- [blok-karta-opisu-produktu.md](references/blok-karta-opisu-produktu.md) — feuer/karta-opisu-produktu „Karta opisu produktu"
+- [blok-karta-opisu-produktu-pozycja.md](references/blok-karta-opisu-produktu-pozycja.md) — feuer/karta-opisu-produktu-pozycja „Pozycja"
+- [blok-karty-informacyjne.md](references/blok-karty-informacyjne.md) — feuer/karty-informacyjne „Karty informacyjne na zdjęciu"
+- [blok-karty-informacyjne-karta.md](references/blok-karty-informacyjne-karta.md) — feuer/karty-informacyjne-karta „Karta informacyjna"
+- [blok-karuzela-szkolen.md](references/blok-karuzela-szkolen.md) — feuer/karuzela-szkolen „Karuzela szkoleń na zdjęciu"
+- [blok-kategoria.md](references/blok-kategoria.md) — feuer/kategoria „Strona kategorii"
+- [blok-kluczowe-informacje.md](references/blok-kluczowe-informacje.md) — feuer/kluczowe-informacje „Kluczowe informacje"
+- [blok-lista-artykulow.md](references/blok-lista-artykulow.md) — feuer/lista-artykulow „Lista artykułów"
+- [blok-naglowek.md](references/blok-naglowek.md) — feuer/naglowek „Header serwisu"
+- [blok-okruszki.md](references/blok-okruszki.md) — feuer/okruszki „Okruszki / link wstecz"
+- [blok-proces-wspolpracy.md](references/blok-proces-wspolpracy.md) — feuer/proces-wspolpracy „Proces współpracy"
+- [blok-proces-wspolpracy-krok.md](references/blok-proces-wspolpracy-krok.md) — feuer/proces-wspolpracy-krok „Krok"
+- [blok-sekcja.md](references/blok-sekcja.md) — feuer/sekcja „Sekcja (po slugu)"
+- [blok-sekcja-kontaktowa.md](references/blok-sekcja-kontaktowa.md) — feuer/sekcja-kontaktowa „Sekcja kontaktowa"
+- [blok-sprawdz-takze.md](references/blok-sprawdz-takze.md) — feuer/sprawdz-takze „Sprawdź także"
+- [blok-stopka.md](references/blok-stopka.md) — feuer/stopka „Stopka serwisu"
+- [blok-szare-tlo.md](references/blok-szare-tlo.md) — feuer/szare-tlo „Szare tło"
+- [blok-tekst-zdjecie.md](references/blok-tekst-zdjecie.md) — feuer/tekst-zdjecie „Sekcja tekst+zdjęcie"
+- [blok-terminy.md](references/blok-terminy.md) — feuer/terminy „Terminy"
+- [blok-terminy-brak.md](references/blok-terminy-brak.md) — feuer/terminy-brak „Terminy — stan pusty"
+- [blok-top-kontentowy.md](references/blok-top-kontentowy.md) — feuer/top-kontentowy „Top visual kontentowy"
+- [blok-top-listingu.md](references/blok-top-listingu.md) — feuer/top-listingu „Top visual listingu"
+- [blok-top-produktowy.md](references/blok-top-produktowy.md) — feuer/top-produktowy „Top visual produktowy"
+- [blok-zgoda.md](references/blok-zgoda.md) — feuer/zgoda „Zgoda RODO"
+- [blok-zobacz-takze.md](references/blok-zobacz-takze.md) — feuer/zobacz-takze „Zobacz także"
