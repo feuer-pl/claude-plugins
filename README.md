@@ -38,7 +38,12 @@ W nowej rozmowie opisz, co chcesz zrobić w serwisie — Claude sam sięgnie po 
 
 ## Aktualizacja
 
-Nową wersję pluginu pobiera się ręcznie — samoczynna synchronizacja w Claude obecnie nie działa. W Claude w przeglądarce (w aplikacji desktopowej ta funkcja zgłasza błąd): Customize → Plugins → „Add" → „Manage marketplaces" → przy `claude-plugins` menu „⋮" → „Check for updates". Którą wersję masz, sprawdzisz w rozmowie: zapytaj o wersję pluginu, np. `/cms jaka jest wersja pluginu?`. Numer widać też na stronie pluginu, pod jego nazwą.
+Samoczynna synchronizacja w Claude obecnie nie działa — po zmianach w serwisie zrób dwa kroki:
+
+1. Nowa wersja pluginu. W Claude w przeglądarce (w aplikacji desktopowej ta funkcja zgłasza błąd): Customize → Plugins → „Add" → „Manage marketplaces" → przy `claude-plugins` menu „⋮" → „Check for updates".
+2. Nowe operacje serwisu. Customize → Connectors → konektor → menu „⋮" → „Refresh tools list" — bez tego Claude pracuje ze starą listą operacji.
+
+Którą wersję pluginu masz, sprawdzisz w rozmowie: zapytaj o wersję, np. `/cms jaka jest wersja pluginu?`. Numer widać też na stronie pluginu, pod jego nazwą.
 
 ## Odłączenie
 
