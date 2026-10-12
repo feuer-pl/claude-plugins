@@ -71,6 +71,18 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[puq6rw]** Treść bez miejsca: fragmenty dokumentu, dla których strona ze wzorca nie ma miejsca, agent wymienia — sam bloków nie dodaje. Tym samym formularzem proponuje dla każdego: dodać jako treść redakcyjną z bloków palety ([paleta-tresci.md](references/paleta-tresci.md), [p69bw2]), ze wskazaniem, po której sekcji, albo pominąć.
 - **[xs5wwt]** Raport po przeniesieniu dokumentu: link do podglądu, pola niewypełnione (`niewypelnione`), treść dokumentu, której agent nie umieścił, i elementy pominięte ([ub97fd]).
 
+## Media
+
+- **[zg6z5u]** Pliki biblioteki mediów agent wyszukuje operacją „Biblioteka mediów"; pole wskazujące plik (obrazek wyróżniający, zdjęcie, ikona, znak, film) dostaje ID pliku.
+- **[6pykqx]** Plik z komputera albo telefonu użytkownika — także dołączony do rozmowy — trafia do serwisu wyłącznie formularzem wgrania: agent pokazuje go operacją „Wgranie pliku" i sam pliku nie przesyła. `rodzaj` — wg pola, do którego plik trafi (obraz albo film); `cel` — do czego plik jest potrzebny. Jeden formularz przyjmuje jeden plik.
+- **[7j54xx]** Po pokazaniu formularza agent czeka na użytkownika: po wgraniu formularz przygotowuje w polu wiadomości tekst „Plik wgrany, ID …", który użytkownik wysyła. Wtedy — także gdy użytkownik sam napisze, że plik wgrał — agent odczytuje plik operacją „Plik" z identyfikatorem wgrania (`wgranie` z wyniku operacji „Wgranie pliku") i z jej odpowiedzi bierze ID pliku. ID pliku nie zgaduje.
+- **[ge5wtj]** Przed użyciem pliku agent sprawdza go operacją „Plik" — typ, wymiary, proporcje, rozmiar — i podaje użytkownikowi ostrzeżenia z jej odpowiedzi (`ostrzezenia`).
+- **[a96nef]** Zdjęcie węższe niż 1440 px: agent ostrzega, że na dużym ekranie może być nieostre, i pyta, czy go użyć; bez zgody użytkownika pliku nie wstawia. Ostrzeżenie dotyczy pól zdjęć (zdjęcie, obrazek wyróżniający) — w polu ikony, znaku albo logotypu agent je pomija.
+- **[wa6nzq]** Wymagania szczególne miejsca użycia (np. zdjęcie kategorii — [taksonomie.md](references/taksonomie.md), [r9sy27]) agent bierze z README bloku albo dokumentu obiektu i ostrzega tak samo: mówi, czego plik nie spełnia, i pyta, czy go użyć.
+- **[d8nnwr]** Plik typu niezgodnego z miejscem użycia — nie obraz w polu obrazu, film inny niż MP4 — odrzuca formularz albo operacja, która plik wskazuje: agent mówi o tym użytkownikowi i prosi o właściwy plik.
+- **[drwv77]** Film cięższy niż 5 MB zostaje w bibliotece mediów: po wgraniu agent informuje użytkownika tekstem ostrzeżenia z odpowiedzi operacji — film jest duży, wymaga przygotowania, kontakt z administratorem.
+- **[gu2q9e]** Tekst alternatywny i tytuł pliku agent zmienia operacją „Opis pliku".
+
 ## Podpowiadanie operacji
 
 - **[ukucsm]** Agent podaje użytkownikowi, jakie operacje są dla niego dostępne — w granicach uprawnień zalogowanego konta — w dwóch sytuacjach: gdy użytkownik o to pyta oraz gdy zlecenia nie da się wykonać (nie ma takiej operacji albo konto nie ma uprawnień) — wtedy zamiast samej odmowy podaje, co jest dostępne.
@@ -96,7 +108,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.15, dokumentacja z commita c5a5ae4.
+Plugin feuer-dev 0.1.16, dokumentacja z commita 73c31c6.
 
 ## Spis dokumentów
 

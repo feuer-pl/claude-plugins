@@ -1,6 +1,6 @@
 # Media
 
-Zdjęcia i filmy: biblioteka mediów, pliki filmów, wgranie (plakat, przepakowanie), formaty miniatur, ładowanie na stronie. Przegląd modelu: [model-tresci.md](model-tresci.md).
+Zdjęcia i filmy: biblioteka mediów, pliki filmów, wgranie (limit, plakat, przepakowanie, duży film), formaty miniatur, profil kolorów, ładowanie na stronie. Przegląd modelu: [model-tresci.md](model-tresci.md).
 
 ## Biblioteka mediów
 
@@ -23,7 +23,8 @@ Zdjęcia i filmy: biblioteka mediów, pliki filmów, wgranie (plakat, przepakowa
 ### Wgranie
 
 - **[egukhf]** Każda droga wgrania MP4 (wp-admin, REST API, WP-CLI) przechodzi przez jeden hak — filtr `wp_read_video_metadata` przy generowaniu metadanych załącznika, wyłącznie dla formatu `mp4`; inne formaty wideo bez zmian.
-- **[257t2f]** Plik większy niż limit wgrania w panelu (2 MB — serwer.md, [uhxgnx]) nie wgra się przez wp-admin ani REST API; większe filmy wgrywa administrator przez WP-CLI (`wp media import` — limit PHP-FPM dotyczy wyłącznie żądań HTTP).
+- **[257t2f]** Limit wgrania pliku przez wp-admin, REST API i formularz z czatu wyznacza PHP (serwer.md, [uhxgnx]) — serwer dev i lokalna instancja dev: 64 MB, produkcja: 2 MB — dla każdej roli i każdego typu pliku; większy plik wgrywa administrator przez WP-CLI (`wp media import` — limit PHP-FPM dotyczy wyłącznie żądań HTTP).
+- **[c6wdu4]** Film cięższy niż 5 MB zostaje w bibliotece mediów z ostrzeżeniem „Film jest duży (<rozmiar>) i wymaga przygotowania — skontaktuj się z administratorem.": w panelu — stan obok tytułu na liście biblioteki mediów i wiersz „Uwaga" w szczegółach załącznika, niezależnie od drogi wgrania; w czacie — ostrzeżenie w wyniku operacji mediów (cms-z-czatu.md, „Operacje mediów"). Wgrania ostrzeżenie nie blokuje.
 - **[gcvqur]** Plik z `moov` za `mdat` jest przepakowywany bez rekompresji, ze wszystkimi ścieżkami (`ffmpeg -map 0 -c copy -movflags +faststart`), podmienia oryginał, rozmiar w metadanych odświeżony; jakość i rozmiar bez zmian. Błąd przepakowania — plik bez zmian.
 - **[my9z2h]** Plakat = pierwsza klatka filmu (0 s) wycięta ffmpeg jako JPEG najwyższej jakości (`-frames:v 1 -q:v 2`) i zapisana jako okładka WordPressa — obrazek wyróżniający załącznika filmu (`attachment:video` z obsługą `thumbnail`). Każdy plik (desktop i mobile) ma plakat z własnej pierwszej klatki, nigdy ze zdjęcia bloku.
 - **[mhqmdf]** Rdzeń WordPressa deduplikuje okładki po md5 obrazu — filmy z identyczną pierwszą klatką dzielą jeden załącznik plakatu.
@@ -40,13 +41,13 @@ Zdjęcia i filmy: biblioteka mediów, pliki filmów, wgranie (plakat, przepakowa
 
 - **[9egzb6]** Miniatury (rozmiary pośrednie z JPEG i PNG) zapisywane jako AVIF z jakością 60 (`image_editor_output_format`, `wp_editor_set_quality`); bez obsługi AVIF w PHP serwera — WebP; jakość innych formatów domyślna. Przy jakości 82 część zdjęć byłaby cięższa niż JPEG.
 - **[98atba]** Miniatury AVIF obsługuje ok. 95% przeglądarek (Chrome, Firefox, Edge 121+, Safari 16+); starsze miniatur nie pokażą.
-- **[6a6sjy]** Pełny rozmiar zostaje oryginałem JPEG / PNG, bez rekompresji: filtr formatu nic nie mapuje, gdy pyta `wp_create_image_subsizes()` (rozpoznanie po stosie wywołań) — WordPress 6.7+ konwertowałby pełny rozmiar razem z miniaturami.
+- **[6a6sjy]** Pełny rozmiar zostaje oryginałem JPEG / PNG, bez rekompresji: filtr formatu nic nie mapuje, gdy pyta `wp_create_image_subsizes()` (rozpoznanie po stosie wywołań) — WordPress 6.7+ konwertowałby pełny rozmiar razem z miniaturami. Wyjątek: oryginał przeliczany do sRGB ([vptpex]).
 - **[7yy3ks]** Oryginał jest `src` obrazu, więc trafia do `srcset` (także szerszy niż 2048 px) — na ekranie o dużej gęstości pikseli przeglądarka może go wybrać. Oryginał powyżej 2560 px: pełnym rozmiarem jest kopia `-scaled` (rozmiar pośredni, więc AVIF).
 - **[mk8tgf]** Zmiana formatu lub jakości miniatur obejmuje obrazy już wgrane wyłącznie po `wp media regenerate --skip-delete` (stare kopie zostają na dysku); potem ręczne czyszczenie cache stron.
 - **[5j89y2]** Obraz zastępczy artykułu — plik motywu poza biblioteką mediów ([artykuly.md](artykuly.md)).
 - **[s4ae2p]** Zdjęcie pierwszego ekranu (element LCP) ma `loading="eager"` i `fetchpriority="high"`; które bloki — README bloku.
 - **[tewya3]** Obrazy poniżej pierwszego ekranu mają jawne `loading="lazy"` (WordPress zostawia pierwsze 3 obrazy treści bez `lazy`); obrazy bez atrybutu `loading` (heurystyka WordPressa) i przypisanie do bloków — README bloku.
-- **[vptpex]** Zdjęcia w profilu Display P3 konwertuje się do sRGB przed wgraniem.
+- **[vptpex]** Zdjęcie z osadzonym profilem kolorów innym niż sRGB (np. Display P3) serwer przelicza do sRGB przy wgraniu — każda droga wgrania (wp-admin, REST API, WP-CLI, formularz z czatu), przed miniaturami: JPEG, PNG, WebP i AVIF; oryginał jest zapisywany ponownie w swoim formacie i z jakością pliku źródłowego, z osadzonym profilem sRGB. Obraz bez profilu albo z profilem sRGB (rozpoznanie po nazwie profilu) — bez zmian. Bez Imagick albo przy błędzie przeliczenia — plik bez zmian, wgranie bez błędu.
 
 ## Edycja i uprawnienia
 
