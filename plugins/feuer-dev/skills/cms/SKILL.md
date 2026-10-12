@@ -74,11 +74,11 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 ## Dokument wpisu
 
 - **[s7kc2n]** Gdy użytkownik chce pracować nad wpisem poza czatem — prosi o dokument, plik albo szablon do wypełnienia w Wordzie albo w Dokumentach Google — agent wywołuje operację „Dokument wpisu": istniejący wpis — z jego ID, nowy — z rodzajem (szkolenie, usługa, artykuł, strona). Pliku sam nie składa. Bez dokumentu: ekspert, sekcje z jednym blokiem pól, header i stopka.
-- **[txxjn2]** Agent podaje link do pliku w całości, jako link, i mówi: link działa 15 minut (po czasie — nowy dokument); plik edytuje się w Wordzie albo w Dokumentach Google, bez zmiany formatu (.docx); wypełniony plik wgrywa się jako załącznik wiadomości — w tej albo w dowolnej innej rozmowie.
+- **[txxjn2]** Agent podaje link do pliku w całości, jako link, i mówi: link działa 15 minut (`wazny_minut`; po czasie — nowy dokument), bez podawania godziny; plik edytuje się w Wordzie albo w Dokumentach Google, bez zmiany formatu (.docx); wypełniony plik wgrywa się jako załącznik wiadomości — w tej albo w dowolnej innej rozmowie.
 - **[3yqren]** Wgrany plik .docx z wierszem „Feuer.pl · … · układ …" pod tytułem to dokument wpisu: agent zapisuje go operacją „Zapis dokumentu" — reguły treści z dokumentu użytkownika („Treść z dokumentu") go nie dotyczą.
 - **[48qfxn]** Agent odczytuje plik razem z tabelami i formatowaniem — w środowisku wykonania kodu, konwersją pliku .docx do HTML (np. `pandoc -f docx -t html --wrap=none`); sam tekst załącznika nie niesie tabel ani formatów.
 - **[zr824f]** Do operacji agent przekazuje całą zawartość dokumentu wierszami, w kolejności dokumentu, także wiersze niezmienione: tekst komórek znak po znaku ([brz5a5]), z formatami w prostym HTML; nagłówki sekcji i pozycji; tekst między sekcjami; tabele terminów i kluczowych informacji; z wiersza pod tytułem — `id`, `wersja` i `uklad`, a dla dokumentu z pustego szablonu — `typ` i `uklad`. Pomija tytuł, nagłówki bez oznaczenia, ramki z oznaczeniem „[i]", wiersze tabel bez oznaczenia (pliki, ustawienia bloku), puste akapity i tabelę „Dozwolone wartości". Zmian sam nie wylicza i niczego w tekście nie poprawia.
-- **[t2hvep]** Istniejący wpis: najpierw podgląd (`podglad`). Agent pokazuje listę zmian tabelą — co, było, będzie — z wyróżnieniem usunięć (sekcja, pozycja bloku, termin, treść między sekcjami), razem z ostrzeżeniami i uwagami, i czeka na potwierdzenie użytkownika ([2auaeg]); po potwierdzeniu zapisuje wywołaniem z kluczem z podglądu. Pusta lista zmian — agent mówi, że dokument nie różni się od wpisu, i nic nie zapisuje.
+- **[t2hvep]** Istniejący wpis: najpierw podgląd (`podglad`). Agent pokazuje listę zmian tabelą — co, było, będzie — z wyróżnieniem usunięć (sekcja, pozycja bloku, termin, treść między sekcjami), razem z ostrzeżeniami i uwagami, i czeka na potwierdzenie użytkownika ([2auaeg]) — mówi, ile minut podgląd czeka (`klucz_wazny_minut`), bez podawania godziny; po potwierdzeniu zapisuje wywołaniem z kluczem z podglądu. Pusta lista zmian — agent mówi, że dokument nie różni się od wpisu, i nic nie zapisuje.
 - **[ydn3bx]** Ostrzeżenie o wpisie zmienionym po pobraniu dokumentu agent pokazuje razem z listą zmian: dokument przywróci te pola do stanu z chwili pobrania.
 - **[3ujd6c]** Nowy wpis z pustego szablonu agent zapisuje od razu, bez podglądu — powstaje szkic ([mubthw]); brakujące dane wymagane zbiera formularzem ([w9wfpv]) i ponawia operację z uzupełnionymi wierszami.
 - **[drvv46]** Gdy operacja odpowie listą błędnych danych — wartość spoza listy, tytuł albo nazwa, której nie ma albo która wskazuje więcej niż jeden wpis — agent pyta o poprawną wartość formularzem ([su5pbj], [w9wfpv]; pozycje list — z operacji „Słowniki i drzewa" i „Wyszukiwanie wpisów") i ponawia operację z poprawionym wierszem; wpis wskazuje wtedy adresem strony albo zapisem „ID <numer>".
@@ -128,7 +128,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.20, dokumentacja z commita 556eb6d.
+Plugin feuer-dev 0.1.21, dokumentacja z commita da3376f.
 
 ## Spis dokumentów
 
