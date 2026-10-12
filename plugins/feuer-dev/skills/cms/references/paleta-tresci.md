@@ -26,6 +26,7 @@ Bloki treści redakcyjnej (typografia A40) i ich ograniczenia w edytorze. Reguł
 
 - **[ekhd7d]** Kod (A40.8) jest poza paletą: blok `core/code` poza listą (strefy treści bloków go nie przyjmują), format inline „kod" wyłączony.
 - **[4du539]** Style bloków core palety rejestruje wtyczka (`register_block_style`); napisy stylów i kontrolek — przez i18n ([wielojezycznosc.md](wielojezycznosc.md), [v25q78]).
+- **[4mqfpv]** Paleta jest powtórzona w kodzie serwera MCP — obsługa treści z czatu (cms-z-czatu.md, [z6yerv], [fwmqrz], [n2as86]): dozwolone atrybuty i zapis HTML bloków core, style akapitu i przycisku, formaty inline. Nowy element palety, styl albo dozwolony atrybut wymaga dopisania tam.
 
 ## Gdzie obowiązuje
 

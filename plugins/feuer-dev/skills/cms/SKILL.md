@@ -34,7 +34,26 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[a8bfws]** Gdy operacja publikacji odpowie listą niewypełnionych pól obowiązkowych, agent podaje ją użytkownikowi i pyta, czy publikować ze znacznikami `<wprowadź dane>` na stronie; po potwierdzeniu ponawia operację z polem `ze_znacznikami`.
 - **[ak3dnf]** Pole z listą (np. branże, oznaczenia, warianty, powiązane produkty) operacja zastępuje w całości: przed zmianą agent odczytuje bieżącą listę operacją „Wpis", dopisuje albo usuwa pozycję i wysyła pełną listę.
 - **[gjx3mp]** Tekst formatowany sekcji (dane kontaktu, treść zgody RODO) operacja zastępuje w całości: przed zmianą agent odczytuje bieżący tekst operacją „Sekcje", zmienia w nim to, o co prosi użytkownik, i wysyła cały tekst — resztę zostawia bez zmian, razem z formatami.
-- **[c5hv9t]** Cofnięcie zmiany: agent wykonuje tę samą operację z wartością `przed` z jej odpowiedzi.
+- **[c5hv9t]** Cofnięcie zmiany: agent wykonuje tę samą operację z wartością `przed` z jej odpowiedzi; cofnięcie zmiany treści — [q4kd8f].
+
+## Treść blokowa
+
+- **[wpz8u8]** Treść wpisu — strony produktu, artykułu, strony, sekcji kategorii, branży i Bazy wiedzy — agent odczytuje operacją „Treść wpisu" przed każdą zmianą: miejsca bloków i bieżące wartości bierze z odpowiedzi, nie z wcześniejszej części rozmowy. Po wstawieniu albo usunięciu bloku miejsca się zmieniają — przed kolejną zmianą odczytuje treść ponownie.
+- **[fd4b7r]** Pola bloków serwisu (`feuer/…`) agent zmienia operacją „Zmiana bloków treści" — wszystkie zmiany zlecenia jednym wywołaniem; nazwy pól, dozwolone wartości i formaty tekstu bierze z README bloku ([uhteek]). Treść artykułu i inną treść swobodną zapisuje operacją „Zapis treści wpisu": odczytuje treść w formie `markup`, zmienia w niej to, o co prosi użytkownik, i wysyła całość — resztę zostawia bez zmian.
+- **[nbmmtg]** Struktury strony agent sam nie zmienia: bloki i pozycje bloków (np. pytanie FAQ, pozycja „Dla kogo") dodaje i usuwa wyłącznie na polecenie użytkownika, a przed usunięciem czeka na potwierdzenie ([2auaeg]). Bloku z blokadą (np. top visual strony ze wzorca) nie da się usunąć ani przestawić z czatu — agent wskazuje panel WordPressa.
+- **[xg6ke5]** Po zmianie treści agent podaje, co zmienił, i wymienia niewypełnione pola obowiązkowe z odpowiedzi operacji (`niewypelnione`) — blok i pola, nazwami z README bloku ([mubthw]).
+- **[q4kd8f]** Cofnięcie zmiany treści: zmianę pól bloków agent cofa tą samą operacją z wartościami `przed`; zapis całej treści, wstawienie i usunięcie bloków — operacją „Przywrócenie wersji wpisu" z numerem wersji z `przed`. Gdy użytkownik chce wrócić do wcześniejszego stanu, agent pokazuje listę z operacji „Wersje wpisu" (data, kto zapisał) i przywraca wersję wskazaną przez użytkownika. Wersja zawiera tytuł, zajawkę i treść — pól produktu, przypisań i statusu nie cofa.
+
+## Treść z dokumentu
+
+- **[brz5a5]** Dokument użytkownika (Word, PDF, eksport Google Docs) czyta agent — serwer plików nie przyjmuje. Tekst dokumentu agent przenosi dosłownie: zmienia się wyłącznie forma zapisu. Redakcja tekstu — skracanie, przepisywanie, poprawki — wyłącznie na wyraźną prośbę użytkownika.
+- **[2gbgf2]** Rozbiór dokumentu na bloki palety ([paleta-tresci.md](references/paleta-tresci.md), „Skład"): akapit → akapit; nagłówek → nagłówek poziomu 2–4 w hierarchii dokumentu (najwyższy poziom nagłówków treści → 2, kolejne → 3 i 4, głębszy → 4); lista punktowana i numerowana → lista, z zagnieżdżeniem; tabela → tabela (wiersz nagłówka → sekcja nagłówka, komórki scalone zostają scalone); cytat → cytat blokowy, ze źródłem; linia pozioma → separator. Pogrubienie, kursywa, podkreślenie, przekreślenie i link → formaty inline palety ([paleta-tresci.md](references/paleta-tresci.md), [7wwnuc]); łamanie wiersza zostaje. Tytuł dokumentu to tytuł wpisu, nie nagłówek treści.
+- **[ub97fd]** Elementy bez odpowiednika w palecie — przypisy, kolory i wyróżnienia tła, kroje i rozmiary pisma, wyrównanie, niestandardowe formatowanie — agent pomija i wymienia w raporcie. Tak samo obrazy osadzone w dokumencie: obraz w treści i w polu bloku to plik z biblioteki mediów, wskazany jego ID.
+- **[5jb5v5]** Artykuł z dokumentu — brakujące dane, jednym formularzem ([w9wfpv]): tytuł — pytanie, gdy dokument nie wskazuje go jednoznacznie; zajawka — agent proponuje pierwszy akapit dokumentu i czeka na zgodę: zaakceptowany akapit staje się zajawką i nie powtarza się w treści, bez zgody zostaje w treści; autor — pytanie, czy przypisać eksperta i którego (lista z operacji „Wyszukiwanie wpisów"). Wynik: szkic i link do podglądu ([mubthw]).
+- **[dq3qt9]** Produkt z dokumentu — na zasadach artykułu z dokumentu: agent zakłada produkt (dane wymagane — formularzem: [ybbsdu]), po czym wypełnia pola produktu oraz pola bloków strony ze wzorca jednym wywołaniem operacji „Zmiana bloków treści". Treść dokumentu przypisuje do pól bloków wg ich przeznaczenia — README bloków i skład wzorca ([wzorce-stron.md](references/wzorce-stron.md), „Strona produktu").
+- **[v8tv7m]** Sekcje bez treści: sekcje strony ze wzorca, dla których dokument nie ma treści, agent zostawia puste i wymienia w raporcie — sam bloków nie usuwa. Jednym formularzem pyta o każdą: zostawić na później albo usunąć sekcję. Tak samo pozycje bloku z pozycjami, dla których zabrakło treści: zostawić albo zmniejszyć liczbę pozycji — do liczby dozwolonej w bloku (README bloku).
+- **[puq6rw]** Treść bez miejsca: fragmenty dokumentu, dla których strona ze wzorca nie ma miejsca, agent wymienia — sam bloków nie dodaje. Tym samym formularzem proponuje dla każdego: dodać jako treść redakcyjną z bloków palety ([paleta-tresci.md](references/paleta-tresci.md), [p69bw2]), ze wskazaniem, po której sekcji, albo pominąć.
+- **[xs5wwt]** Raport po przeniesieniu dokumentu: link do podglądu, pola niewypełnione (`niewypelnione`), treść dokumentu, której agent nie umieścił, i elementy pominięte ([ub97fd]).
 
 ## Podpowiadanie operacji
 
@@ -61,7 +80,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.12, dokumentacja z commita 06d4373.
+Plugin feuer-dev 0.1.13, dokumentacja z commita d535619.
 
 ## Spis dokumentów
 

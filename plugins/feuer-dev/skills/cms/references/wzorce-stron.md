@@ -16,6 +16,7 @@ Wzorce stron wtyczki — gotowe składy bloków, które redaktor i agent wstawia
 | **[bu9r6e]** | Szkolenie, Usługa | `feuer/produkt-szkolenie`, `feuer/produkt-usluga` | `produkt` | tak — redaktor wybiera jeden przy tworzeniu produktu |
 
 - **[hegdab]** Innych wzorców nie ma: strony filarów, strona „Oferta", strony lądowania i pozostałe strony nie mają własnego wzorca — składa się je z bloków. Wzorzec „Strona kontentowa" jest dostępny dla każdej strony (`page`) i daje Top visual kontentowy (poza wstawiaczem) — nową stronę z tym blokiem (kontentową, filaru, lądowania) zaczyna się od niego.
+- **[zzbw47]** Ze wzorców korzystają operacje obsługi z czatu: nowy produkt powstaje ze wzorca „Szkolenie" albo „Usługa", nowa strona — ze wzorca „Strona kontentowa" (cms-z-czatu.md, [caaqxh], [pag7x5]).
 
 ## Strona główna
 

@@ -34,6 +34,7 @@ Artykuły Bazy wiedzy (natywne wpisy `post`) i ich autorzy (typ `ekspert`): pola
 - **[azuzdc]** Autora wybiera się w panelu bocznym „Autor artykułu" edytora wpisu.
 - **[a3cg2z]** Flagę ustawia się w panelu bocznym „Widoczność na listach" edytora wpisu.
 - **[ht9pkv]** Typografia treści w edytorze wpisu — css.md, [h8kha9]; pole tytułu ma typografię H1 artykułu (wspólna reguła).
+- **[npkmr3]** Artykuł i eksperta zakłada się i zmienia także z czatu — operacje artykułu i eksperta oraz operacje treści (cms-z-czatu.md, „Operacje artykułu i eksperta", „Operacje treści"), w granicach uprawnień konta; ekspert założony z czatu powstaje opublikowany (cms-z-czatu.md, [bz3z46]).
 
 ### Odbiorcy
 
