@@ -164,6 +164,7 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 - **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`; bez `example` — `dane-kontaktu`, `terminy-brak`, `zgoda`.
 - **[7ws8qv]** Opis bloku — `README.md` w folderze bloku ([DOC-README-BLOCK], szablon „Blok": zasady-dokumentacji.md, „Szablony dokumentów").
 - **[sf9ue8]** Reguły bloków powtórzone w kodzie serwera MCP — obsługa treści z czatu (cms-z-czatu.md, [duh56w], [72sfmh]): liczba pozycji bloków z pozycjami ([4dtarj]) i pola wskazujące obiekty serwisu, rozpoznawane po nazwie atrybutu (obraz, film, wpisy, termy). Nowy blok z pozycjami i pole tego rodzaju o nowej nazwie wymagają dopisania tam.
+- **[nf2npd]** Pola zawartości bloków w dokumencie wpisu — nazwy pól, zestawy formatów, limity znaków, pola obowiązkowe i teksty domyślne — są powtórzone w kodzie serwera MCP (`feuer_mcp_dok_definicje_blokow()`; cms-z-czatu.md, [j92cq6]). Nowy blok, nowe pole zawartości albo zmiana nazwy, formatów czy limitu pola wymaga zmiany tam; bez niej blok stoi w dokumencie jako sekcja bez pól, a pole — bez wiersza.
 
 | ID | Blok | Typ | Gdzie | Wstawiacz | README |
 |---|---|---|---|---|---|

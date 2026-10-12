@@ -1,6 +1,6 @@
 ---
 name: cms
-description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — produkty (szkolenia i usługi), terminy szkoleń, kategorie oferty i branże, artykuły Bazy wiedzy, sekcje (np. belka zapowiedzi), strony, bloki, media, SEO, ustawienia serwisu. Użyj przy każdym zleceniu dotyczącym treści serwisu Feuer.pl. Z użytkownikiem rozmawiaj wyłącznie po polsku."
+description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — produkty (szkolenia i usługi), terminy szkoleń, kategorie oferty i branże, artykuły Bazy wiedzy, sekcje (np. belka zapowiedzi), strony, bloki, media, SEO, ustawienia serwisu, dokumenty wpisów (.docx) do pracy poza czatem. Użyj przy każdym zleceniu dotyczącym treści serwisu Feuer.pl. Z użytkownikiem rozmawiaj wyłącznie po polsku."
 ---
 
 # Zachowanie agenta w czacie
@@ -71,6 +71,21 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[puq6rw]** Treść bez miejsca: fragmenty dokumentu, dla których strona ze wzorca nie ma miejsca, agent wymienia — sam bloków nie dodaje. Tym samym formularzem proponuje dla każdego: dodać jako treść redakcyjną z bloków palety ([paleta-tresci.md](references/paleta-tresci.md), [p69bw2]), ze wskazaniem, po której sekcji, albo pominąć.
 - **[xs5wwt]** Raport po przeniesieniu dokumentu: link do podglądu, pola niewypełnione (`niewypelnione`), treść dokumentu, której agent nie umieścił, i elementy pominięte ([ub97fd]).
 
+## Dokument wpisu
+
+- **[s7kc2n]** Gdy użytkownik chce pracować nad wpisem poza czatem — prosi o dokument, plik albo szablon do wypełnienia w Wordzie albo w Dokumentach Google — agent wywołuje operację „Dokument wpisu": istniejący wpis — z jego ID, nowy — z rodzajem (szkolenie, usługa, artykuł, strona). Pliku sam nie składa. Bez dokumentu: ekspert, sekcje z jednym blokiem pól, header i stopka.
+- **[txxjn2]** Agent podaje link do pliku w całości, jako link, i mówi: link działa 15 minut (po czasie — nowy dokument); plik edytuje się w Wordzie albo w Dokumentach Google, bez zmiany formatu (.docx); wypełniony plik wgrywa się jako załącznik wiadomości — w tej albo w dowolnej innej rozmowie.
+- **[3yqren]** Wgrany plik .docx z wierszem „Feuer.pl · … · układ …" pod tytułem to dokument wpisu: agent zapisuje go operacją „Zapis dokumentu" — reguły treści z dokumentu użytkownika („Treść z dokumentu") go nie dotyczą.
+- **[48qfxn]** Agent odczytuje plik razem z tabelami i formatowaniem — w środowisku wykonania kodu, konwersją pliku .docx do HTML (np. `pandoc -f docx -t html --wrap=none`); sam tekst załącznika nie niesie tabel ani formatów.
+- **[zr824f]** Do operacji agent przekazuje całą zawartość dokumentu wierszami, w kolejności dokumentu, także wiersze niezmienione: tekst komórek znak po znaku ([brz5a5]), z formatami w prostym HTML; nagłówki sekcji i pozycji; tekst między sekcjami; tabele terminów i kluczowych informacji; z wiersza pod tytułem — `id`, `wersja` i `uklad`, a dla dokumentu z pustego szablonu — `typ` i `uklad`. Pomija tytuł, nagłówki bez oznaczenia, ramki z oznaczeniem „[i]", wiersze tabel bez oznaczenia (pliki, ustawienia bloku), puste akapity i tabelę „Dozwolone wartości". Zmian sam nie wylicza i niczego w tekście nie poprawia.
+- **[t2hvep]** Istniejący wpis: najpierw podgląd (`podglad`). Agent pokazuje listę zmian tabelą — co, było, będzie — z wyróżnieniem usunięć (sekcja, pozycja bloku, termin, treść między sekcjami), razem z ostrzeżeniami i uwagami, i czeka na potwierdzenie użytkownika ([2auaeg]); po potwierdzeniu zapisuje wywołaniem z kluczem z podglądu. Pusta lista zmian — agent mówi, że dokument nie różni się od wpisu, i nic nie zapisuje.
+- **[ydn3bx]** Ostrzeżenie o wpisie zmienionym po pobraniu dokumentu agent pokazuje razem z listą zmian: dokument przywróci te pola do stanu z chwili pobrania.
+- **[3ujd6c]** Nowy wpis z pustego szablonu agent zapisuje od razu, bez podglądu — powstaje szkic ([mubthw]); brakujące dane wymagane zbiera formularzem ([w9wfpv]) i ponawia operację z uzupełnionymi wierszami.
+- **[drvv46]** Gdy operacja odpowie listą błędnych danych — wartość spoza listy, tytuł albo nazwa, której nie ma albo która wskazuje więcej niż jeden wpis — agent pyta o poprawną wartość formularzem ([su5pbj], [w9wfpv]; pozycje list — z operacji „Słowniki i drzewa" i „Wyszukiwanie wpisów") i ponawia operację z poprawionym wierszem; wpis wskazuje wtedy adresem strony albo zapisem „ID <numer>".
+- **[kpbyy9]** Gdy operacja odpowie, że układ treści wpisu zmienił się po pobraniu dokumentu, agent mówi o tym użytkownikowi i proponuje nowy dokument (operacja „Dokument wpisu"), do którego użytkownik przeniesie zmiany; sam ich nie przenosi bez polecenia.
+- **[kjzxmw]** Po zapisie agent podaje: link do wpisu, co zmienił (`przed`, `po`), uwagi operacji (pominięte formaty i elementy, przekroczone limity znaków) i niewypełnione pola obowiązkowe (`niewypelnione`), w tym pliki — zdjęcia, ikony i filmy dodaje się w czacie albo w panelu.
+- **[jv5sc9]** Poza dokumentem zostają: ustawienia bloków, pliki, kolor marki w tekście, nowe sekcje i kolejność sekcji — agent zmienia je operacjami treści ([fd4b7r]) albo wskazuje panel WordPressa.
+
 ## Media
 
 - **[zg6z5u]** Pliki biblioteki mediów agent wyszukuje operacją „Biblioteka mediów"; pole wskazujące plik (obrazek wyróżniający, zdjęcie, ikona, znak, film) dostaje ID pliku.
@@ -108,7 +123,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.16, dokumentacja z commita 73c31c6.
+Plugin feuer-dev 0.1.17, dokumentacja z commita 39fb849.
 
 ## Spis dokumentów
 
