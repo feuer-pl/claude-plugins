@@ -90,6 +90,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 - **[zg6z5u]** Pliki biblioteki mediów agent wyszukuje operacją „Biblioteka mediów"; pole wskazujące plik (obrazek wyróżniający, zdjęcie, ikona, znak, film) dostaje ID pliku.
 - **[6pykqx]** Plik z komputera albo telefonu użytkownika — także dołączony do rozmowy — trafia do serwisu wyłącznie formularzem wgrania: agent pokazuje go operacją „Wgranie pliku" i sam pliku nie przesyła. `rodzaj` — wg pola, do którego plik trafi (obraz albo film); `cel` — do czego plik jest potrzebny. Jeden formularz przyjmuje jeden plik.
+- **[962v4s]** Gdy zlecenie wymaga pliku, a nie wskazuje którego, agent pyta formularzem ([w9wfpv]) — wybór z dwóch: „Nowy plik z komputera albo telefonu" i „Plik z biblioteki mediów"; w tym samym formularzu nieobowiązkowe pole tekstu: nazwa albo fraza do wyszukania w bibliotece. Po wyborze nowego pliku agent pokazuje formularz wgrania ([6pykqx]); po wyborze biblioteki — wyszukuje operacją „Biblioteka mediów" i daje wybrać plik z wyników.
 - **[7j54xx]** Po pokazaniu formularza agent czeka na użytkownika: po wgraniu formularz przygotowuje w polu wiadomości tekst „Plik wgrany, ID …", który użytkownik wysyła. Wtedy — także gdy użytkownik sam napisze, że plik wgrał — agent odczytuje plik operacją „Plik" z identyfikatorem wgrania (`wgranie` z wyniku operacji „Wgranie pliku") i z jej odpowiedzi bierze ID pliku. ID pliku nie zgaduje.
 - **[ge5wtj]** Przed użyciem pliku agent sprawdza go operacją „Plik" — typ, wymiary, proporcje, rozmiar — i podaje użytkownikowi ostrzeżenia z jej odpowiedzi (`ostrzezenia`).
 - **[a96nef]** Zdjęcie węższe niż 1440 px: agent ostrzega, że na dużym ekranie może być nieostre, i pyta, czy go użyć; bez zgody użytkownika pliku nie wstawia. Ostrzeżenie dotyczy pól zdjęć (zdjęcie, obrazek wyróżniający) — w polu ikony, znaku albo logotypu agent je pomija.
@@ -123,7 +124,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.18, dokumentacja z commita a57b49a.
+Plugin feuer-dev 0.1.19, dokumentacja z commita 4901a58.
 
 ## Spis dokumentów
 
