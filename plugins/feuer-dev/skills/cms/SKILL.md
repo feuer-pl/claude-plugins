@@ -94,7 +94,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[bjn7h4]** Obrazy dołączone do rozmowy — także kilka naraz — agent wgrywa sam: operacją „Wgranie plików z rozmowy" zakłada wgranie na liczbę plików i w środowisku wykonania kodu uruchamia polecenie z jej odpowiedzi osobno dla każdego pliku z katalogu załączników rozmowy (`/mnt/user-data/uploads/`). ID pliku i ostrzeżenia bierze z odpowiedzi poleceń; odmowę (np. plik nie jest obrazem) podaje użytkownikowi.
 - **[gc4kcn]** To także droga zapasowa: gdy użytkownik zgłasza, że formularz wgrania się nie pokazał — tak jest w aplikacjach Claude na komputerze i na telefonie (komunikat „Connector not found" albo „Unknown connector") — agent prosi o dołączenie zdjęcia do rozmowy i wgrywa je tą drogą ([bjn7h4]); przy filmie wskazuje Claude w przeglądarce.
 - **[e59pdt]** Gdy polecenie nie łączy się z serwisem — kod HTTP 000 albo błąd proxy — środowisko wykonania kodu nie ma dostępu do domeny serwisu. Agent mówi użytkownikowi, że domenę dodaje się raz w ustawieniach Claude: Settings → Capabilities → „Allow network egress" → „Additional allowed domains", i po dodaniu ponawia wgranie, w razie potrzeby w nowej rozmowie. Do tego czasu proponuje formularz wgrania na komputerze.
-- **[2t96wf]** Zdjęcie dołączone do rozmowy dociera do serwisu zmniejszone — dłuższy bok ok. 2500 px, niezależnie od urządzenia; na stronach serwisu bez różnicy. Gdy użytkownikowi zależy na pliku oryginalnym, agent wskazuje formularz wgrania w przeglądarce albo panel WordPressa.
+- **[2t96wf]** Zdjęcie dołączone do rozmowy dociera do serwisu zmniejszone — dłuższy bok ok. 2200–2600 px, zależnie od aplikacji; na stronach serwisu różnica jest mała. Gdy użytkownikowi zależy na pliku oryginalnym, agent wskazuje formularz wgrania w przeglądarce albo panel WordPressa.
 - **[7j54xx]** Po pokazaniu formularza agent czeka na użytkownika: po wgraniu formularz przygotowuje w polu wiadomości tekst „Plik wgrany, ID …", który użytkownik wysyła. Wtedy — także gdy użytkownik sam napisze, że plik wgrał — agent odczytuje plik operacją „Plik" z identyfikatorem wgrania (`wgranie` z wyniku operacji „Wgranie pliku") i z jej odpowiedzi bierze ID pliku. ID pliku nie zgaduje.
 - **[ge5wtj]** Przed użyciem pliku agent sprawdza go operacją „Plik" — typ, wymiary, proporcje, rozmiar — i podaje użytkownikowi ostrzeżenia z jej odpowiedzi (`ostrzezenia`).
 - **[a96nef]** Zdjęcie węższe niż 1440 px: agent ostrzega, że na dużym ekranie może być nieostre, i pyta, czy go użyć; bez zgody użytkownika pliku nie wstawia. Ostrzeżenie dotyczy pól zdjęć (zdjęcie, obrazek wyróżniający) — w polu ikony, znaku albo logotypu agent je pomija.
@@ -128,7 +128,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.23, dokumentacja z commita 031817d.
+Plugin feuer-dev 0.1.24, dokumentacja z commita aa95fb9.
 
 ## Spis dokumentów
 
