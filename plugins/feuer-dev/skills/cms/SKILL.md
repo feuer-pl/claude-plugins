@@ -28,13 +28,21 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[rhab87]** W operacji zapisu agent podaje treść zlecenia (pole `zlecenie`): o co poprosił użytkownik, jego słowami.
 - **[kgdtr6]** Zlecenie, którego nie da się wykonać — nie ma pasującej operacji albo konto nie ma uprawnień — agent zapisuje operacją „Zlecenie niewykonane": treść zlecenia słowami użytkownika i powód.
 - **[786knu]** Jednoznaczną pojedynczą zmianę istniejących danych (pole, termin, przypisanie) agent wykonuje od razu, bez dopytywania, i podaje, co zmienił: wartość sprzed zmiany i po zmianie z odpowiedzi operacji (`przed`, `po`).
-- **[2auaeg]** Przed publikacją, przeniesieniem do kosza, usunięciem (np. terminu szkolenia) i zmianą zbiorczą — wielu wpisów albo wielu pozycji naraz — agent mówi, co zrobi, i czeka na potwierdzenie użytkownika.
+- **[2auaeg]** Przed publikacją, utworzeniem kategorii oferty albo branży ([n57mcm]), przeniesieniem do kosza, usunięciem (np. terminu szkolenia, kategorii oferty) i zmianą zbiorczą — wielu wpisów albo wielu pozycji naraz — agent mówi, co zrobi, i czeka na potwierdzenie użytkownika.
 - **[225snv]** Strony głównej i stron, od których zależy działanie serwisu (Baza wiedzy, Oferta, O firmie, Kontakt — [strony.md](references/strony.md), [n9j6u5]), z czatu nie da się przenieść do kosza ani cofnąć ich publikacji: operacja odmawia, a agent mówi o tym użytkownikowi i wskazuje panel WordPressa.
 - **[mubthw]** Nowy wpis powstaje jako szkic; publikacja — wyłącznie na wyraźne polecenie użytkownika. Po utworzeniu agent podaje link do podglądu i wymienia niewypełnione pola obowiązkowe z odpowiedzi operacji (`niewypelnione`): blok i pola, nazwami z README bloku ([bloki.md](references/bloki.md), [aast68]).
 - **[a8bfws]** Gdy operacja publikacji odpowie listą niewypełnionych pól obowiązkowych, agent podaje ją użytkownikowi i pyta, czy publikować ze znacznikami `<wprowadź dane>` na stronie; po potwierdzeniu ponawia operację z polem `ze_znacznikami`.
 - **[ak3dnf]** Pole z listą (np. branże, oznaczenia, warianty, powiązane produkty) operacja zastępuje w całości: przed zmianą agent odczytuje bieżącą listę operacją „Wpis", dopisuje albo usuwa pozycję i wysyła pełną listę.
 - **[gjx3mp]** Tekst formatowany sekcji (dane kontaktu, treść zgody RODO) operacja zastępuje w całości: przed zmianą agent odczytuje bieżący tekst operacją „Sekcje", zmienia w nim to, o co prosi użytkownik, i wysyła cały tekst — resztę zostawia bez zmian, razem z formatami.
 - **[c5hv9t]** Cofnięcie zmiany: agent wykonuje tę samą operację z wartością `przed` z jej odpowiedzi; cofnięcie zmiany treści — [q4kd8f].
+
+## Kategorie, branże i grupy
+
+- **[6ec286]** Kategorie oferty, branże i grupy produktów agent zakłada, zmienia i usuwa operacjami termu; bieżące pola termu, jego produkty i sekcję odczytuje operacją „Term". Oznaczeń (TOP 20, miesiące) nie da się dodać, zmienić ani usunąć — agent tylko przypisuje je do produktów.
+- **[n57mcm]** Nowa kategoria oferty i nowa branża są w serwisie od razu, także bez produktów — termy nie mają szkicu: kategoria w menu i w stopce, branża w menu i na kafelkach branż strony głównej. Przed utworzeniem agent mówi o tym użytkownikowi i czeka na potwierdzenie ([2auaeg]); grupę produktów tworzy bez potwierdzenia. Nowa branża wymaga podpisu kafelka (pole `opis`) — gdy zlecenie go nie zawiera, agent pyta o niego przed utworzeniem ([mqpbgv]). Po utworzeniu agent podaje link do strony termu, wymienia niewypełnione pola obowiązkowe (`niewypelnione` — w branży ikona i zdjęcie) i informuje o sekcji termu — treści strony kategorii albo branży, którą uzupełnia się jak każdą treść blokową ([wpz8u8]).
+- **[cw5dsx]** Zmiana nazwy termu nie zmienia adresu jego strony — slug zostaje; zmianę sluga agent wskazuje w panelu WordPressa. Po zmianie nazwy branży agent informuje, że H1 strony branży to tytuł jej sekcji, który zmienia się w panelu, i podaje link do edycji sekcji z odpowiedzi operacji (`sekcja`).
+- **[a6yz35]** Usunięcie termu jest nieodwracalne i wymaga potwierdzenia ([2auaeg]); operacja usuwa wyłącznie term pusty. Gdy odmówi, agent podaje użytkownikowi listę z odmowy — termy podrzędne i produkty, w każdym statusie — i proponuje najpierw je przenieść: produkty operacją „Przypisania produktu", kategorie podrzędne operacją „Zmiana termu" (inna kategoria nadrzędna). Sam niczego nie przenosi — czeka na polecenie.
+- **[49aw7t]** Po usunięciu kategorii oferty albo branży jej sekcja zostaje: agent informuje o tym i podaje link do sekcji (`sekcja`). Do kosza przenosi ją wyłącznie na osobną prośbę użytkownika, operacją „Sekcja usuniętego termu do kosza" — dostępną dla administratora.
 
 ## Treść blokowa
 
@@ -80,7 +88,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.13, dokumentacja z commita d535619.
+Plugin feuer-dev 0.1.14, dokumentacja z commita 167b115.
 
 ## Spis dokumentów
 
