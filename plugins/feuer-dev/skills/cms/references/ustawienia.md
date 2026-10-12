@@ -26,6 +26,7 @@ Globalne ustawienia serwisu: strona Ustawienia → Feuer (linki social, odbiorca
 ## Edycja i uprawnienia
 
 - **[3cyzrx]** Stronę Ustawienia → Feuer otwiera i zapisuje wyłącznie administrator (`manage_options`).
+- **[r9vfap]** Ustawienia → Feuer administrator czyta i zmienia także z czatu — operacje „Ustawienia serwisu" i „Zmiana ustawień serwisu" (cms-z-czatu.md, „Operacje administratora"): te same pola i to samo czyszczenie wartości (`feuer_social_oczysc()`, `feuer_organizacja_oczysc()`, `sanitize_email`); wartość, którą strona ustawień czyści albo zapisuje jako pustą, operacja odrzuca.
 
 ## Odbiorcy
 

@@ -28,7 +28,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[rhab87]** W operacji zapisu agent podaje treść zlecenia (pole `zlecenie`): o co poprosił użytkownik, jego słowami.
 - **[kgdtr6]** Zlecenie, którego nie da się wykonać — nie ma pasującej operacji albo konto nie ma uprawnień — agent zapisuje operacją „Zlecenie niewykonane": treść zlecenia słowami użytkownika i powód.
 - **[786knu]** Jednoznaczną pojedynczą zmianę istniejących danych (pole, termin, przypisanie) agent wykonuje od razu, bez dopytywania, i podaje, co zmienił: wartość sprzed zmiany i po zmianie z odpowiedzi operacji (`przed`, `po`).
-- **[2auaeg]** Przed publikacją, utworzeniem kategorii oferty albo branży ([n57mcm]), przeniesieniem do kosza, usunięciem (np. terminu szkolenia, kategorii oferty) i zmianą zbiorczą — wielu wpisów albo wielu pozycji naraz — agent mówi, co zrobi, i czeka na potwierdzenie użytkownika.
+- **[2auaeg]** Przed publikacją, utworzeniem kategorii oferty albo branży ([n57mcm]), zmianą headera albo stopki serwisu ([fb4fmh]), przeniesieniem do kosza, usunięciem (np. terminu szkolenia, kategorii oferty) i zmianą zbiorczą — wielu wpisów albo wielu pozycji naraz — agent mówi, co zrobi, i czeka na potwierdzenie użytkownika.
 - **[225snv]** Strony głównej i stron, od których zależy działanie serwisu (Baza wiedzy, Oferta, O firmie, Kontakt — [strony.md](references/strony.md), [n9j6u5]), z czatu nie da się przenieść do kosza ani cofnąć ich publikacji: operacja odmawia, a agent mówi o tym użytkownikowi i wskazuje panel WordPressa.
 - **[mubthw]** Nowy wpis powstaje jako szkic; publikacja — wyłącznie na wyraźne polecenie użytkownika. Po utworzeniu agent podaje link do podglądu i wymienia niewypełnione pola obowiązkowe z odpowiedzi operacji (`niewypelnione`): blok i pola, nazwami z README bloku ([bloki.md](references/bloki.md), [aast68]).
 - **[a8bfws]** Gdy operacja publikacji odpowie listą niewypełnionych pól obowiązkowych, agent podaje ją użytkownikowi i pyta, czy publikować ze znacznikami `<wprowadź dane>` na stronie; po potwierdzeniu ponawia operację z polem `ze_znacznikami`.
@@ -43,6 +43,14 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[cw5dsx]** Zmiana nazwy termu nie zmienia adresu jego strony — slug zostaje; zmianę sluga agent wskazuje w panelu WordPressa. Po zmianie nazwy branży agent informuje, że H1 strony branży to tytuł jej sekcji, który zmienia się w panelu, i podaje link do edycji sekcji z odpowiedzi operacji (`sekcja`).
 - **[a6yz35]** Usunięcie termu jest nieodwracalne i wymaga potwierdzenia ([2auaeg]); operacja usuwa wyłącznie term pusty. Gdy odmówi, agent podaje użytkownikowi listę z odmowy — termy podrzędne i produkty, w każdym statusie — i proponuje najpierw je przenieść: produkty operacją „Przypisania produktu", kategorie podrzędne operacją „Zmiana termu" (inna kategoria nadrzędna). Sam niczego nie przenosi — czeka na polecenie.
 - **[49aw7t]** Po usunięciu kategorii oferty albo branży jej sekcja zostaje: agent informuje o tym i podaje link do sekcji (`sekcja`). Do kosza przenosi ją wyłącznie na osobną prośbę użytkownika, operacją „Sekcja usuniętego termu do kosza" — dostępną dla administratora.
+
+## Operacje administratora
+
+- **[vaxwhj]** Ustawienia serwisu (linki social, e-mail odbiorcy formularza kontaktu, dane organizacji), header, stopkę i log operacji obsługują operacje dostępne wyłącznie dla administratora. Zlecenie z innego konta agent traktuje jak każde zlecenie bez uprawnień ([kgdtr6], [ukucsm]).
+- **[fb4fmh]** Header i stopka są na każdej stronie serwisu: przed każdą ich zmianą — także pojedynczą i jednoznaczną — agent pokazuje, co się zmieni (wartość sprzed zmiany i po zmianie), i czeka na potwierdzenie użytkownika. Wyjątek od zmiany bez dopytywania ([786knu]).
+- **[bewysp]** Bieżące pola headera i stopki agent odczytuje operacją „Sekcje". Listę — linki, certyfikaty — operacja zastępuje w całości: agent zmienia w odczytanej liście to, o co prosi użytkownik, i wysyła całą, w kolejności wyświetlania ([ak3dnf]). Link do strony serwisu podaje wpisem (ID produktu, artykułu albo strony z operacji „Wyszukiwanie wpisów"), link poza serwis — adresem.
+- **[knx7jb]** Ustawienia serwisu agent zmienia od razu ([786knu]); bieżące wartości odczytuje operacją „Ustawienia serwisu". Po zmianie adresu albo telefonów w danych organizacji informuje, że te same dane są zapisane osobno w sekcji „Dane kontaktu" — na karcie Sekcji kontaktowej stron serwisu — i że tamten zapis zmienia się osobno; sam go nie zmienia, czeka na polecenie.
+- **[r7u2md]** Na pytanie administratora o to, co zlecano albo zmieniano z czatu, agent odczytuje operację „Log operacji" z zawężeniem z pytania — zakres dat, konto, operacja, wynik; pytanie o zlecenia użytkowników — z polem `tylko_zlecenia`. Wpisy pokazuje tabelą: czas, konto, operacja (etykietą), wynik, treść zlecenia. Dane wejściowe wpisu oraz wartości sprzed zmiany i po zmianie odczytuje na prośbę użytkownika — tą samą operacją, z `id` wpisu.
 
 ## Treść blokowa
 
@@ -88,7 +96,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.14, dokumentacja z commita 167b115.
+Plugin feuer-dev 0.1.15, dokumentacja z commita c5a5ae4.
 
 ## Spis dokumentów
 
