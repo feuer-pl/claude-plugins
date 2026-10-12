@@ -1,7 +1,7 @@
 {
   "name": "feuer-dev",
   "displayName": "Feuer (dev)",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "description": "Obsługa treści serwisu Feuer.pl z czatu — serwer dev: dokumentacja serwisu (skill cms) i konektor „Feuer CMS (dev)\".",
   "author": {
     "name": "Feuer.pl"
