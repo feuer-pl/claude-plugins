@@ -91,7 +91,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[zg6z5u]** Pliki biblioteki mediów agent wyszukuje operacją „Biblioteka mediów"; pole wskazujące plik (obrazek wyróżniający, zdjęcie, ikona, znak, film) dostaje ID pliku.
 - **[6pykqx]** Plik, którego użytkownik nie dołączył do rozmowy, trafia do serwisu formularzem wgrania: agent pokazuje go operacją „Wgranie pliku" i sam pliku nie przesyła. `rodzaj` — wg pola, do którego plik trafi (obraz albo film); `cel` — do czego plik jest potrzebny. Jeden formularz przyjmuje jeden plik. Formularz pokazuje się wyłącznie w Claude w przeglądarce (claude.ai) — w aplikacjach Claude na komputerze i na telefonie nie. Film wgrywa się wyłącznie formularzem, czyli w przeglądarce.
 - **[962v4s]** Gdy zlecenie wymaga pliku, a nie wskazuje którego, i do rozmowy nie dołączono pliku, agent pyta formularzem ([w9wfpv]) — wybór z dwóch: „Nowy plik z komputera albo telefonu" i „Plik z biblioteki mediów"; w tym samym formularzu nieobowiązkowe pole tekstu: nazwa albo fraza do wyszukania w bibliotece. Po wyborze nowego pliku agent pokazuje formularz wgrania ([6pykqx]); po wyborze biblioteki — wyszukuje operacją „Biblioteka mediów" i daje wybrać plik z wyników.
-- **[bjn7h4]** Obrazy dołączone do rozmowy — także kilka naraz — agent wgrywa sam: operacją „Wgranie plików z rozmowy" zakłada wgranie na liczbę plików i w środowisku wykonania kodu uruchamia polecenie z jej odpowiedzi osobno dla każdego pliku z katalogu załączników rozmowy (`/mnt/user-data/uploads/`). ID pliku i ostrzeżenia bierze z odpowiedzi poleceń; odmowę (np. plik nie jest obrazem) podaje użytkownikowi.
+- **[bjn7h4]** Obrazy dołączone do rozmowy — także kilka naraz — agent wgrywa sam: operacją „Wgranie plików z rozmowy" zakłada wgranie na liczbę plików i w środowisku wykonania kodu uruchamia polecenie z jej odpowiedzi osobno dla każdego pliku z katalogu załączników rozmowy (`/mnt/user-data/uploads/`). ID pliku i ostrzeżenia bierze z odpowiedzi poleceń; odmowę (np. plik nie jest obrazem) podaje użytkownikowi. Gdy zdjęć jest kilka, a z rozmowy nie wynika, do których pól trafiają, agent pyta o to formularzem ([w9wfpv]).
 - **[gc4kcn]** To także droga zapasowa: gdy użytkownik zgłasza, że formularz wgrania się nie pokazał — tak jest w aplikacjach Claude na komputerze i na telefonie (komunikat „Connector not found" albo „Unknown connector") — agent prosi o dołączenie zdjęcia do rozmowy i wgrywa je tą drogą ([bjn7h4]); przy filmie wskazuje Claude w przeglądarce.
 - **[e59pdt]** Gdy polecenie nie łączy się z serwisem — kod HTTP 000 albo błąd proxy — środowisko wykonania kodu nie ma dostępu do domeny serwisu. Agent mówi użytkownikowi, że domenę dodaje się raz w ustawieniach Claude: Settings → Capabilities → „Allow network egress" → „Additional allowed domains", i po dodaniu ponawia wgranie, w razie potrzeby w nowej rozmowie. Do tego czasu proponuje formularz wgrania na komputerze.
 - **[2t96wf]** Zdjęcie dołączone do rozmowy dociera do serwisu zmniejszone — dłuższy bok ok. 2200–2600 px, zależnie od aplikacji; na stronach serwisu różnica jest mała. Gdy użytkownikowi zależy na pliku oryginalnym, agent wskazuje formularz wgrania w przeglądarce albo panel WordPressa.
@@ -128,7 +128,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.24, dokumentacja z commita aa95fb9.
+Plugin feuer-dev 0.1.25, dokumentacja z commita b0c4c1e.
 
 ## Spis dokumentów
 
