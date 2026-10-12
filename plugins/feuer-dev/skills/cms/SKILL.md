@@ -24,7 +24,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Operacje
 
-- **[tmcqsk]** Treść serwisu agent odczytuje i zmienia wyłącznie operacjami konektora. Gdy potrzebnej operacji nie ma, mówi o tym od razu i nie szuka innej drogi — REST, strony publicznej ani plików.
+- **[tmcqsk]** Treść serwisu agent odczytuje i zmienia wyłącznie operacjami konektora. Gdy potrzebnej operacji nie ma, mówi o tym od razu i nie szuka innej drogi — REST, strony publicznej ani plików. Wyjątek: wysłanie pliku dołączonego do rozmowy poleceniem z operacji „Wgranie plików z rozmowy" ([bjn7h4]).
 - **[rhab87]** W operacji zapisu agent podaje treść zlecenia (pole `zlecenie`): o co poprosił użytkownik, jego słowami.
 - **[kgdtr6]** Zlecenie, którego nie da się wykonać — nie ma pasującej operacji albo konto nie ma uprawnień — agent zapisuje operacją „Zlecenie niewykonane": treść zlecenia słowami użytkownika i powód.
 - **[786knu]** Jednoznaczną pojedynczą zmianę istniejących danych (pole, termin, przypisanie) agent wykonuje od razu, bez dopytywania, i podaje, co zmienił: wartość sprzed zmiany i po zmianie z odpowiedzi operacji (`przed`, `po`).
@@ -89,8 +89,12 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 ## Media
 
 - **[zg6z5u]** Pliki biblioteki mediów agent wyszukuje operacją „Biblioteka mediów"; pole wskazujące plik (obrazek wyróżniający, zdjęcie, ikona, znak, film) dostaje ID pliku.
-- **[6pykqx]** Plik z komputera albo telefonu użytkownika — także dołączony do rozmowy — trafia do serwisu wyłącznie formularzem wgrania: agent pokazuje go operacją „Wgranie pliku" i sam pliku nie przesyła. `rodzaj` — wg pola, do którego plik trafi (obraz albo film); `cel` — do czego plik jest potrzebny. Jeden formularz przyjmuje jeden plik.
-- **[962v4s]** Gdy zlecenie wymaga pliku, a nie wskazuje którego, agent pyta formularzem ([w9wfpv]) — wybór z dwóch: „Nowy plik z komputera albo telefonu" i „Plik z biblioteki mediów"; w tym samym formularzu nieobowiązkowe pole tekstu: nazwa albo fraza do wyszukania w bibliotece. Po wyborze nowego pliku agent pokazuje formularz wgrania ([6pykqx]); po wyborze biblioteki — wyszukuje operacją „Biblioteka mediów" i daje wybrać plik z wyników.
+- **[6pykqx]** Plik, którego użytkownik nie dołączył do rozmowy, trafia do serwisu formularzem wgrania: agent pokazuje go operacją „Wgranie pliku" i sam pliku nie przesyła. `rodzaj` — wg pola, do którego plik trafi (obraz albo film); `cel` — do czego plik jest potrzebny. Jeden formularz przyjmuje jeden plik. Film wgrywa się wyłącznie formularzem.
+- **[962v4s]** Gdy zlecenie wymaga pliku, a nie wskazuje którego, i do rozmowy nie dołączono pliku, agent pyta formularzem ([w9wfpv]) — wybór z dwóch: „Nowy plik z komputera albo telefonu" i „Plik z biblioteki mediów"; w tym samym formularzu nieobowiązkowe pole tekstu: nazwa albo fraza do wyszukania w bibliotece. Po wyborze nowego pliku agent pokazuje formularz wgrania ([6pykqx]); po wyborze biblioteki — wyszukuje operacją „Biblioteka mediów" i daje wybrać plik z wyników.
+- **[bjn7h4]** Obrazy dołączone do rozmowy — także kilka naraz — agent wgrywa sam: operacją „Wgranie plików z rozmowy" zakłada wgranie na liczbę plików i w środowisku wykonania kodu uruchamia polecenie z jej odpowiedzi osobno dla każdego pliku z katalogu załączników rozmowy (`/mnt/user-data/uploads/`). ID pliku i ostrzeżenia bierze z odpowiedzi poleceń; odmowę (np. plik nie jest obrazem) podaje użytkownikowi.
+- **[gc4kcn]** To także droga zapasowa: gdy użytkownik zgłasza, że formularz wgrania się nie pokazał (np. w aplikacji Claude na telefonie), agent prosi o dołączenie zdjęcia do rozmowy i wgrywa je tą drogą ([bjn7h4]).
+- **[e59pdt]** Gdy polecenie nie łączy się z serwisem — kod HTTP 000 albo błąd proxy — środowisko wykonania kodu nie ma dostępu do domeny serwisu. Agent mówi użytkownikowi, że domenę dodaje się raz w ustawieniach Claude: Settings → Capabilities → „Allow network egress" → „Additional allowed domains", i po dodaniu ponawia wgranie, w razie potrzeby w nowej rozmowie. Do tego czasu proponuje formularz wgrania na komputerze.
+- **[2t96wf]** Zdjęcie dołączone do rozmowy w aplikacji Claude na telefonie dociera do serwisu zmniejszone, do ok. 2500 px dłuższego boku — na stronach serwisu bez różnicy. Gdy użytkownikowi zależy na pliku oryginalnym, agent wskazuje formularz wgrania na komputerze albo panel WordPressa.
 - **[7j54xx]** Po pokazaniu formularza agent czeka na użytkownika: po wgraniu formularz przygotowuje w polu wiadomości tekst „Plik wgrany, ID …", który użytkownik wysyła. Wtedy — także gdy użytkownik sam napisze, że plik wgrał — agent odczytuje plik operacją „Plik" z identyfikatorem wgrania (`wgranie` z wyniku operacji „Wgranie pliku") i z jej odpowiedzi bierze ID pliku. ID pliku nie zgaduje.
 - **[ge5wtj]** Przed użyciem pliku agent sprawdza go operacją „Plik" — typ, wymiary, proporcje, rozmiar — i podaje użytkownikowi ostrzeżenia z jej odpowiedzi (`ostrzezenia`).
 - **[a96nef]** Zdjęcie węższe niż 1440 px: agent ostrzega, że na dużym ekranie może być nieostre, i pyta, czy go użyć; bez zgody użytkownika pliku nie wstawia. Ostrzeżenie dotyczy pól zdjęć (zdjęcie, obrazek wyróżniający) — w polu ikony, znaku albo logotypu agent je pomija.
@@ -124,7 +128,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.19, dokumentacja z commita 4901a58.
+Plugin feuer-dev 0.1.20, dokumentacja z commita 556eb6d.
 
 ## Spis dokumentów
 
