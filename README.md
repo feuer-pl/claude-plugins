@@ -8,29 +8,9 @@ Zawartość repozytorium jest generowana automatycznie z dokumentacji serwisu �
 |---|---|---|
 | `feuer-dev` — „Feuer (dev)" | serwer dev (testowy) | „Feuer CMS (dev)" |
 
-## Wymagania
+## Instalacja i podłączenie konektora
 
-- Konto Claude na płatnym planie (Pro, Max, Team albo Enterprise).
-- W Claude włączone „Code execution and file creation": Settings → Capabilities.
-- Własne konto WordPressa w serwisie.
-
-Konto GitHub nie jest potrzebne.
-
-## Instalacja
-
-W Claude w przeglądarce albo w aplikacji desktopowej:
-
-1. Customize → Plugins → „Add" → „Add marketplace".
-2. W polu „URL" wpisz `feuer-pl/claude-plugins`. Przełącznik „Sync automatically" zostaw włączony. Zatwierdź przyciskiem „Sync".
-3. Zakładka „Discover", blok „New plugins": przy „Feuer (dev)" wybierz „+".
-
-## Podłączenie konektora
-
-1. Otwórz plugin „Feuer (dev)" → zakładka „Connectors" → przy konektorze („Not added") wybierz „Connect".
-2. Okno „Add custom connector": nazwa i adres są już wpisane → „Continue". Na następnym ekranie zostaw zaznaczone „Sign in now" i „Use Claude's published identity" → „Add".
-3. Ekran logowania WordPressa: zaloguj się własnym kontem serwisu (na zalogowanie jest 60 sekund) → na ekranie zgody wybierz „Zezwól" → powrót do Claude. Konektor ma stan „Connected".
-
-Plugin i konektor dodane w przeglądarce działają także w aplikacji desktopowej i na telefonie, na tym samym koncie Claude.
+Wymagania, instalacja pluginu i podłączenie konektora — krok po kroku, ze zrzutami ekranu: [lekcja „Instalacja pluginu Claude i podłączenie konektora"](https://feuer-dev.duckdns.org/samouczek/b/instalacja-pluginu-claude/).
 
 ## Użycie
 
