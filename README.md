@@ -6,11 +6,14 @@ Zawartość repozytorium jest generowana automatycznie z dokumentacji serwisu �
 
 | Plugin | Serwer | Konektor |
 |---|---|---|
+| `feuer` — „Feuer" | serwis `www.feuer.pl` | „Feuer CMS" |
 | `feuer-dev` — „Feuer (dev)" | serwer dev (testowy) | „Feuer CMS (dev)" |
+
+Do pracy z serwisem służy plugin „Feuer". Plugin „Feuer (dev)" łączy się z serwerem testowym — nim sprawdza się nowe funkcje, zanim trafią do serwisu.
 
 ## Instalacja i podłączenie konektora
 
-Wymagania, instalacja pluginu i podłączenie konektora — krok po kroku, ze zrzutami ekranu: [lekcja „Instalacja pluginu Claude i podłączenie konektora"](https://feuer-dev.duckdns.org/samouczek/b/instalacja-pluginu-claude/).
+Wymagania, instalacja pluginu i podłączenie konektora — krok po kroku, ze zrzutami ekranu: [lekcja „Instalacja pluginu Claude i podłączenie konektora"](https://feuer-dev.duckdns.org/samouczek/b/instalacja-pluginu-claude/). Lekcja pokazuje kroki na pluginie „Feuer (dev)" — dla pluginu „Feuer" są takie same, a domeną serwisu do dopisania w ustawieniach jest `www.feuer.pl`.
 
 ## Użycie
 
