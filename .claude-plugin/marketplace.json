@@ -9,6 +9,11 @@
       "name": "feuer-dev",
       "source": "./plugins/feuer-dev",
       "description": "Obsługa treści serwisu Feuer.pl z czatu — serwer dev: dokumentacja serwisu (skill cms) i konektor „Feuer CMS (dev)\"."
+    },
+    {
+      "name": "feuer",
+      "source": "./plugins/feuer",
+      "description": "Obsługa treści serwisu Feuer.pl z czatu: dokumentacja serwisu (skill cms) i konektor „Feuer CMS\"."
     }
   ]
 }

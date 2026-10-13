@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Feuer CMS": {
+      "type": "http",
+      "url": "https://www.feuer.pl/wp-json/mcp/mcp-oauth-server"
+    }
+  }
+}
