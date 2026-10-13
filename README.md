@@ -13,7 +13,7 @@ Do pracy z serwisem służy plugin „Feuer". Plugin „Feuer (dev)" łączy si�
 
 ## Instalacja i podłączenie konektora
 
-Wymagania, instalacja pluginu i podłączenie konektora — krok po kroku, ze zrzutami ekranu: [lekcja „Instalacja pluginu Claude i podłączenie konektora"](https://feuer-dev.duckdns.org/samouczek/b/instalacja-pluginu-claude/). Lekcja pokazuje kroki na pluginie „Feuer (dev)" — dla pluginu „Feuer" są takie same, a domeną serwisu do dopisania w ustawieniach jest `www.feuer.pl`.
+Wymagania, instalacja pluginu i podłączenie konektora — krok po kroku, ze zrzutami ekranu: [lekcja „Instalacja pluginu Claude i podłączenie konektora"](https://feuer-dev.duckdns.org/samouczek/b/instalacja-pluginu-claude/).
 
 ## Użycie
 
