@@ -14,7 +14,7 @@ Wymagania, instalacja pluginu i podłączenie konektora — krok po kroku, ze zr
 
 ## Użycie
 
-W nowej rozmowie opisz, co chcesz zrobić w serwisie — Claude sam sięgnie po skill i konektor. Skill można też wybrać ręcznie: wpisz `/` i wybierz `cms`. Przy pierwszym użyciu konektora Claude prosi o zgodę („Allow once").
+Co można zlecić w czacie — grupy możliwości z gotowymi zleceniami do skopiowania, operacje dostępne dla konta i to, czego agent nie zrobi: [przegląd „Co potrafi agent"](https://feuer-dev.duckdns.org/samouczek/b/co-potrafi-agent/).
 
 ## Aktualizacja
 
