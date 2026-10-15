@@ -15,13 +15,13 @@ Globalne ustawienia serwisu: strona Ustawienia → Feuer (linki social, odbiorca
 |---|---|---|---|---|---|---|
 | **[rrgwk9]** | Linki social: Facebook, Instagram, YouTube, LinkedIn | `feuer_social` | tablica serwis → adres; klucze `facebook`, `instagram`, `youtube`, `linkedin` | pole adresu (URL) na serwis | domyślnie pusta | stały zestaw serwisów w kodzie, w tej kolejności; brak adresu = ikona niewyświetlana (opis sekcji „Brak linku = ikona niewyświetlana.") |
 | **[eaq9jg]** | E-mail odbiorcy formularza | `feuer_formularz_odbiorca` | adres e-mail | pole e-mail | domyślnie pusty | sekcja „Formularz kontaktowy" |
-| **[p3qxtw]** | Dane organizacji: Nazwa prawna, Ulica i numer, Kod pocztowy, Miejscowość, Telefony, E-mail | `feuer_organizacja` | tablica: `nazwa_prawna`, `ulica`, `kod`, `miejscowosc`, `telefony`, `email` | tekst jednowierszowy, bez formatów; Telefony — tekst z łamaniem wiersza (3 wiersze, jeden numer w wierszu); E-mail — pole e-mail | domyślnie pusta | sekcja „Dane organizacji"; podpowiedź pod Telefonami „Po jednym w wierszu, z kierunkowym kraju (+48)." — formatu numeru nikt nie sprawdza |
+| **[p3qxtw]** | Dane organizacji: Nazwa prawna, NIP, Ulica i numer, Kod pocztowy, Miejscowość, Telefony, E-mail | `feuer_organizacja` | tablica: `nazwa_prawna`, `nip`, `ulica`, `kod`, `miejscowosc`, `telefony`, `email` | tekst jednowierszowy, bez formatów; Telefony — tekst z łamaniem wiersza (3 wiersze, jeden numer w wierszu); E-mail — pole e-mail | domyślnie pusta | sekcja „Dane organizacji"; podpowiedź pod Telefonami „Po jednym w wierszu, z kierunkowym kraju (+48)." — formatu numeru telefonu ani NIP-u nikt nie sprawdza (zapis i wyświetlenie takie, jak wpisane) |
 
 - **[tuzhz6]** Zapis `feuer_social`: wyłącznie klucze czterech serwisów (inne odrzucane); adres przez `esc_url_raw` — bez protokołu dostaje `http://`, z protokołem spoza dozwolonych w WordPressie (np. `javascript:`) staje się pusty; puste wartości usuwane z opcji.
 - **[exuqdq]** Zapis `feuer_formularz_odbiorca`: `sanitize_email` — niepoprawny adres zapisuje się jako pusty, bez komunikatu w panelu.
-- **[wmv3mz]** Zapis `feuer_organizacja`: wyłącznie sześć znanych pól (inne klucze odrzucane); nazwa, ulica, kod, miejscowość — `sanitize_text_field` (bez HTML, jedna linia); telefony — `sanitize_textarea_field` (bez HTML, wiersze zostają); e-mail — `sanitize_email` (niepoprawny zapisuje się jako pusty, bez ostrzeżenia); pola puste po czyszczeniu nie trafiają do opcji.
+- **[wmv3mz]** Zapis `feuer_organizacja`: wyłącznie siedem znanych pól (inne klucze odrzucane); nazwa, NIP, ulica, kod, miejscowość — `sanitize_text_field` (bez HTML, jedna linia); telefony — `sanitize_textarea_field` (bez HTML, wiersze zostają); e-mail — `sanitize_email` (niepoprawny zapisuje się jako pusty, bez ostrzeżenia); pola puste po czyszczeniu nie trafiają do opcji.
 - **[r2nvkv]** Sekcja „Formularz kontaktowy" pokazuje stan logu zgłoszeń: brak stałej `FEUER_ZGLOSZENIA_KATALOG` — „Log zgłoszeń wyłączony: brak stałej FEUER_ZGLOSZENIA_KATALOG w wp-config.php."; plik logu czytelny (także pusty) — link „Pobierz log zgłoszeń" (formularz-kontaktu.md, [4fw86a]); stała jest, a pliku brak albo nieczytelny — „Log zgłoszeń jest pusty.".
-- **[duq4sh]** Opis sekcji „Dane organizacji": „Dane dla Google (strona główna). Nazwa — nazwa witryny, logo — ikona witryny (Ustawienia → Ogólne). Adres i telefony są też w sekcji kontaktowej „O firmie" — zmiana w obu miejscach."
+- **[duq4sh]** Opis sekcji „Dane organizacji": „Dane w stopce serwisu i dla Google (strona główna). Puste pole nie wyświetla się w stopce. Nazwa i logo dla Google — nazwa i ikona witryny (Ustawienia → Ogólne). Adres i telefony są też w sekcji „Dane kontaktu" (Sekcje) — zmiana w obu miejscach."
 
 ## Edycja i uprawnienia
 
@@ -32,5 +32,5 @@ Globalne ustawienia serwisu: strona Ustawienia → Feuer (linki social, odbiorca
 
 - **[mu2fed]** `feuer_social` — ikony social w stopce i `sameAs` danych strukturalnych `Organization`.
 - **[86wby2]** `feuer_formularz_odbiorca` — adres, na który trafiają zgłoszenia z formularza kontaktu.
-- **[vaxsex]** `feuer_organizacja` — dane strukturalne `Organization` na stronie głównej.
+- **[vaxsex]** `feuer_organizacja` — dane firmy w stopce ([README bloku `stopka`](blok-stopka.md), „Dane") i dane strukturalne `Organization` na stronie głównej.
 - **[adw9sx]** Adres i telefony są zapisane także w treści sekcji `dane-kontaktu` (karta Sekcji kontaktowej) — dwa niezależne zapisy; zmiana wymaga edycji w obu miejscach.

@@ -88,7 +88,7 @@ Metadane stron dla wyszukiwarek i podglądów linków (title, meta description, 
 ### Organization
 
 - **[8mza78]** Wyłącznie strona główna, w `<head>` (`wp_head`).
-- **[23bkfp]** Właściwości: `name` — nazwa witryny (encje zdekodowane); `url` — adres strony głównej; `logo` — ikona witryny ([strony.md](strony.md), [4qcyr9]; logo wtyczki 179×30 jest poniżej minimum Google 112×112); `legalName`, `email` — dane organizacji ([ustawienia.md](ustawienia.md), [p3qxtw]); `telephone` — lista numerów z pola „Telefony" (wiersz = numer, przycięty, puste pomijane; lista także przy jednym numerze); `sameAs` — linki social stopki ([ustawienia.md](ustawienia.md), [rrgwk9]), w kolejności opcji.
+- **[23bkfp]** Właściwości: `name` — nazwa witryny (encje zdekodowane); `url` — adres strony głównej; `logo` — ikona witryny ([strony.md](strony.md), [4qcyr9]; logo wtyczki 179×30 jest poniżej minimum Google 112×112); `legalName`, `taxID` (NIP), `email` — dane organizacji ([ustawienia.md](ustawienia.md), [p3qxtw]); `telephone` — lista numerów z pola „Telefony" (wiersz = numer, przycięty, puste pomijane; lista także przy jednym numerze); `sameAs` — linki social stopki ([ustawienia.md](ustawienia.md), [rrgwk9]), w kolejności opcji.
 - **[s46dc3]** `address` — `PostalAddress`: `streetAddress`, `postalCode`, `addressLocality` i stałe `addressCountry` = `PL`; wystawiane, gdy wypełnione jest co najmniej jedno z trzech pól (puste pomijane).
 - **[7rctfw]** Puste pole (także brak ikony witryny albo linków social) — bez właściwości, nie pusta wartość.
 - **[hh2u3u]** Bez `image` (to zdjęcie firmy, nie logo) — niekrytyczna uwaga Rich Results Test („Local businesses") zostaje.
