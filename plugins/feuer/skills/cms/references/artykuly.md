@@ -38,7 +38,7 @@ Artykuły Bazy wiedzy (natywne wpisy `post`) i ich autorzy (typ `ekspert`): pola
 
 ### Odbiorcy
 
-- **[jwnmvv]** Flaga „Nie pokazuj na listach artykułów" wyłącza artykuł ze wszystkich list automatycznych artykułów: Lista artykułów (każde źródło poza wyborem ręcznym) i Aktualności; wybór ręczny może go wskazać. Na listach jest artykuł bez klucza meta albo z wartością inną niż „1". Flaga dotyczy wyłącznie list w serwisie: artykuł zostaje pod swoim adresem, bez `noindex`, w sitemapie i w kanale RSS; ukrycia pojedynczego artykułu przed wyszukiwarką serwis nie ma.
+- **[jwnmvv]** Flaga „Nie pokazuj na listach artykułów" wyłącza artykuł ze wszystkich list automatycznych artykułów: Lista artykułów (każde źródło poza wyborem ręcznym) i Aktualności; wybór ręczny może go wskazać. Na listach jest artykuł bez klucza meta albo z wartością inną niż „1". Flaga dotyczy wyłącznie list w serwisie: artykuł zostaje pod swoim adresem, bez `noindex`, w sitemapie, w kanale RSS i w `/llms.txt` ([seo.md](seo.md), [he24kd]); ukrycia pojedynczego artykułu przed wyszukiwarką serwis nie ma.
 - **[srd8za]** Kanał RSS wpisów: 10 ostatnich artykułów (`posts_per_rss`), pełna treść (`rss_use_excerpt` = 0).
 
 ## Ekspert (`ekspert`)

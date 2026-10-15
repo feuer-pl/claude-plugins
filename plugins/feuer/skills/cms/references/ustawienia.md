@@ -32,5 +32,5 @@ Globalne ustawienia serwisu: strona Ustawienia → Feuer (linki social, odbiorca
 
 - **[mu2fed]** `feuer_social` — ikony social w stopce i `sameAs` danych strukturalnych `Organization`.
 - **[86wby2]** `feuer_formularz_odbiorca` — adres, na który trafiają zgłoszenia z formularza kontaktu.
-- **[vaxsex]** `feuer_organizacja` — dane firmy w stopce ([README bloku `stopka`](blok-stopka.md), „Dane") i dane strukturalne `Organization` na stronie głównej.
+- **[vaxsex]** `feuer_organizacja` — dane firmy w stopce ([README bloku `stopka`](blok-stopka.md), „Dane") i dane strukturalne `Organization` na stronie głównej; nazwa prawna, adres, telefony i e-mail — także akapit danych organizacji `/llms.txt` ([seo.md](seo.md), [8rkrdm]).
 - **[adw9sx]** Adres i telefony są zapisane także w treści sekcji `dane-kontaktu` (karta Sekcji kontaktowej) — dwa niezależne zapisy; zmiana wymaga edycji w obu miejscach.
