@@ -1,6 +1,6 @@
 # SEO
 
-Metadane stron dla wyszukiwarek i podglądów linków (title, meta description, OG / Twitter, canonical, hreflang), indeksowanie, sitemapa, dane strukturalne, plik `/llms.txt` dla modeli językowych. Wymagania Google i pomiary: pomiary.md; ustawienia, z których korzystają metadane: [ustawienia.md](ustawienia.md); wersje językowe: [wielojezycznosc.md](wielojezycznosc.md).
+Metadane stron dla wyszukiwarek i podglądów linków (title, meta description, OG / Twitter, canonical, hreflang), indeksowanie, sitemapa, dane strukturalne, plik `/llms.txt` i wersje Markdown stron dla modeli językowych. Wymagania Google i pomiary: pomiary.md; ustawienia, z których korzystają metadane: [ustawienia.md](ustawienia.md); wersje językowe: [wielojezycznosc.md](wielojezycznosc.md).
 
 ## Mechanizm
 
