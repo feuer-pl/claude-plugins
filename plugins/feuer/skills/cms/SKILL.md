@@ -129,7 +129,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer 0.1.3, dokumentacja z commita c2e10a0.
+Plugin feuer 0.1.4, dokumentacja z commita 79b713c.
 
 ## Spis dokumentów
 
