@@ -20,7 +20,7 @@
 ## Dane
 
 - **[p56emp]** Zaszyte (nieedytowalne): logo — link do strony głównej (etykieta dostępności „Feuer — strona główna", i18n); przycisk „Do góry" (tekst i18n, `href="#"`, płynne przewinięcie z `scroll-behavior: smooth`) na styku pasa certyfikatów i ciemnej części stopki; nagłówek „Oferta" (H2, i18n — [bloki.md](bloki.md), [8464y5]).
-- **[83bs8x]** E-mail — pole „E-mail" danych organizacji (`feuer_organizacja`, [ustawienia.md](ustawienia.md), [p3qxtw]): link `mailto:`; pusty albo nieprawidłowy (po `sanitize_email`) — niewyświetlany.
+- **[83bs8x]** E-mail — pole „E-mail" danych organizacji (`feuer_organizacja`, [ustawienia.md](ustawienia.md), [p3qxtw]): link `mailto:` — od 1024 px tekst podkreślony linią w kolorze marki, w bloku danych firmy poniżej 1024 px bez podkreślenia; pusty albo nieprawidłowy (po `sanitize_email`) — niewyświetlany.
 - **[wy43yq]** Telefony — pole „Telefony" danych organizacji: wiersz pola = numer (przycięty, puste pomijane), w kolejności pola; link `tel:` — w adresie same cyfry i „+", tekst jak wpisany.
 - **[dzef8w]** Nazwa prawna, adres (ulica; kod i miejscowość) i NIP (tekst „NIP {numer}", i18n) — pola danych organizacji, tekst bez linków.
 - **[q7y6qj]** Od 1024 px: pod logo e-mail, pod nim telefony (każdy w osobnym wierszu), dalej ikony social; nazwa prawna, adres i NIP — drugi wiersz paska prawnego, pod prawami autorskimi: „{nazwa prawna} · {ulica}, {kod} {miejscowość} · NIP {numer}".
