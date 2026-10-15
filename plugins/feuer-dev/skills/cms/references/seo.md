@@ -14,6 +14,7 @@ Metadane stron dla wyszukiwarek i podglądów linków (title, meta description, 
 - **[6ey8yg]** Podpowiedzi pól: tytuł — „Puste — tytuł strony z sufiksem „ – Feuer" (razem do 60 znaków)." (w formularzu termu — „nazwa z sufiksem"); opis — „Puste — opis z tekstu wprowadzającego strony."
 - **[9qymn6]** Meta SEO wpisów i termów w REST API; uprawnienia zapisu — [uprawnienia.md](uprawnienia.md), [pgxvxr].
 - **[hz4wf5]** Pola SEO wpisów nie są synchronizowane między tłumaczeniami — każda wersja językowa ma własne wartości ([wielojezycznosc.md](wielojezycznosc.md), [jrtygf]); pola termów `oferta` i `branza` są wspólne dla języków ([wielojezycznosc.md](wielojezycznosc.md), [7n3mcs]).
+- **[p9vapx]** Pole „Opis dla AI" (meta `_feuer_opis_ai`) — opis strony przy linku w `/llms.txt` ([7m92v8]): jedno rzeczowe zdanie, co zawiera strona (o czym, dla kogo, forma). Artykuły, strony, produkty — panel „Wyszukiwarka", pod polami SEO; branże — formularz termu (dodawanie i edycja); kategorie oferty pola nie mają. Podpowiedź: „Puste — w llms.txt sam link. Wypełnia agent przy pracy przez czat." Jedna linia — podziały wierszy zapis zamienia na spacje; domyślnie puste; w REST i bez synchronizacji między tłumaczeniami jak pola SEO ([9qymn6], [hz4wf5]). Wypełnia je agent przy pracy przez czat (zachowanie-agenta.md, „Opis dla AI"); wpis utworzony albo zmieniony w panelu — pole bez zmiany (serwis opisu nie generuje), redaktor poprawia je albo czyści ręcznie.
 
 ## Title
 

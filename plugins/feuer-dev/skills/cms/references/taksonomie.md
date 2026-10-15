@@ -20,9 +20,9 @@ Taksonomie produktu: kategorie oferty (`oferta`), branże (`branza`), grupy prod
 | **[nrgnra]** | Zdjęcie | `_feuer_zdjecie` | ID załącznika (liczba ≥ 0) | medium: obraz | 0 = brak | branża — zdjęcie w bloku „Branże" mega-panelu menu; kategoria — kafel kategorii i top visual strony kategorii |
 
 - **[78ghuw]** Pola plików termu (Ikona, Zdjęcie) mają wyłącznie `branza` i `oferta`; meta termu w REST, zapis — uprawnienie z [52n8r5].
-- **[y6guyt]** Formularz dodawania i edycji termu `branza` / `oferta`: pod polami WordPressa kolejno Ikona, Zdjęcie, Kolejność (tylko branża) i pola SEO ([seo.md](seo.md), [jsncvy]).
+- **[y6guyt]** Formularz dodawania i edycji termu `branza` / `oferta`: pod polami WordPressa kolejno Ikona, Zdjęcie, Kolejność (tylko branża), pola SEO ([seo.md](seo.md), [jsncvy]) i „Opis dla AI" (tylko branża — [seo.md](seo.md), [p9vapx]).
 - **[bbk78s]** Pole pliku: „Wybierz: Ikona" / „Wybierz: Zdjęcie" otwiera bibliotekę mediów (tylko obrazy, jeden plik); podgląd — miniatura (rozmiar `thumbnail`, a gdy go brak — oryginał); „Usuń" ustawia 0 i czyści podgląd, plik zostaje w bibliotece.
-- **[7rrvjb]** W panelu pola termu zapisują się wyłącznie z formularza termu (pole `feuer_term`, nonce i uprawnienie z [52n8r5]; inaczej zapis pominięty bez komunikatu) — szybka edycja listy termów ich nie zmienia, a utworzenie albo zmiana termu z kodu ich nie zapisuje; operacje taksonomii z czatu zapisują meta termu wprost (cms-z-czatu.md, [t25wry]). Pole nieobecne w żądaniu formularza zapisuje się jako 0 (pliki, kolejność) albo pusty tekst (SEO); czyszczenie — `sanitize_callback` meta termu, te same co w REST.
+- **[7rrvjb]** W panelu pola termu zapisują się wyłącznie z formularza termu (pole `feuer_term`, nonce i uprawnienie z [52n8r5]; inaczej zapis pominięty bez komunikatu) — szybka edycja listy termów ich nie zmienia, a utworzenie albo zmiana termu z kodu ich nie zapisuje; operacje taksonomii z czatu zapisują meta termu wprost (cms-z-czatu.md, [t25wry]). Pole nieobecne w żądaniu formularza zapisuje się jako 0 (pliki, kolejność) albo pusty tekst (SEO, „Opis dla AI"); czyszczenie — `sanitize_callback` meta termu, te same co w REST.
 - **[bhw589]** Ikony branż i kategorii oferty pochodzą z zestawu Tabler Icons 3.48.0 (licencja MIT), pliki SVG w bibliotece mediów; kategoria „Compliance, audyty i doradztwo" ma ikonę własną.
 
 ## Oferta (`oferta`)
@@ -41,6 +41,7 @@ Taksonomie produktu: kategorie oferty (`oferta`), branże (`branza`), grupy prod
 - **[82fpks]** Produkt każdego rodzaju ma dowolną liczbę branż, także żadną. Produkt bez branży dotyczy wszystkich branż: jest na każdej stronie branży i w źródle „branża" Kafli produktowych; Lista artykułów ze źródłem „branża" bierze wyłącznie artykuły produktów z tą branżą przypisaną wprost.
 - **[wkeeu2]** Publiczna: strona branży pod `/branza/<slug-termu>/` (szablon „Strona branży"); w REST; kolumna „Branże" na liście produktów.
 - **[2ue5f6]** Pole „Kolejność" (`_feuer_kolejnosc`) — pole liczbowe w formularzu termu (krok 1); zapis jako tekst (pusta wartość liczbowa w REST byłaby 0): liczba całkowita, ułamek obcięty, wartość nienumeryczna → pusty tekst; pusty = bez ręcznej kolejności. W REST.
+- **[grmvr8]** Branża ma pole „Opis dla AI" (`_feuer_opis_ai`) — opis strony branży przy linku w `/llms.txt`: [seo.md](seo.md), [p9vapx]; kategoria oferty go nie ma.
 - **[4c6qy5]** Lista branż: wszystkie termy (także bez produktów), rosnąco wg „Kolejność"; bez wartości — na końcu; przy równej wartości (także wśród pustych) alfabetycznie po nazwie. Błąd pobrania termów — pusta lista.
 - **[wngjx8]** Ta sama lista i kolejność: blok „Branże" mega-panelu menu, kafelki branż na stronie głównej, okruszki strony branży, tagi branż na liście artykułów Bazy wiedzy.
 - **[jw2d32]** Przy utworzeniu termu `branza` powstaje sekcja branży ([sekcje.md](sekcje.md)).

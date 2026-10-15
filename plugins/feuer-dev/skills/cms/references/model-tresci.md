@@ -19,6 +19,7 @@ Przegląd modelu treści serwisu: typy wpisów, taksonomie, relacje między obie
 - **[38t6vv]** Typy własne (`produkt`, `sekcja`, `ekspert`) i ich pola meta rejestruje kod wtyczki `feuer-komponenty` — źródło danych dla bloków; `post` i `page` to typy natywne.
 - **[62j8p2]** `page` — natywny typ stron: hierarchiczny (strona nadrzędna i podstrony), publiczny, w REST (`pages`); obsługuje tytuł, treść, autora, obrazek wyróżniający, atrybuty strony i pola własne.
 - **[p8nkhw]** Strona (`page`) ma pola SEO — „Tytuł dla wyszukiwarek" (`_feuer_seo_tytul`) i „Opis dla wyszukiwarek" (`_feuer_seo_opis`): [seo.md](seo.md), „Pola nadpisania".
+- **[andnyt]** Strona (`page`) ma pole „Opis dla AI" (`_feuer_opis_ai`) — opis strony przy linku w `/llms.txt`: [seo.md](seo.md), [p9vapx].
 - **[aaqnca]** Typu `ksiazka` nie ma — poza zakresem do czasu projektu karty lub strony książki.
 
 ## Taksonomie

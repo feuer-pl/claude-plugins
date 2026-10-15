@@ -20,6 +20,7 @@ Artykuły Bazy wiedzy (natywne wpisy `post`) i ich autorzy (typ `ekspert`): pola
 
 - **[587wxx]** Meta `_feuer_ekspert` i `_feuer_bez_listy` są w REST; zapis — [uprawnienia.md](uprawnienia.md), [pgxvxr].
 - **[zxj2pt]** Artykuł ma też pola SEO — „Tytuł dla wyszukiwarek" (`_feuer_seo_tytul`) i „Opis dla wyszukiwarek" (`_feuer_seo_opis`): [seo.md](seo.md), „Pola nadpisania".
+- **[gf6mjf]** Artykuł ma pole „Opis dla AI" (`_feuer_opis_ai`) — opis strony przy linku w `/llms.txt`: [seo.md](seo.md), [p9vapx].
 - **[22bfx8]** Obraz zastępczy artykułu bez obrazka wyróżniającego — plik motywu `feuer-skorka/img/artykul-zapasowy.jpg` (JPEG 633×553), poza biblioteką mediów, wstawiany z `width` i `height`; jedna funkcja (`feuer_zdjecie_artykulu()`) dla otwarcia artykułu (`eager`, `fetchpriority="high"`) i bloku Aktualności (`lazy`).
 
 ### Relacje
