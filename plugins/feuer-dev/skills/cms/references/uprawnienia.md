@@ -1,6 +1,6 @@
 # Uprawnienia
 
-Role i konta, blokady edycji („idiotoodporność"), bloki dostępne w edytorze, Site Editor, dane kont i REST bez logowania. Uprawnienia poszczególnych obiektów — sekcja „Edycja i uprawnienia" dokumentów [produkt.md](produkt.md), [artykuly.md](artykuly.md), [sekcje.md](sekcje.md), [ustawienia.md](ustawienia.md); uprawnienia termów — [taksonomie.md](taksonomie.md), „Wspólne" ([52n8r5]).
+Role i konta (z weryfikacją dwuetapową), blokady edycji („idiotoodporność"), bloki dostępne w edytorze, Site Editor, dane kont i REST bez logowania. Uprawnienia poszczególnych obiektów — sekcja „Edycja i uprawnienia" dokumentów [produkt.md](produkt.md), [artykuly.md](artykuly.md), [sekcje.md](sekcje.md), [ustawienia.md](ustawienia.md); uprawnienia termów — [taksonomie.md](taksonomie.md), „Wspólne" ([52n8r5]).
 
 ## Blokady edycji
 
