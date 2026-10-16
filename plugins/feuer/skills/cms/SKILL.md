@@ -87,6 +87,12 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 - **[kjzxmw]** Po zapisie agent podaje: link do wpisu, co zmienił (`przed`, `po`), uwagi operacji (pominięte formaty i elementy, przekroczone limity znaków) i niewypełnione pola obowiązkowe (`niewypelnione`), w tym pliki — zdjęcia, ikony i filmy dodaje się w czacie albo w panelu.
 - **[jv5sc9]** Poza dokumentem zostają: ustawienia bloków, pliki, kolor marki w tekście, nowe sekcje i kolejność sekcji — agent zmienia je operacjami treści ([fd4b7r]) albo wskazuje panel WordPressa.
 
+## Opis dla AI
+
+- **[h7gdts]** „Opis dla AI" ([seo.md](references/seo.md), [p9vapx]) — opis strony przy linku w `/llms.txt` — agent pisze sam: jedno rzeczowe zdanie, co zawiera strona (o czym, dla kogo, forma), zwięźle, informacyjnie, bez niewyjaśnionego żargonu — wyłącznie z treści wpisu. Zapis: produkt, artykuł, strona — operacją „Pola SEO wpisu" (`opis_ai`); branża — operacją „Nowy term" albo „Zmiana termu" (`opis_ai`). Kategoria oferty pola nie ma.
+- **[2yp9d5]** Nowy produkt, artykuł albo strona (także z pustego szablonu dokumentu wpisu) i nowa branża z czatu: agent wypełnia „Opis dla AI" ([h7gdts]) i podaje go w odpowiedzi.
+- **[kkdhmy]** Po operacji z czatu zmieniającej tekst strony — treść blokowa (także lead; sekcja branży — opis branży, sekcja Bazy wiedzy — opis strony „Baza wiedzy"), tytuł albo nazwa branży, zajawka, zapis dokumentu wpisu, przywrócenie wersji — agent odczytuje „Opis dla AI" (operacja „Wpis", branża — „Term") i porównuje go z nową treścią. Opis pusty albo przestał odpowiadać treści — agent zapisuje nowy ([h7gdts]) i podaje w odpowiedzi wartość sprzed zmiany i po zmianie (`przed`, `po`); odpowiada — bez zmiany. Operacje bez zmiany tekstu strony (terminy, media, pola SEO, status, przypisania kategorii i branż) — bez sprawdzenia.
+
 ## Media
 
 - **[zg6z5u]** Pliki biblioteki mediów agent wyszukuje operacją „Biblioteka mediów"; pole wskazujące plik (obrazek wyróżniający, zdjęcie, ikona, znak, film) dostaje ID pliku.
@@ -129,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer 0.1.4, dokumentacja z commita 79b713c.
+Plugin feuer 0.1.5, dokumentacja z commita 560fc24.
 
 ## Spis dokumentów
 
