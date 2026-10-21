@@ -30,7 +30,7 @@ Bloki treści redakcyjnej (typografia A40) i ich ograniczenia w edytorze. Reguł
 
 ## Gdzie obowiązuje
 
-- **[8psccg]** Paleta jest listą dozwolonych bloków (`allowedBlocks`) stref treści redakcyjnej bloków `feuer/karta-opisu-produktu-pozycja` (etap Programu), `feuer/tekst-zdjecie`, `feuer/kluczowe-informacje` (wstęp), `feuer/top-kontentowy` (karta) i `feuer/szare-tlo` — nadaje ją filtr `block_type_metadata` (`feuer_paleta_w_blokach()`), `block.json` tych bloków listy nie powtarza; nowy blok ze strefą treści redakcyjnej — dopisanie do listy w filtrze.
+- **[8psccg]** Paleta jest listą dozwolonych bloków (`allowedBlocks`) stref treści redakcyjnej bloków `feuer/karta-opisu-produktu-pozycja` (etap Programu), `feuer/tekst-zdjecie`, `feuer/kluczowe-informacje` (wstęp), `feuer/top-kontentowy` (karta) i `feuer/szare-tlo` — nadaje ją filtr `block_type_metadata` (`feuer_paleta_w_blokach()`), `block.json` tych bloków listy nie powtarza; nowy blok ze strefą treści redakcyjnej — dopisanie do listy w filtrze. Etap Programu przyjmuje ponadto blok `feuer/terminy-otwarte` (ten sam filtr); pozostałe strefy — sama paleta.
 - **[7dr2f7]** `feuer/szare-tlo` przyjmuje paletę, ale sam do niej nie należy — strefy treści bloków go nie przyjmują.
 - **[p69bw2]** Bloki palety stoją także bezpośrednio w treści stron (`page`) i produktów, między sekcjami — wyglądają jak w treści artykułu, na froncie i w edytorze.
 - **[zpunnt]** Pole albo strefa z ograniczoną listą elementów palety (np. odpowiedź FAQ, wartość wiersza Kluczowych informacji) — wygląd elementów zawsze wg atomów treści redakcyjnej (A40).

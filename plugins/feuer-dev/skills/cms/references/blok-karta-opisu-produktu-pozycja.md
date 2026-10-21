@@ -12,7 +12,7 @@
 |---|---|---|---|---|---|---|
 | **[anu6vd]** | Nadtytuł (np. „Etap I", na stronach produktów „1." … „4.") | `nadtytul` | tekst jednowierszowy | bez formatów | bez limitu | opcjonalne — pusty (po usunięciu znaczników i spacji) się nie wyświetla |
 | **[qevafg]** | Tytuł | `tytul` | tekst z łamaniem wiersza (na froncie tylko `br`) | bez formatów | 35 | obowiązkowe |
-| **[gzrcmd]** | Treść (panel zakładki albo kolumna; typografia treści redakcyjnej A40, `.tresc`) | bloki wewnętrzne | strefa treści, swobodna (`templateLock: false`) | paleta treści redakcyjnej ([paleta-tresci.md](paleta-tresci.md), [8psccg]); nagłówki h3–h4 ([2qrdcd]) | bez limitu | opcjonalne — pusta treść: pusty panel albo kolumna, bez znacznika |
+| **[gzrcmd]** | Treść (panel zakładki albo kolumna; typografia treści redakcyjnej A40, `.tresc`) | bloki wewnętrzne | strefa treści, swobodna (`templateLock: false`) | paleta treści redakcyjnej ([paleta-tresci.md](paleta-tresci.md), [8psccg]) i blok Terminy szkoleń otwartych ([feuer/terminy-otwarte](blok-terminy-otwarte.md)); nagłówki h3–h4 ([2qrdcd]) | bez limitu | opcjonalne — pusta treść: pusty panel albo kolumna, bez znacznika |
 
 ## Dane
 

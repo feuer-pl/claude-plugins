@@ -26,7 +26,7 @@ Strony z listami produktów: „Oferta", strony kategorii oferty, strony branż,
 ## Widoczność i kolejność
 
 - **[hu253v]** Listy automatyczne produktów (`feuer_produkty_listingu()`): opublikowane produkty (także bez rodzaju) bez flagi „Nie pokazuj w listingu kategorii" ([produkt.md](produkt.md), [999uaf]; brak meta albo wartość różna od 1), spełniające warunek taksonomii wywołującego (kategoria, branża, oznaczenia), w języku strony ([wielojezycznosc.md](wielojezycznosc.md), [4htqwa]); bez limitu i stronicowania, w kolejności listingu; dane produktów i miniatur wczytywane hurtem. Ta sama lista daje TOP 20 (oznaczenie `top-20`).
-- **[xbcyrc]** Kolejność listingu (`feuer_kolejnosc_listingu()`): najpierw produkty z Promocją lub Nowością, w obu grupach ranga rosnąco (1 najwyżej, bez rangi na końcu), przy równej randze — nazwa na karcie porównywana bajtowo (wielkie litery przed małymi, litery z polskimi znakami po wszystkich literach ASCII). Listy ręczne — kolejność redaktora.
+- **[xbcyrc]** Kolejność listingu (`feuer_kolejnosc_listingu()`): najpierw produkty z Promocją lub Nowością, w obu grupach ranga rosnąco (1 najwyżej, bez rangi na końcu), przy równej randze — nazwa na karcie porównywana bajtowo (wielkie litery przed małymi, litery z polskimi znakami po wszystkich literach ASCII); ta sama kolejność — wiersze bloku Terminy szkoleń otwartych. Listy ręczne — kolejność redaktora.
 - **[g62a6w]** Kategoria „ma produkty" (`feuer_oferta_ma_produkty()`; kafle kategorii, drzewo kategorii), gdy w niej albo w jej podkategoriach jest opublikowany produkt bez flagi „Nie pokazuj w listingu kategorii".
 
 ## Strona „Oferta"
