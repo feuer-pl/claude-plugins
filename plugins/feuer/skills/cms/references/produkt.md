@@ -76,8 +76,8 @@ Typ wpisu `produkt` — produkty oferty: szkolenia i usługi. Pola, słowniki, m
 
 ## Odbiorcy
 
-- **[hh6g67]** Karty produktu (listingi stron zbiorczych, Zobacz także, Karuzela szkoleń, Kalendarium) pokazują nazwę skróconą, a gdy pusta — tytuł wpisu; strona produktu (H1, okruszki) — tytuł wpisu.
-- **[96rack]** Opis na karcie: karta produktu stron zbiorczych, Kalendarium, szablon artykułu.
+- **[hh6g67]** Karty produktu (listingi stron zbiorczych, Zobacz także, Karuzela szkoleń, Kalendarium) i wiersze bloku Terminy szkoleń otwartych pokazują nazwę skróconą, a gdy pusta — tytuł wpisu; strona produktu (H1, okruszki) — tytuł wpisu.
+- **[96rack]** Opis na karcie: karta produktu stron zbiorczych, Kalendarium, szablon artykułu, wiersz bloku Terminy szkoleń otwartych.
 - **[2khtq5]** Kluczowe informacje — blok „Kluczowe informacje" (tylko wyświetla).
 - **[ja6sjh]** Warianty i terminy — Top visual produktowy ([README bloku](blok-top-produktowy.md), [jsxm7f]); pola usługi zostają w meta i są pomijane.
 - **[d566w4]** Aktualne terminy = data późniejsza niż dzisiejsza (strefa czasowa witryny); dzisiejszy i przeszłe nie są pokazywane nigdzie w serwisie (bloki, listingi, wybór terminu).
@@ -85,7 +85,7 @@ Typ wpisu `produkt` — produkty oferty: szkolenia i usługi. Pola, słowniki, m
 - **[srrv3u]** Powiązane produkty — blok „Zobacz także".
 - **[wmnf4g]** Tag — badge na kartach (Kafle produktowe, Zobacz także, Karuzela szkoleń): odmiana, ikona i nazwa wg kodu — [strony-zbiorcze.md](strony-zbiorcze.md), [vjmjws].
 - **[293tqa]** Nowość, Promocja i Ranga — kolejność produktów w listingach.
-- **[999uaf]** Flaga „Nie pokazuj w listingu kategorii" wyłącza produkt ze wszystkich list automatycznych produktów i z nawigacji, także z kart Terminów i Karuzeli szkoleń (poza bieżącym szkoleniem w Terminach); artykułów powiązanych z produktem nie wyłącza ze źródeł Listy artykułów.
+- **[999uaf]** Flaga „Nie pokazuj w listingu kategorii" wyłącza produkt ze wszystkich list automatycznych produktów i z nawigacji, także z kart Terminów i Karuzeli szkoleń (poza bieżącym szkoleniem w Terminach) i z bloku Terminy szkoleń otwartych; artykułów powiązanych z produktem nie wyłącza ze źródeł Listy artykułów.
 - **[hkxpca]** Metadane — wyszukiwarka katalogu.
 - **[v2qktg]** Powiązany artykuł — link „Dowiedz się więcej" w Top visualu produktowym.
 - **[ujbj5d]** Forma, Egzamin/Certyfikat, Poziom i Link do Moodle nie są wyświetlane na froncie (dostępne w REST).

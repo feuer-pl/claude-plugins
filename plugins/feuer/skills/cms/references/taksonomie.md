@@ -50,7 +50,7 @@ Taksonomie produktu: kategorie oferty (`oferta`), branże (`branza`), grupy prod
 
 - **[3stw5s]** Niepubliczna: bez stron i adresów; zapytanie z frontu `?taxonomy=grupa` jest ignorowane.
 - **[8cuu94]** Termy tworzy i redaguje redaktor w panelu (ekran termów w menu „Produkty"); produkt każdego rodzaju może mieć dowolną liczbę grup — wybór w natywnym panelu bocznym edytora produktu; kolumna „Grupy produktów" na liście produktów.
-- **[2sg6dc]** Grupy nie są pokazywane na froncie przez żaden blok ani szablon.
+- **[2sg6dc]** Grupa wybiera szkolenia bloku Terminy szkoleń otwartych ([README bloku](blok-terminy-otwarte.md), [7uacps]); nazwy grupy na froncie nie pokazuje żaden blok ani szablon.
 
 ## Oznaczenia (`oznaczenie`)
 

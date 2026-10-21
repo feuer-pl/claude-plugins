@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer 0.1.5, dokumentacja z commita 560fc24.
+Plugin feuer 0.1.6, dokumentacja z commita aee3080.
 
 ## Spis dokumentów
 
@@ -198,6 +198,7 @@ Plugin feuer 0.1.5, dokumentacja z commita 560fc24.
 - [blok-tekst-zdjecie.md](references/blok-tekst-zdjecie.md) — feuer/tekst-zdjecie „Sekcja tekst+zdjęcie"
 - [blok-terminy.md](references/blok-terminy.md) — feuer/terminy „Terminy"
 - [blok-terminy-brak.md](references/blok-terminy-brak.md) — feuer/terminy-brak „Terminy — stan pusty"
+- [blok-terminy-otwarte.md](references/blok-terminy-otwarte.md) — feuer/terminy-otwarte „Terminy szkoleń otwartych"
 - [blok-top-kontentowy.md](references/blok-top-kontentowy.md) — feuer/top-kontentowy „Top visual kontentowy"
 - [blok-top-listingu.md](references/blok-top-listingu.md) — feuer/top-listingu „Top visual listingu"
 - [blok-top-produktowy.md](references/blok-top-produktowy.md) — feuer/top-produktowy „Top visual produktowy"
