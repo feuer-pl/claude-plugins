@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.35, dokumentacja z commita e560163.
+Plugin feuer-dev 0.1.36, dokumentacja z commita a934294.
 
 ## Spis dokumentów
 
@@ -172,6 +172,7 @@ Plugin feuer-dev 0.1.35, dokumentacja z commita e560163.
 - [blok-dla-kogo-pozycja.md](references/blok-dla-kogo-pozycja.md) — feuer/dla-kogo-pozycja „Pozycja"
 - [blok-dwie-kolumny.md](references/blok-dwie-kolumny.md) — feuer/dwie-kolumny „Dwie kolumny"
 - [blok-dwie-kolumny-kolumna.md](references/blok-dwie-kolumny-kolumna.md) — feuer/dwie-kolumny-kolumna „Kolumna"
+- [blok-email-zapisu.md](references/blok-email-zapisu.md) — feuer/email-zapisu „E-mail zapisu na szkolenie"
 - [blok-faq.md](references/blok-faq.md) — feuer/faq „FAQ"
 - [blok-faq-pytanie.md](references/blok-faq-pytanie.md) — feuer/faq-pytanie „Pytanie"
 - [blok-kafelki-branz.md](references/blok-kafelki-branz.md) — feuer/kafelki-branz „Kafelki branż"

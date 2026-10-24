@@ -1,6 +1,6 @@
 # feuer/terminy
 
-„Terminy" — sekcja z nagłówkiem, leadem i rzędem kart najbliższych aktualnych terminów szkoleń; przy bieżącym szkoleniu bez terminów — stan pusty z sekcji `terminy-brak`. Typ: D ([bloki.md](bloki.md), „Typy bloków"). Źródło kart i brak terminów: [bloki.md](bloki.md), [g93eyy], [xrqdvx]; aktualne terminy: [produkt.md](produkt.md), [d566w4]; teksty stanu pustego: [feuer/terminy-brak](blok-terminy-brak.md); prewypełnienie layeru: formularz-kontaktu.md, [zfmtfn], [7x4m9c].
+„Terminy" — sekcja z nagłówkiem, leadem i rzędem kart najbliższych aktualnych terminów szkoleń; przy bieżącym szkoleniu bez terminów — stan pusty z sekcji `terminy-brak`. Typ: D ([bloki.md](bloki.md), „Typy bloków"). Źródło kart i brak terminów: [bloki.md](bloki.md), [g93eyy], [xrqdvx]; aktualne terminy: [produkt.md](produkt.md), [d566w4]; teksty stanu pustego: [feuer/terminy-brak](blok-terminy-brak.md); prewypełnienie layeru: formularz-kontaktu.md, [zfmtfn], [7x4m9c]; „Zamów" karty szkolenia gotowego do zapisu — formularz zapisu: formularz-zapisu.md, [8bhh5a].
 
 ## Gdzie
 

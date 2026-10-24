@@ -22,7 +22,7 @@
 ## Dane
 
 - **[vrnn3b]** Dane z wpisu z kontekstu bloku (`postId`, `postType`); bez identyfikatora wpisu blok nic nie renderuje.
-- **[jsxm7f]** Rząd zamówienia (układ z danych, bez ustawienia odmiany): pole wyboru wariantu — tylko szkolenie z niepustą listą wariantów (opcje — nazwy wariantów); pole terminu — tylko szkolenie z aktualnymi terminami (opcje „j F Y"); przycisk „Zamów" (`button.przycisk.przycisk-strzalka`, wyzwalacz layeru kontaktu) — zawsze.
+- **[jsxm7f]** Rząd zamówienia (układ z danych, bez ustawienia odmiany): pole wyboru wariantu — tylko szkolenie z niepustą listą wariantów (opcje — nazwy wariantów); pole terminu — tylko szkolenie z aktualnymi terminami (opcje „j F Y"); przycisk „Zamów" (`button.przycisk.przycisk-strzalka`, wyzwalacz layeru kontaktu, a przy szkoleniu gotowym do zapisu — formularza zapisu: formularz-zapisu.md, [t472my]) — zawsze.
 - **[k26qth]** Link „Dowiedz się więcej" (link akcji ze strzałką, A43) — do powiązanego artykułu produktu (`_feuer_artykul`; adres w języku strony: [wielojezycznosc.md](wielojezycznosc.md), [b8tb5u]), tylko gdy artykuł istnieje i jest opublikowany; przy polach wyboru stoi osobną linią nad nimi, bez pól — w rzędzie za przyciskiem.
 - **[qu9w2v]** Pola wyboru — atom A53 ([bloki.md](bloki.md), [3r3tf7]): lista `role="listbox"`, opcje `role="option"`.
 

@@ -160,8 +160,8 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 
 - **[2s88n5]** Kategoria wstawiacza bloku — `category` w `block.json` (kolumna „Wstawiacz").
 - **[b4jwt5]** Żaden blok firmowy nie ma trybu edycji jako HTML (`supports.html: false`).
-- **[ecp7bd]** Bez zapisu jako blok wielokrotnego użytku (`supports.reusable: false`): bloki ramy i szablonowe, bloki zawartości sekcji (`belka-zapowiedzi-dane`, `dane-kontaktu`, `terminy-brak`, `zgoda`), bloki potomne (pozycja, krok, pytanie, karta, kolumna) i Lista artykułów; bloki potomne dodatkowo bez blokady (`supports.lock: false`).
-- **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`; bez `example` — `dane-kontaktu`, `terminy-brak`, `zgoda`.
+- **[ecp7bd]** Bez zapisu jako blok wielokrotnego użytku (`supports.reusable: false`): bloki ramy i szablonowe, bloki zawartości sekcji (`belka-zapowiedzi-dane`, `dane-kontaktu`, `email-zapisu`, `terminy-brak`, `zgoda`), bloki potomne (pozycja, krok, pytanie, karta, kolumna) i Lista artykułów; bloki potomne dodatkowo bez blokady (`supports.lock: false`).
+- **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`; bez `example` — `dane-kontaktu`, `email-zapisu`, `terminy-brak`, `zgoda`.
 - **[7ws8qv]** Opis bloku — `README.md` w folderze bloku ([DOC-README-BLOCK], szablon „Blok": zasady-dokumentacji.md, „Szablony dokumentów").
 - **[sf9ue8]** Reguły bloków powtórzone w kodzie serwera MCP — obsługa treści z czatu (cms-z-czatu.md, [duh56w], [72sfmh]): liczba pozycji bloków z pozycjami ([4dtarj]) i pola wskazujące obiekty serwisu, rozpoznawane po nazwie atrybutu (obraz, film, wpisy, termy). Nowy blok z pozycjami i pole tego rodzaju o nowej nazwie wymagają dopisania tam.
 - **[nf2npd]** Pola zawartości bloków w dokumencie wpisu — nazwy pól, zestawy formatów, limity znaków, pola obowiązkowe i teksty domyślne — są powtórzone w kodzie serwera MCP (`feuer_mcp_dok_definicje_blokow()`; cms-z-czatu.md, [j92cq6]). Nowy blok, nowe pole zawartości albo zmiana nazwy, formatów czy limitu pola wymaga zmiany tam; bez niej blok stoi w dokumencie jako sekcja bez pól, a pole — bez wiersza.
@@ -177,6 +177,7 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 | **[c39d8n]** | `feuer/branza` — Strona branży | S | szablon strony branży (`taxonomy-branza.html`) | ukryty | [README](blok-branza.md) |
 | **[4updw3]** | `feuer/cytat` — Opinia klienta | T | treść; paleta | text | [README](blok-cytat.md) |
 | **[zgmse2]** | `feuer/dane-kontaktu` — Dane kontaktu | T | sekcja `dane-kontaktu`; jeden | ukryty | [README](blok-dane-kontaktu.md) |
+| **[k6srwh]** | `feuer/email-zapisu` — E-mail zapisu na szkolenie | T | sekcje `email-zapisu`, `email-zapisu-sep`; jeden | ukryty | [README](blok-email-zapisu.md) |
 | **[d9sgfg]** | `feuer/dla-kogo` — Dla kogo | T | treść | design | [README](blok-dla-kogo.md) |
 | **[wkksec]** | `feuer/dla-kogo-pozycja` — Pozycja | T | wewnątrz `feuer/dla-kogo` | design | [README](blok-dla-kogo-pozycja.md) |
 | **[2uktfq]** | `feuer/dwie-kolumny` — Dwie kolumny | T | treść; paleta | text | [README](blok-dwie-kolumny.md) |

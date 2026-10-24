@@ -22,7 +22,7 @@
 - **[j3svr5]** Do 4 kart: miesiące po kolei od bieżącego, aż zbierze się 4 — miesiąc rozpoczęty przed osiągnięciem 4 kart trafia do renderu w całości, dalsze są pomijane; w obrębie miesiąca losowanie w przeglądarce przy każdym wczytaniu (`uloz.js`), karty w kolejności miesięcy. Mniej produktów — tyle kart, ile jest, bez powtórzeń; brak produktów — zachowanie wg [bloki.md](bloki.md), [szj5f5].
 - **[pa284q]** Karta: czerwony element — miesiąc i rok, z którego produkt jest pokazany („F Y" wielką literą, np. „Październik 2026", `<time datetime="Y-m">`), bez szarego wiersza; tytuł (`h3`) — nazwa na karcie ([produkt.md](produkt.md), [hh6g67]), link do strony produktu.
 - **[ctwd7y]** Szkolenie z aktualnym terminem — najbliższy aktualny termin ([produkt.md](produkt.md), [d566w4]; także w kolejnym miesiącu niż miesiąc karty): forma (słownik, pogrubiona), data („j F Y", np. „15 października 2026") i opis terminu z łamaniami; przycisk `zamow`. Szkolenie bez aktualnego terminu — „Opis na karcie" (`_feuer_opis_karty`) i przycisk `uzgodnij`. Usługa i produkt bez rodzaju — „Opis na karcie" i przycisk `zamow`, bez terminu.
-- **[yp926z]** Przycisk karty otwiera layer kontaktu (formularz-kontaktu.md, [g3heqp]); `aria-label` „<tekst przycisku>: <nazwa>, <data terminu>" (bez terminu — „<tekst przycisku>: <nazwa>"); po tekście ikona strzałki (`i-strzalka`).
+- **[yp926z]** Przycisk karty otwiera layer kontaktu (formularz-kontaktu.md, [g3heqp]), a karta z terminem szkolenia gotowego do zapisu — formularz zapisu (formularz-zapisu.md, [53y98g]); `aria-label` „<tekst przycisku>: <nazwa>, <data terminu>" (bez terminu — „<tekst przycisku>: <nazwa>"); po tekście ikona strzałki (`i-strzalka`).
 
 ## Edytor
 
