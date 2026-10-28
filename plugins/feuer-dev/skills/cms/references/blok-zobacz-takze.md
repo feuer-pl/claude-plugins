@@ -13,6 +13,7 @@
 | **[dt3qat]** | Nagłówek (H2, w całości ExtraBold) | `tytul` | tekst z łamaniem wiersza, w miejscu | „Akcent w nagłówkach — bez akcentu" ([bloki.md](bloki.md), [bmw7u4]); na froncie `wp_kses_post` | bez limitu | pusty (po usunięciu znaczników) — „Inni klienci wybierali także" (i18n; w edytorze jako wartość pola) |
 | **[8gk8xa]** | Pozycje (źródło) — tylko na stronie produktu | `zrodlo` | wybór „Pozycje" (panel „Ustawienia"): „Powiązania produktu" (podpowiedź „Z sekcji „Powiązane produkty" w danych produktu (pod treścią)."), „Wybór ręczny" | `powiazania`, `reczny` | — | `powiazania`; na innych stronach zawsze wybór ręczny, bez wyboru źródła |
 | **[7fj2yj]** | Produkty (wybór ręczny) | `produkty` (lista ID) | panel wyboru ręcznego | produkty (szkolenia i usługi) | 10 | pusta |
+| **[aj9p5c]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 

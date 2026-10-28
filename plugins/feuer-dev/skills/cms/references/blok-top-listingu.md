@@ -15,7 +15,7 @@ Pola poza trybem kategorii (w trybie kategorii ignorowane — dane z termu):
 | **[3k4v4r]** | Zdjęcie | `zdjecie` (ID) | medium — toolbar: „Wybierz zdjęcie" / „Zmień zdjęcie" | obrazy z biblioteki mediów | — | obowiązkowe — niewybrane albo usunięte: obraz zastępczy (front i edytor); `loading="eager"` i `fetchpriority="high"` ([media.md](media.md), [s4ae2p]) |
 | **[qakenc]** | H1 | `tytul` | tekst jednowierszowy, w miejscu | bez formatów (na froncie bez znaczników) | bez limitu | pusty (po usunięciu znaczników i spacji) — tytuł strony; w edytorze tytuł wpisu jako podpowiedź |
 | **[guhf6y]** | Lead | `lead` | tekst z łamaniem wiersza, w miejscu, podpowiedź „Lead…" | pogrubienie (na froncie `strong`, `br`) | bez limitu | opcjonalne — pusty się nie wyświetla |
-| **[g454ac]** | Szerokość zdjęcia w tle | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie bloków ze zdjęciem-tłem: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
+| **[g454ac]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1920` |
 
 ## Dane
 

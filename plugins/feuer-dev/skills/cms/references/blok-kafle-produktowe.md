@@ -15,6 +15,7 @@
 | **[5m9p6e]** | Źródło produktów | `zrodlo` + `produkty` (ID), `oferta` (ID termu), `branza` (ID termu), `miesiace` (slugi) | panel „Ustawienia": „Źródło produktów" — „Wybór ręczny", „Kategoria oferty", „Branża", „TOP 20", „Miesiące"; dla źródła „branża bieżącej strony" (`branza-strony`) wyboru nie ma | — | bez limitu liczby kart | wybór ręczny z pustą listą |
 | **[wcef4q]** | Kafel kontaktowy na końcu | `kontakt` | przełącznik (panel „Ustawienia"), pomoc „Ostatni kafel siatki otwiera formularz kontaktu." | — | — | włączony |
 | **[kf7u3n]** | Tytuł, tekst i tekst linku kafla kontaktowego | `kontaktTytul`, `kontaktTekst`, `kontaktLink` | w miejscu: tytuł i tekst z łamaniem wiersza, tekst linku jednowierszowy | bez formatów w edytorze; na froncie tytuł i tekst oczyszczane do pogrubienia, kursywy i łamania | — | puste — teksty domyślne (i18n): „Inne potrzeby? / I tak mamy to, serio", „Pomożemy Ci wybrać odpowiednie szkolenie lub przygotujemy dedykowaną ofertę.", „Skontaktuj się z nami" |
+| **[kyhfvh]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 

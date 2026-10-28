@@ -14,6 +14,7 @@
 | **[dtvnh9]** | Linki paska prawnego | `linkiPrawne` | lista: etykieta + link (jak wyżej) | wpis serwisu albo adres | — | pusta |
 | **[wh6yky]** | Certyfikaty (pas certyfikatów) | `certyfikaty`: `obrazId`, `alt`, link | lista pozycji: obraz z biblioteki mediów, tekst alternatywny (wpisywany w pozycji), opcjonalny link | obrazy | — | pusta; pozycja bez obrazu (niewybranego albo usuniętego) pominięta; bez pozycji — pusty biały pas |
 | **[5wtzqn]** | Prawa autorskie | `prawa` | tekst z łamaniem wiersza, w miejscu | „Krótki tekst" ([bloki.md](bloki.md), [nmwmdu], [taeeq4]) | — | pusty (także same łamania i spacje) — „Feuer. Wszystkie prawa zastrzeżone" przez i18n; `© {bieżący rok}` (rok z `wp_date`) wstawia render przed polem |
+| **[66frrv]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła, jedno dla pasa certyfikatów i ciemnej części: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 - **[vhqfqv]** Edycja — [bloki.md](bloki.md), [bfdf6a] (panel boczny i prawa autorskie w miejscu); panel „Kontakt" ma sam wiersz z odnośnikiem „Ustawienia → Feuer" (nowa karta) — dane firmy i linki social żyją w ustawieniach serwisu.
 

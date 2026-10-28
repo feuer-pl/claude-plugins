@@ -16,6 +16,7 @@
 | **[4ffr45]** | Tekst przycisku | `przycisk` | tekst jednowierszowy, w miejscu | bez formatów | — | pusty — „Zamów" (i18n) |
 | **[puqw98]** | Tekst linku do artykułu | `etykietaLinku` | tekst jednowierszowy, w miejscu | bez formatów | — | pusty — „Dowiedz się więcej" (i18n) |
 | **[r4hwp8]** | Zdjęcie | obrazek wyróżniający wpisu (bez pola w bloku) | medium | obrazy | — | obowiązkowe — brak albo usunięty: obraz zastępczy; `loading="eager"` i `fetchpriority="high"` ([media.md](media.md), [s4ae2p]) |
+| **[t6t4te]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 - **[trpyjp]** Podpowiedzi pól wyboru („Wybierz wariant", „Termin") — zaszyte w kodzie (i18n) jako etykiety formularza.
 

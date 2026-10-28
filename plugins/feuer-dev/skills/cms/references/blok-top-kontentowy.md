@@ -16,7 +16,7 @@
 | **[27t9xv]** | Karta | bloki wewnętrzne | strefa treści — typografia treści redakcyjnej (A40, `.tresc`) | paleta treści redakcyjnej ([paleta-tresci.md](paleta-tresci.md), [8psccg]) | — | obowiązkowe; po wstawieniu jeden pusty akapit z podpowiedzią `<wprowadź dane>` |
 | **[n38er8]** | Zdjęcie | obrazek wyróżniający wpisu (bez pola w bloku; wybór w panelu wpisu) | medium | obrazy | — | obowiązkowe — brak albo usunięty: obraz zastępczy; `loading="eager"` i `fetchpriority="high"` ([media.md](media.md), [s4ae2p]); jedno zdjęcie dla desktopu i mobile |
 | **[87bepv]** | Film, Film mobile | `film`, `filmMobile` | medium — toolbar ([bloki.md](bloki.md), [hcje6t]) | MP4 | — | opcjonalne — zamiast zdjęcia |
-| **[gg6yex]** | Szerokość zdjęcia w tle | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie bloków ze zdjęciem-tłem: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
+| **[gg6yex]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1920` |
 
 ## Warianty
 

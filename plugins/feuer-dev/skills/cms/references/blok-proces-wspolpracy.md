@@ -14,6 +14,7 @@
 | **[n7tmqs]** | Nagłówek (H2, w całości ExtraBold) | `tytul` | tekst z łamaniem wiersza | „Akcent w nagłówkach — bez akcentu" ([bloki.md](bloki.md), [bmw7u4]) | 45 | opcjonalne, bez tekstu domyślnego — pusty (także same łamania wiersza): blok bez `h2`, zaczyna się od rzędu kroków |
 | **[bm7bf2]** | Odmiana | `odmiana` | wybór w toolbarze bloku: „Proces" (1), „Lista" (2) | 1, 2 | — | 1 — także bloki bez atrybutu |
 | **[8cq7n9]** | Kroki | bloki wewnętrzne | `feuer/proces-wspolpracy-krok` | wyłącznie `feuer/proces-wspolpracy-krok` | „Liczba kroków" w toolbarze bloku ([bloki.md](bloki.md), [4dtarj], [edg7dw]) | po wstawieniu 4 |
+| **[mnrctm]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 - **[xpas5g]** Bez leadu i podpisu — atrybuty bloku to wyłącznie `tytul` i `odmiana`.
 

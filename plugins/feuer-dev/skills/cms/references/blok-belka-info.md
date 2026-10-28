@@ -16,6 +16,7 @@
 | **[2skqv8]** | Przycisk (atom A41 ze strzałką) | `przycisk`: `etykieta`, `url`, `id`, `zamowienie` | etykieta — tekst jednowierszowy w miejscu; cel — toolbar: „Link przycisku" (kontrolka linku: [bloki.md](bloki.md), [wawuac], [a4xc8h]; wybór linku zeruje `zamowienie`) albo „Zamówienie produktu" (`zamowienie: true` — layer kontaktu z prewypełnieniem, bez adresu; adres linku zostaje w atrybucie, niewyświetlany) | etykieta bez formatów | — | obowiązkowe — bez etykiety: `<wprowadź dane>`; z etykietą bez celu (bez linku albo zamówienie poza stroną produktu): `<wprowadź link>` w miejscu tekstu (front; w edytorze tekst zostaje do edycji); znaczniki bez strzałki i celu |
 | **[39u63z]** | Zdjęcie (dekoracyjne, alt pusty) | `zdjecie` (ID) | medium — toolbar: „Wybierz zdjęcie" / „Zmień zdjęcie" | obrazy z biblioteki mediów | — | obowiązkowe — niewybrane albo usunięte: obraz zastępczy ([bloki.md](bloki.md), [wdhnxv]) |
 | **[uh68kk]** | Film, Film mobile | `film`, `filmMobile` | medium — toolbar: „Film", „Film mobile", „Resetuj" ([bloki.md](bloki.md), [hcje6t]) | MP4 | — | opcjonalne — zamiast zdjęcia; plik mobile poniżej 1024 px |
+| **[f8vb7e]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Warianty
 

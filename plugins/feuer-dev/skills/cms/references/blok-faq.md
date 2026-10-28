@@ -12,6 +12,7 @@
 |---|---|---|---|---|---|---|
 | **[u8xg88]** | Nagłówek (H2, w całości ExtraBold) | `tytul` | tekst z łamaniem wiersza | „Akcent w nagłówkach — bez akcentu" ([bloki.md](bloki.md), [bmw7u4]) | — | pusty — „Często zadawane pytania" przez i18n: na froncie także, gdy po usunięciu znaczników zostają same spacje; w edytorze (jako edytowalna wartość pola) — tylko przy całkiem pustym polu |
 | **[x83wsu]** | Pytania | bloki wewnętrzne | `feuer/faq-pytanie`, dodawanie swobodne (`templateLock: false`) | wyłącznie `feuer/faq-pytanie` | bez górnego limitu | min. 1 — usunięcie ostatniego przywraca jedno puste; po wstawieniu 1 |
+| **[yxcavu]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 

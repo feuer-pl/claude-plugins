@@ -18,7 +18,7 @@
 | **[862sv4]** | Kreacje pasa: desktop i mobile (osobna kreacja, bez przycinania desktopowej) | `zdjecie` + `zdjecieMobile` albo `film` + `filmMobile` (ID) | medium — toolbar bloku | zdjęcie: obrazy; film: wyłącznie `video/mp4` | — | obie obowiązkowe; brak kreacji mobile wybranego medium (niewybrana, usunięta albo złego typu — także w świeżym bloku) blokuje zapis i autozapis wpisu |
 | **[w36ke4]** | Tekst na pasie | `napis` — lista linii `{ tekst, lead }` | jedno pole wieloliniowe: każda linia osobnym polem bez miękkich łamań; styl linii w toolbarze — „Linia główna" / „Lead" | „Akcent w nagłówkach" ([bloki.md](bloki.md), [s56shy]); w hero `span.akcent` = słowo większe | — | opcjonalne — domyślnie jedna pusta linia; puste (wszystkie linie bez tekstu): bez nagłówka i leadu |
 | **[m2htay]** | Karty | bloki wewnętrzne | `feuer/karty-informacyjne-karta`, przestawiane dowolnie (`templateLock: false`) | wyłącznie `feuer/karty-informacyjne-karta` | 1–10 | min. 1 — nowy blok ma jedną kartę, po usunięciu ostatniej pojawia się pusta (bez wpisu w historii zmian) |
-| **[a79uy4]** | Szerokość zdjęcia w tle | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie bloków ze zdjęciem-tłem: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
+| **[a79uy4]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1920` |
 
 - **[3vfxxy]** Bez ostrzeżenia o rozmiarze filmu — blok sprawdza wyłącznie typ pliku.
 

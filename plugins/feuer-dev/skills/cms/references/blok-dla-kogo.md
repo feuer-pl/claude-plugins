@@ -14,6 +14,7 @@
 | **[bzrp29]** | Lead | `lead` | tekst z łamaniem wiersza | pogrubienie | 200 | obowiązkowe |
 | **[kqtg8d]** | Podpis (Bold z CSS) | `podpis` | tekst jednowierszowy | bez formatów | 60 | obowiązkowe |
 | **[gn8sv6]** | Pozycje | bloki wewnętrzne | `feuer/dla-kogo-pozycja` | wyłącznie `feuer/dla-kogo-pozycja` | „Liczba pozycji" w toolbarze bloku ([bloki.md](bloki.md), [4dtarj], [edg7dw]) | po wstawieniu 4 |
+| **[3f3a77]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 - **[j233hx]** Numer pozycji („01.", „02." …) — automatycznie z licznika CSS, bez znaczników w treści.
 
