@@ -81,14 +81,14 @@ Zestaw = lista formatów inline pola tekstowego bloku (`allowedFormats`). Pole b
 
 | ID | Zestaw | Formaty | Kod |
 |---|---|---|---|
-| **[s56shy]** | „Akcent w nagłówkach" | akcent (`feuer/akcent`, `span.akcent` — ExtraBold), kolor marki (`feuer/akcent-marki`, `span.akcent-marki`), kursywa, podkreślenie | `FORMATY_AKCENTU` |
+| **[s56shy]** | „Akcent w nagłówkach" | akcent (`feuer/akcent`, `span.akcent` — waga `--waga-najgrubsza`, bez widocznego efektu: [mdu3cy]), kolor marki (`feuer/akcent-marki`, `span.akcent-marki`), kursywa, podkreślenie | `FORMATY_AKCENTU` |
 | **[bmw7u4]** | „Akcent w nagłówkach — bez akcentu" (pola w całości ExtraBold) | kolor marki, kursywa, podkreślenie | `FORMATY_BEZ_AKCENTU` |
 | **[nj47ej]** | „Paleta" | formaty inline palety ([paleta-tresci.md](paleta-tresci.md), [7wwnuc]) | bloki core palety, bez `allowedFormats` |
 | **[nmwmdu]** | „Krótki tekst" | pogrubienie, kursywa, łamanie wiersza | `feuer_tekst_z_formatami()` |
 | **[9xgmea]** | bez formatów | — | `allowedFormats` pusta |
 
 - **[nwcsbu]** Formaty „Akcent", „Kolor marki" i akcent H1 Top visualu kontentowego (`feuer/tytul-duzy`, `span.tytul-duzy` — słowo większe; poza zestawami) rejestruje `src/wspolne/akcent.js` — raz, mimo importu w wielu blokach; dostępność w blokach core — [paleta-tresci.md](paleta-tresci.md), [7wwnuc], [ve4jan].
-- **[mdu3cy]** Format „Akcent" zmienia wygląd wyłącznie w polu lżejszym niż ExtraBold: w nagłówkach w całości ExtraBold (Terminy i ich stan pusty, Sekcja kontaktowa, Karty informacyjne w zwykłej odmianie) przycisk „Akcent" jest dostępny, ale nic nie zmienia — wyróżniają kolor marki, kursywa i podkreślenie.
+- **[mdu3cy]** Format „Akcent" (waga `--waga-najgrubsza`) nie ma widocznego efektu: obie wagi pogrubione serwisu są równe 700 (css.md, [sv8ud3]) — przycisk „Akcent" jest dostępny w każdym nagłówku, ale nic nie zmienia; wyróżniają kolor marki, kursywa i podkreślenie (decyzja użytkownika 2026-10-28).
 
 ## Linki i pola panelu
 
