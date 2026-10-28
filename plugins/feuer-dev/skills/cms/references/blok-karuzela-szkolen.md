@@ -20,6 +20,7 @@
 | **[6dwpn8]** | Szkolenia (tylko źródło „Terminy szkoleń") | `oferta` (ID kategorii) | lista „Szkolenia": „Wszystkie szkolenia" i kategorie oferty z wcięciami; pomoc „Kategoria obejmuje też swoje podkategorie." | — | — | 0 — wszystkie szkolenia |
 | **[9yvuqs]** | Liczba kart | `limit` | lista: „Wszystkie" (0), 1–12; zmiana źródła ustawia domyślną liczbę źródła (TOP 20 — wszystkie, terminy — 12) | 0–12 (render przycina do zakresu) | — | 12 w `block.json` (niezależnie od źródła) |
 | **[xnghng]** | Autoplay, Sekundy na kartę | `autoplay`, `sekundy` | przełącznik „Autoplay" (pomoc „Karty przewijają się same; najechanie kursorem i ręczna zmiana wstrzymują na 15 s."); pole „Sekundy na kartę" — tylko przy włączonym autoplayu (pusty, zerowy albo nienumeryczny wpis daje 3; ujemny — 1; ułamek obcinany do części całkowitej) | sekundy ≥ 1 | — | wyłączony; 3 s |
+| **[2esewm]** | Szerokość zdjęcia w tle | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie bloków ze zdjęciem-tłem: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 
