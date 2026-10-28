@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.37, dokumentacja z commita 1c73ec2.
+Plugin feuer-dev 0.1.38, dokumentacja z commita e7f8b68.
 
 ## Spis dokumentów
 
@@ -185,6 +185,7 @@ Plugin feuer-dev 0.1.37, dokumentacja z commita 1c73ec2.
 - [blok-karty-informacyjne-karta.md](references/blok-karty-informacyjne-karta.md) — feuer/karty-informacyjne-karta „Karta informacyjna"
 - [blok-karuzela-szkolen.md](references/blok-karuzela-szkolen.md) — feuer/karuzela-szkolen „Karuzela szkoleń na zdjęciu"
 - [blok-kategoria.md](references/blok-kategoria.md) — feuer/kategoria „Strona kategorii"
+- [blok-klauzula-rodo.md](references/blok-klauzula-rodo.md) — feuer/klauzula-rodo „Klauzula RODO formularza zapisu"
 - [blok-kluczowe-informacje.md](references/blok-kluczowe-informacje.md) — feuer/kluczowe-informacje „Kluczowe informacje"
 - [blok-lista-artykulow.md](references/blok-lista-artykulow.md) — feuer/lista-artykulow „Lista artykułów"
 - [blok-naglowek.md](references/blok-naglowek.md) — feuer/naglowek „Header serwisu"
