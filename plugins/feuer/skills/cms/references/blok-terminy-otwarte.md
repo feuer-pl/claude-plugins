@@ -1,6 +1,6 @@
 # feuer/terminy-otwarte
 
-„Terminy szkoleń otwartych" (K44) — tabela szkoleń jednej grupy produktów z terminami na najbliższe miesiące: wybór terminu i „Zamów" w pasku pod tabelą. Typ: D ([bloki.md](bloki.md), „Typy bloków"). Aktualne terminy: [produkt.md](produkt.md), [d566w4]; grupy produktów: [taksonomie.md](taksonomie.md), „Grupa produktów"; prewypełnienie layeru: formularz-kontaktu.md, „Prewypełnienie".
+„Terminy szkoleń otwartych" (K44) — tabela szkoleń jednej grupy produktów z terminami na najbliższe miesiące: wybór terminu i „Zamów" pod tabelą. Typ: D ([bloki.md](bloki.md), „Typy bloków"). Aktualne terminy: [produkt.md](produkt.md), [d566w4]; grupy produktów: [taksonomie.md](taksonomie.md), „Grupa produktów"; prewypełnienie layeru: formularz-kontaktu.md, „Prewypełnienie".
 
 ## Gdzie
 
@@ -14,18 +14,18 @@
 | **[7uacps]** | Grupa produktów | `grupa` (ID termu `grupa`) | lista w panelu „Ustawienia": „— wybierz grupę —" (0) i grupy po nazwie | — | — | 0 — bez szkoleń (komunikat braku terminów) |
 | **[mnuma9]** | Okres | `okres` | lista w panelu „Ustawienia": 1–6 miesięcy | 1–6; inna wartość daje 3 | — | 3 |
 
-- **[s7htgg]** Teksty bloku (podpowiedź paska, „Zamów", komunikat braku terminów) — etykiety interfejsu przez i18n ([bloki.md](bloki.md), [8464y5]); blok nie ma pól tekstowych.
+- **[s7htgg]** Teksty bloku („Zamów", tekst ceny w wierszu, komunikat braku terminów) — etykiety interfejsu przez i18n ([bloki.md](bloki.md), [8464y5]); blok nie ma pól tekstowych.
 
 ## Dane
 
 - **[4qgdz5]** Szkolenia: opublikowane produkty rodzaju „szkolenie" z wybraną grupą (bez grup podrzędnych), bez flagi „Nie pokazuj w listingu kategorii" ([produkt.md](produkt.md), [999uaf]), w języku strony; kolejność wierszy — kolejność listingu ([strony-zbiorcze.md](strony-zbiorcze.md), [xbcyrc]).
 - **[tbyvfz]** Okres N miesięcy: aktualne terminy z datą nie późniejszą niż dzisiejszy dzień miesiąca N miesięcy później (21.10, N = 3 → do 21.01); gdy takiego dnia w tamtym miesiącu nie ma — do jego ostatniego dnia (30.11, N = 3 → do 28.02).
-- **[xfmbr9]** Wiersz — szkolenie z co najmniej jednym terminem w okresie (szkolenie bez terminu w okresie nie ma wiersza): z lewej nazwa na karcie ([produkt.md](produkt.md), [hh6g67]) jako link do strony szkolenia, pod nią „Opis na karcie" (pusty — znacznik pola obowiązkowego, bez zgłoszenia); z prawej kwadraty terminów, od najbliższego.
+- **[xfmbr9]** Wiersz — szkolenie z co najmniej jednym terminem w okresie (szkolenie bez terminu w okresie nie ma wiersza): z lewej nazwa na karcie ([produkt.md](produkt.md), [hh6g67]) jako link do strony szkolenia, pod nią „Opis w terminach szkoleń otwartych" ([produkt.md](produkt.md), [7fy2wg]) i tekst ceny rozdzielone „·" — „Cena: 300 zł za osobę, zwolnione z VAT", „Cena: 550 zł netto za osobę", przy formularzu z SEP „… + 480,60 zł netto za jedno uprawnienie" (kwota bez groszy, gdy pełne złote; bez ceny — sam opis; `feuer_zapis_cena_tekst()`); pusty opis — „Opis na karcie" (pusty — znacznik pola obowiązkowego, bez zgłoszenia); z prawej kwadraty terminów, od najbliższego.
 - **[sxkrs8]** Kwadrat terminu: dzień, skrót miesiąca, skrót dnia tygodnia („18 / lis / śr"; formaty dat przez i18n); termin to jeden dzień — kilka terminów jednego dnia to kilka kwadratów.
-- **[ndb3yd]** Klik w kwadrat zaznacza ten termin (pole wyboru, jedno zaznaczenie na tabelę; kolejny klik w inny kwadrat przenosi zaznaczenie) — nie przechodzi na stronę szkolenia; każda tabela na stronie ma własne zaznaczenie i własny pasek. Zaznaczenie nie przetrwa przeładowania strony.
-- **[7y4e7u]** Pasek pod tabelą, na tle wyróżnionym: bez zaznaczenia — „Wybierz termin, aby zamówić szkolenie." i nieaktywny przycisk „Zamów" (A41 ze strzałką); po zaznaczeniu — nazwa na karcie, pod nią pełna data z dniem tygodnia („18 listopada 2026 (środa)"), forma terminu (słownik) i opis terminu rozdzielone „·" (pusta forma albo opis — bez tej części), przycisk aktywny i otwiera layer kontaktu z prewypełnieniem (formularz-kontaktu.md, [ga8j4w]).
+- **[ndb3yd]** Klik w kwadrat zaznacza ten termin (pole wyboru, jedno zaznaczenie na tabelę; kolejny klik w inny kwadrat przenosi zaznaczenie) — nie przechodzi na stronę szkolenia; każda tabela na stronie ma własne zaznaczenie i własny przycisk „Zamów". Zaznaczenie nie przetrwa przeładowania strony.
+- **[7y4e7u]** Pod tabelą przycisk „Zamów" (A41 ze strzałką), bez tła i bez tekstu, od lewej krawędzi kolumny kwadratów terminów; bez zaznaczenia — nieaktywny; po zaznaczeniu (zaznaczony kwadrat) aktywny i otwiera layer kontaktu z prewypełnieniem (formularz-kontaktu.md, [ga8j4w]), a przy szkoleniu gotowym do zapisu — formularz zapisu z wybranym terminem (formularz-zapisu.md, [ducsaw]).
 - **[kcpka6]** Brak wierszy (żadnego terminu w okresie albo grupa niewybrana) — w miejscu tabeli i paska komunikat „W najbliższych N miesiącach nie ma terminów tych szkoleń." (N = 1 — „W najbliższym miesiącu…") z linkiem akcji „Skontaktuj się z nami", który otwiera layer kontaktu bez prewypełnienia (`feuer_brak_produktow()`); blok wyświetla się także bez wierszy.
-- **[w2hwn7]** Poniżej 1024 px wiersz w kolumnie — nazwa, opis, pod nimi kwadraty od lewej; przycisk paska na całą szerokość, pod tekstem paska.
+- **[w2hwn7]** Poniżej 1024 px wiersz w kolumnie — nazwa, opis, pod nimi kwadraty od lewej; przycisk „Zamów" na całą szerokość.
 
 ## Edytor
 

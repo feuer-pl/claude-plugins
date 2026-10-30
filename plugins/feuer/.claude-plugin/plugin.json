@@ -1,7 +1,7 @@
 {
   "name": "feuer",
   "displayName": "Feuer",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Obsługa treści serwisu Feuer.pl z czatu: dokumentacja serwisu (skill cms) i konektor „Feuer CMS\".",
   "author": {
     "name": "Feuer.pl"

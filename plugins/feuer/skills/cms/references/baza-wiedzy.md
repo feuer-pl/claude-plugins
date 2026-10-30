@@ -49,7 +49,7 @@ Strona Bazy wiedzy, lista artykułów i jej wyszukiwarka, strona artykułu (szab
 
 - **[jxhfpc]** Artykuł z produktem ([artykuly.md](artykuly.md), [wbvxbp], [wbc8fy]): szablon renderuje z danych produktu link na początku, CTA w środku i Sekcję kontaktową na końcu — redaktor niczego nie wstawia w treść; teksty szablonu — [bloki.md](bloki.md), [8464y5].
 - **[dncw7j]** Początek: na górze karty treści, nad leadem i spisem — blok z linią marki z boku na tle wyróżnionym: „Ten artykuł dotyczy: [tytuł wpisu produktu]" (pogrubiony; tytuł wpisu, nie nazwa skrócona), pod nim link akcji do strony produktu — szkolenie „Zobacz opis szkolenia", inny rodzaj „Zobacz opis produktu".
-- **[yccmqr]** CTA w środku: przed H2 nr ⌊n/2⌋ + 1 treści (H2 liczone jak w spisie treści); przy mniej niż 2 H2 — bez CTA. Forma jak początek: tytuł wpisu produktu (pogrubiony), „Opis na karcie", zdanie wg stanu produktu i przycisk otwierający layer kontaktu z prewypełnieniem (formularz-kontaktu.md, [n4xfj4]). Od 1024 px przycisk z prawej, wyśrodkowany w pionie; poniżej — pod tekstem.
+- **[yccmqr]** CTA w środku: przed H2 nr ⌊n/2⌋ + 1 treści (H2 liczone jak w spisie treści); przy mniej niż 2 H2 — bez CTA. Forma jak początek: tytuł wpisu produktu (pogrubiony), „Opis na karcie", zdanie wg stanu produktu i przycisk otwierający layer kontaktu z prewypełnieniem (formularz-kontaktu.md, [n4xfj4]); „Zamów" szkolenia gotowego do zapisu — formularz zapisu z najbliższym terminem (formularz-zapisu.md, [nrywje]). Od 1024 px przycisk z prawej, wyśrodkowany w pionie; poniżej — pod tekstem.
 
   | ID | Stan produktu | Zdanie | Przycisk |
   |---|---|---|---|

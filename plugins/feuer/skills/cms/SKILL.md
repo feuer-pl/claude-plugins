@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer 0.1.6, dokumentacja z commita aee3080.
+Plugin feuer 0.1.7, dokumentacja z commita c6439f4.
 
 ## Spis dokumentów
 
@@ -172,6 +172,7 @@ Plugin feuer 0.1.6, dokumentacja z commita aee3080.
 - [blok-dla-kogo-pozycja.md](references/blok-dla-kogo-pozycja.md) — feuer/dla-kogo-pozycja „Pozycja"
 - [blok-dwie-kolumny.md](references/blok-dwie-kolumny.md) — feuer/dwie-kolumny „Dwie kolumny"
 - [blok-dwie-kolumny-kolumna.md](references/blok-dwie-kolumny-kolumna.md) — feuer/dwie-kolumny-kolumna „Kolumna"
+- [blok-email-zapisu.md](references/blok-email-zapisu.md) — feuer/email-zapisu „E-mail zapisu na szkolenie"
 - [blok-faq.md](references/blok-faq.md) — feuer/faq „FAQ"
 - [blok-faq-pytanie.md](references/blok-faq-pytanie.md) — feuer/faq-pytanie „Pytanie"
 - [blok-kafelki-branz.md](references/blok-kafelki-branz.md) — feuer/kafelki-branz „Kafelki branż"
@@ -184,6 +185,7 @@ Plugin feuer 0.1.6, dokumentacja z commita aee3080.
 - [blok-karty-informacyjne-karta.md](references/blok-karty-informacyjne-karta.md) — feuer/karty-informacyjne-karta „Karta informacyjna"
 - [blok-karuzela-szkolen.md](references/blok-karuzela-szkolen.md) — feuer/karuzela-szkolen „Karuzela szkoleń na zdjęciu"
 - [blok-kategoria.md](references/blok-kategoria.md) — feuer/kategoria „Strona kategorii"
+- [blok-klauzula-rodo.md](references/blok-klauzula-rodo.md) — feuer/klauzula-rodo „Klauzula RODO formularza zapisu"
 - [blok-kluczowe-informacje.md](references/blok-kluczowe-informacje.md) — feuer/kluczowe-informacje „Kluczowe informacje"
 - [blok-lista-artykulow.md](references/blok-lista-artykulow.md) — feuer/lista-artykulow „Lista artykułów"
 - [blok-naglowek.md](references/blok-naglowek.md) — feuer/naglowek „Header serwisu"

@@ -23,7 +23,7 @@
 
 ## Dane
 
-- **[ujmd7b]** Blok czyta kontekst bieżącego wpisu (`postId`, `postType`) — cel „zamówienie produktu": produkt = bieżący wpis typu `produkt`; render — `<button>` wyzwalacz layeru kontaktu. Przycisk „Zamówienie produktu" w toolbarze tylko na stronie produktu (`postType` = `produkt`) albo przy bloku, który już ma `zamowienie` (przeniesiony z produktu — wtedy wyłącznie do przełączenia na link); poza produktem cel to link (np. do strony „Kontakt").
+- **[ujmd7b]** Blok czyta kontekst bieżącego wpisu (`postId`, `postType`) — cel „zamówienie produktu": produkt = bieżący wpis typu `produkt`; render — `<button>` wyzwalacz layeru kontaktu, a przy szkoleniu gotowym do zapisu — formularza zapisu (formularz-zapisu.md, [3zuhr3]). Przycisk „Zamówienie produktu" w toolbarze tylko na stronie produktu (`postType` = `produkt`) albo przy bloku, który już ma `zamowienie` (przeniesiony z produktu — wtedy wyłącznie do przełączenia na link); poza produktem cel to link (np. do strony „Kontakt").
 - **[kenag5]** Zdjęcie w rozmiarze `full` z `srcset`; `loading="lazy"` ([media.md](media.md), [tewya3]); `sizes` wg kadru: 704 px od 1024 px, 100vw poniżej.
 
 ## Przykład
