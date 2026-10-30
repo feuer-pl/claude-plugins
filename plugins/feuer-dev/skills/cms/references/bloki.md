@@ -138,6 +138,7 @@ Zestaw = lista formatów inline pola tekstowego bloku (`allowedFormats`). Pole b
 - **[d5anc2]** Karuzele kart — Swiper (architektura-kodu.md, [enwfdx]): Karty informacyjne na zdjęciu i Zobacz także — `slidesPerView: 'auto'`, wskaźnik z kresek (klikalny), bez pętli i autoplay, przewijanie poziome kółkiem albo trackpadem (pionowe przewija stronę); Karuzela szkoleń — README bloku.
 - **[974r7r]** Karty informacyjne na zdjęciu i Zobacz także chowają wskaźnik, gdy wszystkie slajdy mieszczą się w widoku (także przy jednym slajdzie); Karuzela szkoleń z jedną kartą pokazuje jedną kreskę (styl wskaźnika z motywu przesłania ukrycie paginacji Swipera).
 - **[95e2p7]** Kreski wskaźnika (`<span>` paginacji) nie dostają fokusu; Tab wchodzi w niewidoczne slajdy.
+- **[b9mayu]** Odstęp między kartami wszystkich trzech karuzel: 2 rem, do 639 px — 1 rem. Po starcie Swipera daje go `spaceBetween` (przeliczany przy zmianie rozmiaru okna — rem skaluje się z oknem); przed startem (front, zanim skrypt się wczyta) i w edytorze — CSS (`gap`), więc karty stoją osobno od pierwszego wyświetlenia.
 
 ## Elementy wspólne
 
