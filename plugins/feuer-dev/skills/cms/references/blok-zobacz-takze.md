@@ -18,7 +18,7 @@
 ## Dane
 
 - **[drt5r8]** Powiązania — z `_feuer_powiazane` bieżącego wpisu, tylko na stronie produktu przy źródle „Powiązania produktu" (kontekst `postId`, `postType`); pierwsze 10 dostępnych w kolejności listy. Lista ręczna przycinana do pierwszych 10 ID. Pozycje — wyłącznie opublikowane produkty (typ `produkt`); nieopublikowane i usunięte pomijane na froncie i w podglądzie, limit 10 liczy pozycje dostępne.
-- **[ucc8t4]** Pozycja — jeden link do strony produktu (inna niż karta produktu — [strony-zbiorcze.md](strony-zbiorcze.md), [kejzfv]): zdjęcie (obrazek wyróżniający, brak — obraz zastępczy; dekoracyjne, leniwe) z tagiem (badge z `_feuer_tag`, bez tagu gdy pusty — [strony-zbiorcze.md](strony-zbiorcze.md), [vjmjws]), nazwa na karcie ([produkt.md](produkt.md), [hh6g67]) i strzałka ↗.
+- **[ucc8t4]** Pozycja — jeden link do strony produktu (inna niż karta produktu — [strony-zbiorcze.md](strony-zbiorcze.md), [kejzfv]): zdjęcie (obrazek wyróżniający, brak — stan „bez zdjęcia", [strony-zbiorcze.md](strony-zbiorcze.md), [3dh7tn]; dekoracyjne, leniwe) z tagiem (badge z `_feuer_tag`, bez tagu gdy pusty — [strony-zbiorcze.md](strony-zbiorcze.md), [vjmjws]), nazwa na karcie ([produkt.md](produkt.md), [hh6g67]) i strzałka ↗.
 - **[q682bd]** Skład: sekcja na tle wyróżnionym (`tlo-wyroznione`) — H2, karuzela (`div.swiper` z `ul.swiper-wrapper`) i pojemnik na kreski `.wskazniki-karuzeli`. Brak pozycji (po filtrach) — zachowanie wg [bloki.md](bloki.md), [szj5f5].
 
 ## Edytor
