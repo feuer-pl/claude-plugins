@@ -19,14 +19,14 @@
 
 ## Dane
 
-- **[mbmw3z]** Źródła: kategoria oferty — produkty kategorii z podkategoriami (0 — brak produktów); branża — produkty wskazanej branży oraz produkty bez branży (0 — brak; [taksonomie.md](taksonomie.md), [82fpks]); branża bieżącej strony — jak „branża", dla branży sekcji `branza-<slug>`, w której stoi blok (kontekst `postId`); TOP 20 — produkty z oznaczeniem „TOP 20"; miesiące — produkty oznaczone którymkolwiek z wybranych miesięcy (nieznane slugi odrzucane). Źródła automatyczne — lista listingu ([strony-zbiorcze.md](strony-zbiorcze.md), [hu253v]); wybór ręczny — wskazane opublikowane produkty w kolejności listy, niezależnie od flagi „Nie pokazuj w listingu kategorii" ([produkt.md](produkt.md), [999uaf]).
+- **[mbmw3z]** Źródła: kategoria oferty — produkty kategorii z podkategoriami (0 — brak produktów); branża — produkty wskazanej branży (0 — brak; [taksonomie.md](taksonomie.md), [82fpks]); branża bieżącej strony — jak „branża", dla branży sekcji `branza-<slug>`, w której stoi blok (kontekst `postId`); TOP 20 — produkty z oznaczeniem „TOP 20"; miesiące — produkty oznaczone którymkolwiek z wybranych miesięcy (nieznane slugi odrzucane). Źródła automatyczne — lista listingu ([strony-zbiorcze.md](strony-zbiorcze.md), [hu253v]); wybór ręczny — wskazane opublikowane produkty w kolejności listy, niezależnie od flagi „Nie pokazuj w listingu kategorii" ([produkt.md](produkt.md), [999uaf]).
 - **[j3buwb]** Kafel kontaktowy (ikona zaszyta) — ostatnia pozycja siatki, otwiera layer kontaktu (formularz-kontaktu.md, [bgjywv]); istnieje tylko w tym bloku (strony filarów, sekcje branż).
 - **[e356e5]** Brak produktów — zachowanie wg [bloki.md](bloki.md), [szj5f5]; kafel kontaktowy też się nie renderuje.
 - **[w4bwtw]** Słownik miesięcy dla panelu pochodzi z renderu bloku (`feuer_oznaczenia()`, dane `feuer_dane`); powód — [taksonomie.md](taksonomie.md), [q5uanq].
 
 ## Edytor
 
-- **[bdb2v4]** Panel: „Kategoria oferty" — „— wybierz —" (0) i kategorie z wcięciami ([bloki.md](bloki.md), [ck9xys]); „Branża" — „— wybierz —" i wszystkie branże, podpowiedź o produktach bez branży; „Miesiące" — pola wyboru miesięcy ze słownika oznaczeń (bez „TOP 20", w kolejności kalendarza).
+- **[bdb2v4]** Panel: „Kategoria oferty" — „— wybierz —" (0) i kategorie z wcięciami ([bloki.md](bloki.md), [ck9xys]); „Branża" — „— wybierz —" i wszystkie branże; „Miesiące" — pola wyboru miesięcy ze słownika oznaczeń (bez „TOP 20", w kolejności kalendarza).
 - **[j9hmqe]** Puste wprowadzenie (brak bloków albo same puste akapity) ukryte, dopóki blok ani jego akapit nie jest zaznaczony; pusty akapit z podpowiedzią; wprowadzenie bez bloków dostaje z powrotem pusty akapit (poza podglądem we wstawiaczu), po wstawieniu jest jeden.
 - **[hzdbg7]** Brak produktów — w miejscu kart komunikat wg źródła, np. wybór ręczny: „Brak produktów do pokazania — wybierz produkty w ustawieniach bloku. Na stronie blok się nie wyświetla."; branża bieżącej strony: „…działa wyłącznie w sekcji branży…".
 - **[h9bdbh]** Zapis w treści: atrybuty i bloki wewnętrzne wprowadzenia (`save` = `InnerBlocks.Content`).

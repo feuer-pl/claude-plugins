@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer-dev 0.1.43, dokumentacja z commita d2a5c9a.
+Plugin feuer-dev 0.1.44, dokumentacja z commita fd45aac.
 
 ## Spis dokumentów
 
