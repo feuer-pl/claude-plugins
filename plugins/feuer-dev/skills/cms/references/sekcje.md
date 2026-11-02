@@ -25,10 +25,11 @@ Typ wpisu `sekcja` — redagowalne fragmenty stron systemowych i ramy strony (he
 | **[mapthe]** | `kontakt-kategorii` | nagłówek i tekst przycisku Sekcji kontaktowej stron kategorii | administrator | nie | tak |
 | **[uttbkn]** | `kontakt-artykulu` | nagłówek i tekst przycisku Sekcji kontaktowej artykułów | administrator | nie | tak |
 | **[7vmaes]** | `baza-wiedzy` | treść strony Bazy wiedzy | administrator (Sekcje → Dodaj albo WP-CLI z README bloku `baza-wiedzy`) | nie | nie |
+| **[zssrvm]** | `wyniki-wyszukiwania` | góra strony wyników wyszukiwania: zablokowany Top visual kontentowy (zdjęcie, etykieta; karta niewyświetlana) | administrator (Sekcje → Dodaj albo WP-CLI z README bloku `wyniki-wyszukiwania`) | nie | nie |
 | **[p3zcgm]** | `kategoria-<slug termu>` | nagłówek strony kategorii oferty: zablokowany Top visual listingu i bloki redaktora pod nim | automatycznie przy utworzeniu termu `oferta` | nie | nie |
 | **[wcbkbp]** | `branza-<slug termu>` | treść strony branży: zestaw startowy i bloki redaktora | automatycznie przy utworzeniu termu `branza` | nie | nie |
 
-- **[rrzbuy]** Sekcje stałe (wszystkie poza `kategoria-*` i `branza-*`) nie powstają automatycznie — na każdym środowisku tworzy je administrator; treść początkowa i polecenie WP-CLI — README bloków `belka-zapowiedzi-dane`, `terminy-brak`, `dane-kontaktu`, `zgoda`, `email-zapisu`, `klauzula-rodo`, `baza-wiedzy`; `naglowek-serwisu` i `stopka-serwisu` — przykład bloku w README bloków `naglowek` i `stopka`; `kontakt-kategorii` i `kontakt-artykulu` — README bloku `sekcja-kontaktowa` (brak sekcji = Sekcja kontaktowa z tekstami domyślnymi).
+- **[rrzbuy]** Sekcje stałe (wszystkie poza `kategoria-*` i `branza-*`) nie powstają automatycznie — na każdym środowisku tworzy je administrator; treść początkowa i polecenie WP-CLI — README bloków `belka-zapowiedzi-dane`, `terminy-brak`, `dane-kontaktu`, `zgoda`, `email-zapisu`, `klauzula-rodo`, `baza-wiedzy`, `wyniki-wyszukiwania`; `naglowek-serwisu` i `stopka-serwisu` — przykład bloku w README bloków `naglowek` i `stopka`; `kontakt-kategorii` i `kontakt-artykulu` — README bloku `sekcja-kontaktowa` (brak sekcji = Sekcja kontaktowa z tekstami domyślnymi).
 - **[jjssnu]** Blok sekcji widzi wyłącznie sekcję opublikowaną; szkic, wpis oczekujący albo prywatny = brak sekcji.
 
 ## Sekcje kategorii i branż

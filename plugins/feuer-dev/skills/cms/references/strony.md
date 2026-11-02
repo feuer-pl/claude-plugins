@@ -15,10 +15,11 @@ Motyw blokowy `feuer-skorka`: szablony stron złożone z bloków (`templates/`),
 | **[pccky5]** | Baza wiedzy | strona wpisów (`page_for_posts`) | `home` ([baza-wiedzy.md](baza-wiedzy.md)) |
 | **[un7fs7]** | Kategoria oferty, branża | termy `oferta` (`/oferta/<slug>/` — [taksonomie.md](taksonomie.md), [u9pkpc]), `branza` (`/branza/<slug>/` — [wkeeu2]) | `taxonomy-oferta`, `taxonomy-branza` ([strony-zbiorcze.md](strony-zbiorcze.md)) |
 | **[tgegdf]** | Strona 404 | — | `404`: header, wzorzec `strona-404`, stopka; bez okruszków |
-| **[dr694q]** | Widoki bez własnego szablonu | archiwa rubryk i tagów, wyniki `/?s=` (archiwa autorów, także `?author=N` — 404: [uprawnienia.md](uprawnienia.md), [2528j4]) | `index` (zapasowy): header, okruszki, lista tytułów wpisów jako linków z zapytania dziedziczonego (bez dat, zajawek i stronicowania) w `<main>`, stopka |
+| **[28vexr]** | Strona wyników wyszukiwania | wyniki `/?s=` | `search`: header, okruszki, blok szablonowy `feuer/wyniki-wyszukiwania` (cały `<main>`), stopka (wyszukiwarka.md, „Strona wyników") |
+| **[dr694q]** | Widoki bez własnego szablonu | archiwa rubryk i tagów (archiwa autorów, także `?author=N` — 404: [uprawnienia.md](uprawnienia.md), [2528j4]) | `index` (zapasowy): header, okruszki, lista tytułów wpisów jako linków z zapytania dziedziczonego (bez dat, zajawek i stronicowania) w `<main>`, stopka |
 | **[4emmgc]** | Strona błędu serwera (5xx) | statyczny plik `blad-serwera.html` | bez WordPressa: samo logo, bez menu i stopki (sekcja „Strona błędu serwera") |
 
-- **[bj92ag]** Strony systemowe (kategoria oferty, branża, Baza wiedzy) = redagowalna sekcja (`kategoria-<slug>`, `branza-<slug>`, `baza-wiedzy` — [sekcje.md](sekcje.md)) + listing bloku firmowego (`feuer/kategoria`, `feuer/branza` z Kaflami produktowymi, `feuer/lista-artykulow`) na zapytaniach w PHP; `core/query` występuje wyłącznie w szablonie zapasowym `index`.
+- **[bj92ag]** Strony systemowe (kategoria oferty, branża, Baza wiedzy, strona wyników wyszukiwania) = redagowalna sekcja (`kategoria-<slug>`, `branza-<slug>`, `baza-wiedzy`, `wyniki-wyszukiwania` — [sekcje.md](sekcje.md)) + listing bloku firmowego (`feuer/kategoria`, `feuer/branza` z Kaflami produktowymi, `feuer/lista-artykulow`, `feuer/wyniki-wyszukiwania`) na zapytaniach w PHP; `core/query` występuje wyłącznie w szablonie zapasowym `index`.
 - **[6mg2dq]** Strony lądowania — zwykłe strony (`page`) najwyższego poziomu składane z bloków, z flagą „Strona lądowania" ([nawigacja.md](nawigacja.md)); np. `/orzeczeniabhp/`.
 - **[hs3kpp]** Strony prawne: „Polityka bezpieczeństwa" (`/polityka-bezpieczenstwa/`) i „Dane osobowe" (`/dane-osobowe/`) — zwykłe strony z blokami palety treści bezpośrednio w treści, bez top visualu (strona bez H1); linki w pasku prawnym stopki. Strona prywatności WordPressa nie jest wskazana (`wp_page_for_privacy_policy` = 0).
 - **[n9j6u5]** Kod zależy od stron rozpoznawanych po slugu (strony najwyższego poziomu): `kontakt` i `o-firmie` (formularz-kontaktu.md), `oferta` ([nawigacja.md](nawigacja.md)); strona główna i strona wpisów — z ustawień Czytania. Strony mają język polski i szablon domyślny (bez ręcznie wybranego).
@@ -28,7 +29,7 @@ Motyw blokowy `feuer-skorka`: szablony stron złożone z bloków (`templates/`),
 
 - **[j8h7tf]** Części szablonu: `naglowek` (w `theme.json` „Header", obszar `header`) i `stopka` („Stopka", obszar `footer`) wstawiają po slugu sekcje `naglowek-serwisu` i `stopka-serwisu` blokiem `feuer/sekcja` ([sekcje.md](sekcje.md), [8vsg6f]); w szablonach są owinięte w `div`, a elementy `<header>` i `<footer>` wypisują bloki `feuer/naglowek` i `feuer/stopka` ([nawigacja.md](nawigacja.md)).
 - **[ku2r4y]** Odstępy między częściami szablonu i między sekcjami w treści stron i produktów — css.md, [s2x592].
-- **[uzqjqk]** Bloki szablonowe `feuer/kategoria`, `feuer/branza` i `feuer/baza-wiedzy` nadają `<main>` klasę treści strony (`wp-block-post-content`) — bloki sekcji i Sekcja kontaktowa działają jak w treści strony.
+- **[uzqjqk]** Bloki szablonowe `feuer/kategoria`, `feuer/branza`, `feuer/baza-wiedzy` i `feuer/wyniki-wyszukiwania` nadają `<main>` klasę treści strony (`wp-block-post-content`) — bloki sekcji i Sekcja kontaktowa działają jak w treści strony.
 - **[4kcmk7]** Każda strona ma H2 w stopce („Oferta") i w layerze kontaktu („Zostaw nam kontakt", ukryte „Dziękujemy!").
 
 ## Adresy
@@ -63,6 +64,6 @@ Motyw blokowy `feuer-skorka`: szablony stron złożone z bloków (`templates/`),
 ## Typy stron pominięte
 
 - **[v6bs3c]** E-commerce poza zakresem ([model-tresci.md](model-tresci.md), [kr68kr]); koszyk w headerze i „Dodaj do koszyka" z projektu nie weszły do serwisu; „Sprawdź całą ofertę e-sklepu" — wyłącznie etykieta linku (bez adresu) drugiej Karuzeli szkoleń we wzorcu strony głównej.
-- **[wc5r4z]** Bez strony wyników i pola wyszukiwania w headerze: wyniki `/?s=` — wyszukiwarka serwisu (wyszukiwarka.md) — wyświetla szablon zapasowy `index` ([dr694q]; `noindex, follow`). Wyszukiwarki katalogu i listy artykułów to osobny mechanizm ([strony-zbiorcze.md](strony-zbiorcze.md), [baza-wiedzy.md](baza-wiedzy.md)).
+- **[wc5r4z]** Bez pola wyszukiwania w headerze: na stronę wyników wyszukiwania serwisu ([28vexr]) prowadzi wyłącznie jej własne pole albo adres `/?s=`. Wyszukiwarki katalogu i listy artykułów to osobny mechanizm ([strony-zbiorcze.md](strony-zbiorcze.md), [baza-wiedzy.md](baza-wiedzy.md)).
 - E-learning nie ma strony w serwisie: integracje.md, [8xu93a].
 - Studium przypadku jako osobny typ strony — pomysł: pomysly.md.

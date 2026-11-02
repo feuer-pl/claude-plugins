@@ -43,7 +43,8 @@ Header i menu główne (drzewo oferty, cache), elementy rozwijane, okruszki i li
   | **[dh48z7]** | Strona z polem „Kategoria oferty" ([nrff6u]; bez flagi „Strona lądowania") | „Oferta" › przodkowie kategorii › kategoria (jak na stronie kategorii) › tytuł strony bez listy; strony nadrzędne pominięte | kategoria |
   | **[gv9nfq]** | Strona lądowania | sam tytuł, bez stron nadrzędnych i listy | strona główna |
   | **[qk3a5s]** | Strona branży | branża z listą wszystkich branż (kolejność — [taksonomie.md](taksonomie.md), [4c6qy5]); strony „Branże" nie ma | strona główna |
-  | **[nb4dev]** | Pozostałe widoki (archiwa rubryk i tagów, wyniki wyszukiwania, 404) | pusta | — |
+  | **[vpqtsm]** | Strona wyników wyszukiwania | „Wyniki wyszukiwania" (bez listy) | strona główna |
+  | **[nb4dev]** | Pozostałe widoki (archiwa rubryk i tagów, 404) | pusta | — |
 
 - **[ercacg]** Pozycja „Oferta" — link do opublikowanej strony o ścieżce `oferta` (nazwa = tytuł strony, rozwiązana na bieżący język przez abstrakcję tłumaczeń), bez listy; bez opublikowanej strony — bez pozycji, a link wstecz kategorii najwyższego poziomu prowadzi na stronę główną.
 - **[xs7vwz]** Lista rodzeństwa kategorii: termy `oferta` o tym samym rodzicu, także puste ([taksonomie.md](taksonomie.md), [xktvsv]).

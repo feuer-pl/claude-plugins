@@ -7,7 +7,7 @@ Bloki wtyczki `feuer-komponenty`: typy, reguły wspólne modelu edycji, zestawy 
 - **[3h2jzq]** T — treściowy: redaktor wpisuje treść w miejscu (pola tekstowe, bloki wewnętrzne); markup w edytorze lustrzany względem frontu.
 - **[exsr92]** D — z danych: treść z CMS (meta wpisu, taksonomie, inne wpisy); redaktor konfiguruje blok, teksty bloku wpisuje w miejscu.
 - **[22nx5c]** R — rama: blok w sekcji chronionej (`naglowek-serwisu`, `stopka-serwisu`; [sekcje.md](sekcje.md), [8vsg6f], [etwwzs]).
-- **[nv2eze]** Szablonowy: blok w szablonie motywu, renderuje dane bieżącej strony (artykuł, strona kategorii, strona branży, strona Bazy wiedzy, okruszki, sekcja po slugu); w edytorze witryny — wyłącznie znacznik miejsca (treść znacznika — README bloku).
+- **[nv2eze]** Szablonowy: blok w szablonie motywu, renderuje dane bieżącej strony (artykuł, strona kategorii, strona branży, strona Bazy wiedzy, strona wyników wyszukiwania, okruszki, sekcja po slugu); w edytorze witryny — wyłącznie znacznik miejsca (treść znacznika — README bloku).
 - **[v33y23]** Strony składają się z bloków firmowych (komponenty z projektu) i bloków palety ([paleta-tresci.md](paleta-tresci.md), [8psccg], [p69bw2]); ograniczenia typów bloków w treści wpisu nie ma ([uprawnienia.md](uprawnienia.md), [tpzesj]).
 - **[h63tez]** Blok firmowy = komponent z projektu; redaktor zmienia jego atrybuty i bloki wewnętrzne (teksty, obrazy, wybór produktów i kategorii, zdefiniowane odmiany), bez ustawień kolorów, typografii i odstępów; w panelu „Zaawansowane" każdego bloku zostają pola „Dodatkowe klasy CSS" i „Dodatkowy CSS" (własny CSS bloku — dla użytkowników z `edit_css`, czyli z `unfiltered_html`: administrator i redaktor).
 - **[68qxdh]** Mobile — te same bloki; różnice wyłącznie responsywne (CSS), bez osobnych bloków mobilnych; siatki i rzędy kart nie zamieniają się w karuzele — karuzelami są wyłącznie bloki karuzel, na każdej szerokości.
@@ -72,7 +72,7 @@ Bloki wtyczki `feuer-komponenty`: typy, reguły wspólne modelu edycji, zestawy 
 
 ### Bloki ramy i szablonowe
 
-- **[89q53x]** Bloki ramy i szablonowe (`feuer/naglowek`, `feuer/stopka`, `feuer/okruszki`, `feuer/sekcja`, `feuer/artykul`, `feuer/kategoria`, `feuer/branza`, `feuer/baza-wiedzy`) są ukryte we wstawiaczu (`inserter: false`).
+- **[89q53x]** Bloki ramy i szablonowe (`feuer/naglowek`, `feuer/stopka`, `feuer/okruszki`, `feuer/sekcja`, `feuer/artykul`, `feuer/kategoria`, `feuer/branza`, `feuer/baza-wiedzy`, `feuer/wyniki-wyszukiwania`) są ukryte we wstawiaczu (`inserter: false`).
 - **[bfdf6a]** Header i stopka to zamknięte bloki ramy: administrator redaguje w sekcji wyłącznie ich atrybuty (panel boczny), struktura jest zaszyta w bloku; szczegóły edycji i podglądu — README bloków ([naglowek](blok-naglowek.md), [stopka](blok-stopka.md)).
 
 ## Zestawy formatów
@@ -163,7 +163,7 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 - **[2s88n5]** Kategoria wstawiacza bloku — `category` w `block.json` (kolumna „Wstawiacz").
 - **[b4jwt5]** Żaden blok firmowy nie ma trybu edycji jako HTML (`supports.html: false`).
 - **[ecp7bd]** Bez zapisu jako blok wielokrotnego użytku (`supports.reusable: false`): bloki ramy i szablonowe, bloki zawartości sekcji (`belka-zapowiedzi-dane`, `dane-kontaktu`, `email-zapisu`, `klauzula-rodo`, `terminy-brak`, `zgoda`), bloki potomne (pozycja, krok, pytanie, karta, kolumna) i Lista artykułów; bloki potomne dodatkowo bez blokady (`supports.lock: false`).
-- **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`; bez `example` — `dane-kontaktu`, `email-zapisu`, `klauzula-rodo`, `terminy-brak`, `zgoda`.
+- **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`, `wyniki-wyszukiwania`; bez `example` — `dane-kontaktu`, `email-zapisu`, `klauzula-rodo`, `terminy-brak`, `zgoda`.
 - **[7ws8qv]** Opis bloku — `README.md` w folderze bloku ([DOC-README-BLOCK], szablon „Blok": zasady-dokumentacji.md, „Szablony dokumentów").
 - **[sf9ue8]** Reguły bloków powtórzone w kodzie serwera MCP — obsługa treści z czatu (cms-z-czatu.md, [duh56w], [72sfmh]): liczba pozycji bloków z pozycjami ([4dtarj]) i pola wskazujące obiekty serwisu, rozpoznawane po nazwie atrybutu (obraz, film, wpisy, termy). Nowy blok z pozycjami i pole tego rodzaju o nowej nazwie wymagają dopisania tam.
 - **[nf2npd]** Pola zawartości bloków w dokumencie wpisu — nazwy pól, zestawy formatów, limity znaków, pola obowiązkowe i teksty domyślne — są powtórzone w kodzie serwera MCP (`feuer_mcp_dok_definicje_blokow()`; cms-z-czatu.md, [j92cq6]). Nowy blok, nowe pole zawartości albo zmiana nazwy, formatów czy limitu pola wymaga zmiany tam; bez niej blok stoi w dokumencie jako sekcja bez pól, a pole — bez wiersza.
@@ -212,8 +212,9 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 | **[nh7824]** | `feuer/terminy` — Terminy | D | treść | widgets | [README](blok-terminy.md) |
 | **[k38j8v]** | `feuer/terminy-brak` — Terminy — stan pusty | T | sekcja `terminy-brak`; jeden | ukryty | [README](blok-terminy-brak.md) |
 | **[fz9bd7]** | `feuer/terminy-otwarte` — Terminy szkoleń otwartych | D | treść; treść etapu Programu | widgets | [README](blok-terminy-otwarte.md) |
-| **[6k3kpy]** | `feuer/top-kontentowy` — Top visual kontentowy | T | wzorzec „Strona kontentowa", zestaw startowy sekcji branży, sekcja `baza-wiedzy`; jeden na stronę | ukryty | [README](blok-top-kontentowy.md) |
+| **[6k3kpy]** | `feuer/top-kontentowy` — Top visual kontentowy | T | wzorzec „Strona kontentowa", zestaw startowy sekcji branży, sekcje `baza-wiedzy` i `wyniki-wyszukiwania`; jeden na stronę | ukryty | [README](blok-top-kontentowy.md) |
 | **[vseg6m]** | `feuer/top-listingu` — Top visual listingu | T / D (sekcja kategorii) | treść; sekcja kategorii; jeden na stronę | design | [README](blok-top-listingu.md) |
 | **[kd3dww]** | `feuer/top-produktowy` — Top visual produktowy | D + T | wzorce produktu (pierwsza pozycja); jeden na stronę | ukryty | [README](blok-top-produktowy.md) |
 | **[t6shq5]** | `feuer/zgoda` — Zgoda RODO | T | sekcja `zgoda-rodo`; jeden | ukryty | [README](blok-zgoda.md) |
+| **[67v438]** | `feuer/wyniki-wyszukiwania` — Strona wyników wyszukiwania | S | szablon strony wyników (`search.html`) | ukryty | README |
 | **[7hvzed]** | `feuer/zobacz-takze` — Zobacz także | D | treść | widgets | [README](blok-zobacz-takze.md) |
