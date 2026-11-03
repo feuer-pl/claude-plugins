@@ -1,6 +1,6 @@
 # feuer/top-listingu
 
-„Top visual listingu" — sekcja otwierająca stron zbiorczych oferty: ciemne zdjęcie na całą szerokość, okruszki, H1 i lead; na stronie kategorii — dane termu. Typ: T, w trybie kategorii D ([bloki.md](bloki.md), „Typy bloków"). Tryb kategorii: [strony-zbiorcze.md](strony-zbiorcze.md), [n7rpch]; okruszki na zdjęciu: [nawigacja.md](nawigacja.md), [xmubhb]; pole wyszukiwarki: [strony-zbiorcze.md](strony-zbiorcze.md), [gdpzwn].
+„Top visual listingu" — sekcja otwierająca stron zbiorczych oferty: ciemne zdjęcie na całą szerokość, okruszki, H1 i lead; na stronie kategorii — dane termu. Typ: T, w trybie kategorii D ([bloki.md](bloki.md), „Typy bloków"). Tryb kategorii: [strony-zbiorcze.md](strony-zbiorcze.md), [n7rpch]; okruszki na zdjęciu: [nawigacja.md](nawigacja.md), [xmubhb].
 
 ## Gdzie
 
@@ -20,7 +20,8 @@ Pola poza trybem kategorii (w trybie kategorii ignorowane — dane z termu):
 ## Dane
 
 - **[rhe2w7]** Tryb kategorii rozpoznawany na froncie po `is_tax('oferta')`, w edytorze — po slugu edytowanej sekcji `kategoria-…` (bez sprawdzania, czy term istnieje). Poza nim blok czyta kontekst wpisu (`postId`, `postType`) — wpis z kontekstu (brak — bieżący) daje domyślny H1.
-- **[vwbdjd]** Markup: `section.top-listingu.tlo-ciemne` — `.scena-zdjecie` (zdjęcie; bez zdjęcia `.bez-zdjecia`) i `.kontener` (`.sciezka`, `h1.top-tytul`, `p.top-lead`, pole wyszukiwarki jako ostatni element).
+- **[vwbdjd]** Markup: `section.top-listingu.tlo-ciemne` — `.scena-zdjecie` (zdjęcie; bez zdjęcia `.bez-zdjecia`) i `.kontener` (`.sciezka`, `h1.top-tytul`, `p.top-lead`).
+- **[wec4m7]** Poniżej 1024 px blok ma wysokość treści: zdjęcie pod linkiem „Wstecz", H1 i leadem, bez minimalnej wysokości; treść pod blokiem zaczyna się od dołu zdjęcia.
 
 ## Edytor
 

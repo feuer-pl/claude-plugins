@@ -94,7 +94,7 @@ Typ wpisu `produkt` — produkty oferty: szkolenia i usługi. Pola, słowniki, m
 - **[wmnf4g]** Tag — badge na kartach (Kafle produktowe, Zobacz także, Karuzela szkoleń): odmiana, ikona i nazwa wg kodu — [strony-zbiorcze.md](strony-zbiorcze.md), [vjmjws].
 - **[293tqa]** Nowość, Promocja i Ranga — kolejność produktów w listingach.
 - **[999uaf]** Flaga „Nie pokazuj w listingu kategorii" wyłącza produkt ze wszystkich list automatycznych produktów i z nawigacji, także z kart Terminów i Karuzeli szkoleń (poza bieżącym szkoleniem w Terminach) i z bloku Terminy szkoleń otwartych; artykułów powiązanych z produktem nie wyłącza ze źródeł Listy artykułów.
-- **[hkxpca]** Metadane — wyszukiwarka katalogu i wyszukiwarka serwisu; Nazwa skrócona i Opis na karcie — także wyszukiwarka serwisu (wyszukiwarka.md, „Indeks").
+- **[hkxpca]** Metadane, Nazwa skrócona i Opis na karcie — wyszukiwarka serwisu (wyszukiwarka.md, „Indeks").
 - **[v2qktg]** Powiązany artykuł — link „Dowiedz się więcej" w Top visualu produktowym.
 - **[a6qpgy]** Formularz zamówienia, Cena szkolenia, Opis podatku i Wzór listy uczestników — formularz zapisu na szkolenie otwarte (formularz-zapisu.md); Cena szkolenia, Opis podatku i Opis w terminach szkoleń otwartych — wiersz bloku Terminy szkoleń otwartych.
 - **[ujbj5d]** Forma, Egzamin/Certyfikat, Poziom i Link do Moodle nie są wyświetlane na froncie (dostępne w REST).

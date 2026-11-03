@@ -1,6 +1,6 @@
 # feuer/kategoria
 
-„Strona kategorii" — cały `<main>` strony kategorii oferty `/oferta/<slug-termu>/` w szablonie motywu `taxonomy-oferta.html`, z danych bieżącego termu. Typ: szablonowy ([bloki.md](bloki.md), „Typy bloków"). Skład strony (sekcja kategorii, drzewo, kafle podkategorii, karty, wyszukiwarka, Sekcja kontaktowa): [strony-zbiorcze.md](strony-zbiorcze.md), „Strona kategorii"; sekcje `kategoria-<slug termu>` i `kontakt-kategorii`: [sekcje.md](sekcje.md).
+„Strona kategorii" — cały `<main>` strony kategorii oferty `/oferta/<slug-termu>/` w szablonie motywu `taxonomy-oferta.html`, z danych bieżącego termu. Typ: szablonowy ([bloki.md](bloki.md), „Typy bloków"). Skład strony (sekcja kategorii, drzewo, kafle podkategorii, karty, Sekcja kontaktowa): [strony-zbiorcze.md](strony-zbiorcze.md), „Strona kategorii"; sekcje `kategoria-<slug termu>` i `kontakt-kategorii`: [sekcje.md](sekcje.md).
 
 ## Gdzie
 

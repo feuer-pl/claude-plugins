@@ -1,6 +1,6 @@
 # feuer/lista-artykulow
 
-„Lista artykułów" — lista artykułów w grupach wg kategorii oferty, ze źródłem wybieranym w bloku; w sekcji `baza-wiedzy` — lista strony Bazy wiedzy. Typ: D ([bloki.md](bloki.md), „Typy bloków"). Źródła, grupy, pozycje, tagi, tryb Bazy wiedzy, wyszukiwarka: [baza-wiedzy.md](baza-wiedzy.md), „Lista artykułów"; wybór ręczny: [bloki.md](bloki.md), „Źródła pozycji".
+„Lista artykułów" — lista artykułów w grupach wg kategorii oferty, ze źródłem wybieranym w bloku; w sekcji `baza-wiedzy` — lista strony Bazy wiedzy. Typ: D ([bloki.md](bloki.md), „Typy bloków"). Źródła, grupy, pozycje, tagi, tryb Bazy wiedzy: [baza-wiedzy.md](baza-wiedzy.md), „Lista artykułów"; wybór ręczny: [bloki.md](bloki.md), „Źródła pozycji".
 
 ## Gdzie
 

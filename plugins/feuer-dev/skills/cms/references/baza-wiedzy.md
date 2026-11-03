@@ -1,6 +1,6 @@
 # Baza wiedzy
 
-Strona Bazy wiedzy, lista artykułów i jej wyszukiwarka, strona artykułu (szablon), link i CTA produktu artykułu, spis treści. Model artykułów i ekspertów: [artykuly.md](artykuly.md); sekcja treści strony: [sekcje.md](sekcje.md); okruszki artykułu: [nawigacja.md](nawigacja.md); wyszukiwarka katalogu (ten sam mechanizm): [strony-zbiorcze.md](strony-zbiorcze.md).
+Strona Bazy wiedzy, lista artykułów, strona artykułu (szablon), link i CTA produktu artykułu, spis treści. Model artykułów i ekspertów: [artykuly.md](artykuly.md); sekcja treści strony: [sekcje.md](sekcje.md); okruszki artykułu: [nawigacja.md](nawigacja.md).
 
 ## Strona Bazy wiedzy
 
@@ -23,14 +23,6 @@ Strona Bazy wiedzy, lista artykułów i jej wyszukiwarka, strona artykułu (szab
 - **[mc9grv]** Pozycja: tytuł (H3, pogrubiony, bez znaczników HTML) — link do artykułu; lead — zajawka wpisana ręcznie (bez zajawki — bez leadu; nie jest generowany z treści), pełny tekst w HTML, widoczne najwyżej 2 wiersze z „…"; tagi branż. Pozycje stoją jedna pod drugą na szerokość kontenera (także na desktopie), rozdzielone linią.
 - **[wbjzqs]** Tagi branż: branże wszystkich opublikowanych produktów wskazujących artykuł — zawsze wszystkie, w kolejności listy branż ([taksonomie.md](taksonomie.md), [4c6qy5]); sama nazwa, bez ikony i linku; artykuł bez branż — bez tagów; źródło „branża" — bez tagów. Grupy i tagi liczą się wyłącznie z produktów opublikowanych.
 - **[kwfw7r]** Hover: nagłówek grupy i tytuł pozycji w kolorze marki; strzałka ↗ (sklejona z ostatnim słowem) widoczna tylko przy najechaniu, poza hoverem zajmuje miejsce — tekst nie skacze.
-
-## Wyszukiwarka listy
-
-- **[9c4vm6]** Pole wyszukiwania listy — wyłącznie na stronie Bazy wiedzy, w Top visualu kontentowym sekcji `baza-wiedzy` (bez pola w ustawieniach bloku; Lista artykułów na innych stronach i strona bez sekcji — bez pola); podpowiedź „Szukaj artykułu". Dwie kopie pola (wspólna fraza — [strony-zbiorcze.md](strony-zbiorcze.md), [4t2682]): od 1024 px na zdjęciu pod H1, poniżej 1024 px pod kartą, nad listą, na całą szerokość (widoczna jedna). W edytorze — wygląd jak na froncie, bez działania.
-- **[s423rv]** Mechanizm jak wyszukiwarka katalogu ([strony-zbiorcze.md](strony-zbiorcze.md), [rtwzsy]). Pola dopasowania w atrybucie `data-szukaj` pozycji: tytuł (encje zdekodowane), potem lead w pełnym tekście — w grupie pozycje z dopasowaniem w tytule stoją przed dopasowaniem w leadzie.
-- **[xqeyyu]** Przy wyszukiwaniu niepasujące pozycje i puste grupy są ukryte; liczba w nagłówku grupy się nie zmienia (liczba całej grupy); „Znaleziono: N" — liczba widocznych pozycji (artykuł w kilku grupach liczy się w każdej). Odstępy grup i linie pozycji liczą się od poprzedniej widocznej grupy albo pozycji.
-- **[uhbnuy]** Brak wyników — komunikat jak w katalogu ([strony-zbiorcze.md](strony-zbiorcze.md), [e2afz8]), nad grupami.
-- **[4ut5tb]** Fraza w adresie (`?q=`), wejście z `?q=` i × — jak w katalogu ([strony-zbiorcze.md](strony-zbiorcze.md), [n27npv], [ewhk98]).
 
 ## Strona artykułu
 
