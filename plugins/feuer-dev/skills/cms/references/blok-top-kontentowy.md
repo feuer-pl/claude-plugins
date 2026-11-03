@@ -22,6 +22,7 @@
 
 - **[vwd7jk]** Wariant akcentowy H1: co najmniej jedno słowo z akcentem (`span.tytul-duzy`) — `h1.tytul-akcent` (krótkie tytuły); bez formatowania — zwykły tytuł bez słów innej wielkości. Formatowanie zapisuje się w `tytulAkcent` (pusty, gdy w H1 nie ma znaczników) i wyświetla, dopóki jego tekst (bez znaczników, z rozkodowanymi encjami) jest równy tytułowi wpisu — tytuł zmieniony poza blokiem to zwykły tytuł (ta sama logika w edytorze).
 - **[jpbbbd]** Sekcja `wyniki-wyszukiwania` (strona wyników — wyszukiwarka.md, [qy2afr]): na froncie H1 „Wyniki wyszukiwania: <hasło>" (puste hasło — „Wyniki wyszukiwania"), formularz wyszukiwania serwisu (wyszukiwarka.md, [j3da32]) w dwóch kopiach (widoczna jedna) — od 1024 px na zdjęciu pod H1 (odstęp `--odstep-8`), szerokość 5 kolumn siatki; poniżej 1024 px pod zdjęciem, 24 niżej, na całą szerokość kontenera; karta niewyświetlana (w edytorze sekcji zostaje), zdjęcie na wysokość treści — pod formularzem 70 jak nad etykietą, poniżej 1024 px 24 pod H1. W edytorze sekcji H1 = tytuł sekcji.
+- **[cv54wq]** Sekcja `baza-wiedzy` od 1024 px: zdjęcie na wysokość treści — pod H1 70 jak nad etykietą, karta nachodzi na zdjęcie jak w pozostałych sekcjach (152); poniżej 1024 px — jak w pozostałych sekcjach.
 - **[hxyjwk]** Jedna albo dwie kolumny karty wynikają ze składu treści, bez przełącznika: bloki palety bezpośrednio w karcie — jedna kolumna (np. lead i przyciski na stronach filarów), blok „Dwie kolumny" w karcie — kolumny 5 : 7.
 
 ## Dane
