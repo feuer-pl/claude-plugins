@@ -4,7 +4,7 @@
 
 ## Gdzie
 
-- **[3nbcgj]** Bez atrybutów i pól: redaktor wstawia blok w treść stron i wpisów (także strony głównej, między blokami) jako samodzielną sekcję pełnej szerokości.
+- **[3nbcgj]** Bez pól, z jednym ustawieniem — „Szerokość tła" (css.md, [k34pyh]; w każdym wstawionym bloku osobno): redaktor wstawia blok w treść stron i wpisów (także strony głównej, między blokami) jako samodzielną sekcję.
 - **[64eyy4]** We wpisie belka stoi w karcie treści — układ jak na stronie, w szerokości łamu, także na telefonie (nie na pełną szerokość ekranu).
 
 ## Dane

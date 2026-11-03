@@ -1,6 +1,6 @@
 # feuer/naglowek
 
-„Header serwisu" — zamknięty blok headera z menu głównym: logo, linki pomocnicze, przycisk (E-learning), menu desktop (mega-panele z drzewa oferty) i mobile, przełącznik języka (wyłączony). Typ: R + D ([bloki.md](bloki.md), „Typy bloków"); blok ramy: [bloki.md](bloki.md), [bfdf6a]; menu, mega-panel, blok „Branże", menu mobile: [nawigacja.md](nawigacja.md), „Header i menu"; przełącznik języka: [wielojezycznosc.md](wielojezycznosc.md), [7d2mfu]; sekcja `naglowek-serwisu`: [sekcje.md](sekcje.md), [2ysenk].
+„Header serwisu" — zamknięty blok headera z menu głównym: logo, linki pomocnicze, pole wyszukiwania, przycisk (E-learning), menu desktop (mega-panele z drzewa oferty) i mobile, przełącznik języka (wyłączony). Typ: R + D ([bloki.md](bloki.md), „Typy bloków"); blok ramy: [bloki.md](bloki.md), [bfdf6a]; menu, mega-panel, blok „Branże", menu mobile: [nawigacja.md](nawigacja.md), „Header i menu"; pole wyszukiwania: [nawigacja.md](nawigacja.md), [g2zmd8], [pqyg7k]; przełącznik języka: [wielojezycznosc.md](wielojezycznosc.md), [7d2mfu]; sekcja `naglowek-serwisu`: [sekcje.md](sekcje.md), [2ysenk].
 
 ## Gdzie
 
@@ -22,10 +22,10 @@
 
 ## Dane
 
-- **[ns2kvd]** Skład: wiersz górny (logo, linki pomocnicze, przycisk) i wiersz menu głównego; mobile — belka z logo i hamburgerem. Logo (desktop i mobile) — link do strony głównej z `aria-label` „Feuer — strona główna" (i18n); obszar kliknięcia większy niż znak, znak na swoim miejscu: desktop — od górnej krawędzi headera do linii rozdzielającej, mobile — cała wysokość belki, z lewej do krawędzi ekranu; po bokach znaku 16 px; nawigacje z etykietami dostępności „Linki pomocnicze", „Menu główne" (desktop i mobile).
+- **[ns2kvd]** Skład: wiersz górny (logo, linki pomocnicze, pole wyszukiwania, przycisk) i wiersz menu głównego; mobile — belka z logo, lupą i hamburgerem, pod nią zwinięty wiersz pola wyszukiwania. Logo (desktop i mobile) — link do strony głównej z `aria-label` „Feuer — strona główna" (i18n); obszar kliknięcia większy niż znak, znak na swoim miejscu: desktop — od górnej krawędzi headera do linii rozdzielającej, mobile — cała wysokość belki, z lewej do krawędzi ekranu; po bokach znaku 16 px; nawigacje z etykietami dostępności „Linki pomocnicze", „Menu główne" (desktop i mobile).
 - **[pdk4cc]** Strona główna (moduł `feuer-naglowek-przewijanie`, aktywny tylko przy `glowna`): na samej górze header ciemny, nieprzyklejony — półprzezroczysta maska na zdjęciu hero, odjeżdża z treścią; po wyjechaniu z ekranu przechodzi bez animacji w stan schowany (animacja migałaby jasnym headerem); po ruchu w górę o 24 px (ruch zsumowany w bieżącym kierunku) wysuwa się jasny i przyklejony (400 ms), po ruchu w dół — chowa się. Stan liczony od razu po załadowaniu wg bieżącego przewinięcia.
 - **[3ytjba]** Strefa górna (przewinięcie mniejsze niż dolna krawędź miejsca headera w toku strony — nad nim może stać belka zapowiedzi): przyklejony header zawsze pokazany i stopniowo przechodzi w ciemny w drodze na samą górę.
-- **[rwa934]** Otwarte menu (mega-panel, menu mobile, lista języków — element headera z `aria-expanded="true"`) wstrzymuje zmianę stanu headera.
+- **[rwa934]** Otwarte menu (mega-panel, menu mobile, lista języków, pole wyszukiwania mobile — element headera z `aria-expanded="true"`) wstrzymuje zmianę stanu headera.
 - **[5b2w5m]** Przykleja się cały header (desktop — oba wiersze, mobile — belka); menu działa z przyklejonego headera w jego bieżącym wariancie. Kotwice (spis treści, „Do góry") zatrzymują się pod przyklejonym headerem (`scroll-padding-top` = wysokość headera). Przyklejony header staje pod paskiem administratora od 601 px (poniżej pasek nie jest przyklejony).
 
 ## Edytor

@@ -12,6 +12,7 @@
 |---|---|---|---|---|---|---|
 | **[bkg4kd]** | Nagłówek (H2) | `tytul` | tekst z łamaniem wiersza (Shift+Enter) | „Akcent w nagłówkach" ([bloki.md](bloki.md), [s56shy]) | — | pusty — tekst domyślny z projektu ([bloki.md](bloki.md), [w7etph]): „16 lat na rynku... i wciąż się u nas dzieje" (z akcentami; w każdym języku jego tłumaczenie) |
 | **[j8zngm]** | Tekst linku | `etykietaLinku` | tekst z łamaniem wiersza, w miejscu | „Krótki tekst" ([bloki.md](bloki.md), [nmwmdu], [taeeq4]) | — | pusty (także same łamania i spacje) — „Sprawdź więcej newsów" przez i18n |
+| **[cry8up]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 

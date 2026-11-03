@@ -13,11 +13,12 @@
 | **[dt3qat]** | Nagłówek (H2, w całości ExtraBold) | `tytul` | tekst z łamaniem wiersza, w miejscu | „Akcent w nagłówkach — bez akcentu" ([bloki.md](bloki.md), [bmw7u4]); na froncie `wp_kses_post` | bez limitu | pusty (po usunięciu znaczników) — „Inni klienci wybierali także" (i18n; w edytorze jako wartość pola) |
 | **[8gk8xa]** | Pozycje (źródło) — tylko na stronie produktu | `zrodlo` | wybór „Pozycje" (panel „Ustawienia"): „Powiązania produktu" (podpowiedź „Z sekcji „Powiązane produkty" w danych produktu (pod treścią)."), „Wybór ręczny" | `powiazania`, `reczny` | — | `powiazania`; na innych stronach zawsze wybór ręczny, bez wyboru źródła |
 | **[7fj2yj]** | Produkty (wybór ręczny) | `produkty` (lista ID) | panel wyboru ręcznego | produkty (szkolenia i usługi) | 10 | pusta |
+| **[aj9p5c]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 
 - **[drt5r8]** Powiązania — z `_feuer_powiazane` bieżącego wpisu, tylko na stronie produktu przy źródle „Powiązania produktu" (kontekst `postId`, `postType`); pierwsze 10 dostępnych w kolejności listy. Lista ręczna przycinana do pierwszych 10 ID. Pozycje — wyłącznie opublikowane produkty (typ `produkt`); nieopublikowane i usunięte pomijane na froncie i w podglądzie, limit 10 liczy pozycje dostępne.
-- **[ucc8t4]** Pozycja — jeden link do strony produktu (inna niż karta produktu — [strony-zbiorcze.md](strony-zbiorcze.md), [kejzfv]): zdjęcie (obrazek wyróżniający, brak — obraz zastępczy; dekoracyjne, leniwe) z tagiem (badge z `_feuer_tag`, bez tagu gdy pusty — [strony-zbiorcze.md](strony-zbiorcze.md), [vjmjws]), nazwa na karcie ([produkt.md](produkt.md), [hh6g67]) i strzałka ↗.
+- **[ucc8t4]** Pozycja — jeden link do strony produktu (inna niż karta produktu — [strony-zbiorcze.md](strony-zbiorcze.md), [kejzfv]): zdjęcie (obrazek wyróżniający, brak — stan „bez zdjęcia", [strony-zbiorcze.md](strony-zbiorcze.md), [3dh7tn]; dekoracyjne, leniwe) z tagiem (badge z `_feuer_tag`, bez tagu gdy pusty — [strony-zbiorcze.md](strony-zbiorcze.md), [vjmjws]), nazwa na karcie ([produkt.md](produkt.md), [hh6g67]) i strzałka ↗.
 - **[q682bd]** Skład: sekcja na tle wyróżnionym (`tlo-wyroznione`) — H2, karuzela (`div.swiper` z `ul.swiper-wrapper`) i pojemnik na kreski `.wskazniki-karuzeli`. Brak pozycji (po filtrach) — zachowanie wg [bloki.md](bloki.md), [szj5f5].
 
 ## Edytor

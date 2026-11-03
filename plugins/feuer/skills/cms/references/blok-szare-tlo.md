@@ -12,6 +12,7 @@
 | ID | Pole | Atrybut | Rodzaj | Dozwolone | Limit | Wymagane / domyślne |
 |---|---|---|---|---|---|---|
 | **[skw45n]** | Treść | bloki wewnętrzne | strefa treści, swobodna (szablon niezablokowany); typografia treści redakcyjnej (A40, `.tresc`) | paleta treści redakcyjnej ([paleta-tresci.md](paleta-tresci.md), [8psccg]) | — | obowiązkowe; po wstawieniu jeden pusty akapit z podpowiedzią `<wprowadź dane>` |
+| **[9ddfg3]** | Szerokość tła | `szerokoscTla` | panel „Ustawienia" — wspólne ustawienie szerokości tła: css.md, [k34pyh] | `1440`, `1920` | — | `1440` |
 
 ## Dane
 

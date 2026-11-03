@@ -7,7 +7,7 @@ Bloki wtyczki `feuer-komponenty`: typy, reguły wspólne modelu edycji, zestawy 
 - **[3h2jzq]** T — treściowy: redaktor wpisuje treść w miejscu (pola tekstowe, bloki wewnętrzne); markup w edytorze lustrzany względem frontu.
 - **[exsr92]** D — z danych: treść z CMS (meta wpisu, taksonomie, inne wpisy); redaktor konfiguruje blok, teksty bloku wpisuje w miejscu.
 - **[22nx5c]** R — rama: blok w sekcji chronionej (`naglowek-serwisu`, `stopka-serwisu`; [sekcje.md](sekcje.md), [8vsg6f], [etwwzs]).
-- **[nv2eze]** Szablonowy: blok w szablonie motywu, renderuje dane bieżącej strony (artykuł, strona kategorii, strona branży, strona Bazy wiedzy, okruszki, sekcja po slugu); w edytorze witryny — wyłącznie znacznik miejsca (treść znacznika — README bloku).
+- **[nv2eze]** Szablonowy: blok w szablonie motywu, renderuje dane bieżącej strony (artykuł, strona kategorii, strona branży, strona Bazy wiedzy, strona wyników wyszukiwania, okruszki, sekcja po slugu); w edytorze witryny — wyłącznie znacznik miejsca (treść znacznika — README bloku).
 - **[v33y23]** Strony składają się z bloków firmowych (komponenty z projektu) i bloków palety ([paleta-tresci.md](paleta-tresci.md), [8psccg], [p69bw2]); ograniczenia typów bloków w treści wpisu nie ma ([uprawnienia.md](uprawnienia.md), [tpzesj]).
 - **[h63tez]** Blok firmowy = komponent z projektu; redaktor zmienia jego atrybuty i bloki wewnętrzne (teksty, obrazy, wybór produktów i kategorii, zdefiniowane odmiany), bez ustawień kolorów, typografii i odstępów; w panelu „Zaawansowane" każdego bloku zostają pola „Dodatkowe klasy CSS" i „Dodatkowy CSS" (własny CSS bloku — dla użytkowników z `edit_css`, czyli z `unfiltered_html`: administrator i redaktor).
 - **[68qxdh]** Mobile — te same bloki; różnice wyłącznie responsywne (CSS), bez osobnych bloków mobilnych; siatki i rzędy kart nie zamieniają się w karuzele — karuzelami są wyłącznie bloki karuzel, na każdej szerokości.
@@ -37,7 +37,7 @@ Bloki wtyczki `feuer-komponenty`: typy, reguły wspólne modelu edycji, zestawy 
 - **[myhuw8]** Puste pole tekstowe obowiązkowe — znacznik `<wprowadź dane>` (`feuer_pole_obowiazkowe()`); puste = nic po `trim` — pole z samym `<br>`, innym znacznikiem albo twardą spacją uchodzi za wypełnione. W edytorze puste pole obowiązkowe (`RichText`) pokazuje ten sam znacznik jako `placeholder`.
 - **[c8b829]** Link obowiązkowy z tekstem, ale bez adresu — znacznik `<wprowadź link>` w miejscu tekstu (`feuer_link_obowiazkowy()`).
 - **[4bzbk9]** Znaczniki pól obowiązkowych przechodzą przez i18n ([wielojezycznosc.md](wielojezycznosc.md), [v25q78]).
-- **[aast68]** Puste pole obowiązkowe render bloku zgłasza akcją `feuer_pole_puste` z nazwą pola (parametr `$pole` funkcji `feuer_pole_obowiazkowe()`, `feuer_link_obowiazkowy()` — link z tekstem bez adresu, `feuer_zdjecie()`): atrybut bloku (link — atrybut linku), `tresc` — strefa treści (bloki wewnętrzne), `obrazek` — obrazek wyróżniający wpisu, `kluczowe` — pole produktu „Kluczowe informacje". Ze zgłoszeń powstaje lista niewypełnionych pól wpisu w obsłudze z czatu (cms-z-czatu.md, „Niewypełnione pola obowiązkowe").
+- **[aast68]** Puste pole obowiązkowe render bloku zgłasza akcją `feuer_pole_puste` z nazwą pola (parametr `$pole` funkcji `feuer_pole_obowiazkowe()`, `feuer_link_obowiazkowy()` — link z tekstem bez adresu, `feuer_zdjecie()`; zdjęcie produktu w stanie „bez zdjęcia" — `feuer_pole_puste()` wprost): atrybut bloku (link — atrybut linku), `tresc` — strefa treści (bloki wewnętrzne), `obrazek` — obrazek wyróżniający wpisu, `kluczowe` — pole produktu „Kluczowe informacje". Ze zgłoszeń powstaje lista niewypełnionych pól wpisu w obsłudze z czatu (cms-z-czatu.md, „Niewypełnione pola obowiązkowe").
 - **[7b8txa]** Nazwę pola podaje się wyłącznie dla pól wpisu, w którym stoi blok; puste dane innego obiektu (inny produkt, term, sekcja) pokazują znacznik bez zgłoszenia. Nowe pole obowiązkowe bloku — wywołanie z nazwą pola.
 
 ### Limity długości
@@ -72,7 +72,7 @@ Bloki wtyczki `feuer-komponenty`: typy, reguły wspólne modelu edycji, zestawy 
 
 ### Bloki ramy i szablonowe
 
-- **[89q53x]** Bloki ramy i szablonowe (`feuer/naglowek`, `feuer/stopka`, `feuer/okruszki`, `feuer/sekcja`, `feuer/artykul`, `feuer/kategoria`, `feuer/branza`, `feuer/baza-wiedzy`) są ukryte we wstawiaczu (`inserter: false`).
+- **[89q53x]** Bloki ramy i szablonowe (`feuer/naglowek`, `feuer/stopka`, `feuer/okruszki`, `feuer/sekcja`, `feuer/artykul`, `feuer/kategoria`, `feuer/branza`, `feuer/baza-wiedzy`, `feuer/wyniki-wyszukiwania`) są ukryte we wstawiaczu (`inserter: false`).
 - **[bfdf6a]** Header i stopka to zamknięte bloki ramy: administrator redaguje w sekcji wyłącznie ich atrybuty (panel boczny), struktura jest zaszyta w bloku; szczegóły edycji i podglądu — README bloków ([naglowek](blok-naglowek.md), [stopka](blok-stopka.md)).
 
 ## Zestawy formatów
@@ -81,14 +81,14 @@ Zestaw = lista formatów inline pola tekstowego bloku (`allowedFormats`). Pole b
 
 | ID | Zestaw | Formaty | Kod |
 |---|---|---|---|
-| **[s56shy]** | „Akcent w nagłówkach" | akcent (`feuer/akcent`, `span.akcent` — ExtraBold), kolor marki (`feuer/akcent-marki`, `span.akcent-marki`), kursywa, podkreślenie | `FORMATY_AKCENTU` |
+| **[s56shy]** | „Akcent w nagłówkach" | akcent (`feuer/akcent`, `span.akcent` — waga `--waga-najgrubsza`, bez widocznego efektu: [mdu3cy]), kolor marki (`feuer/akcent-marki`, `span.akcent-marki`), kursywa, podkreślenie | `FORMATY_AKCENTU` |
 | **[bmw7u4]** | „Akcent w nagłówkach — bez akcentu" (pola w całości ExtraBold) | kolor marki, kursywa, podkreślenie | `FORMATY_BEZ_AKCENTU` |
 | **[nj47ej]** | „Paleta" | formaty inline palety ([paleta-tresci.md](paleta-tresci.md), [7wwnuc]) | bloki core palety, bez `allowedFormats` |
 | **[nmwmdu]** | „Krótki tekst" | pogrubienie, kursywa, łamanie wiersza | `feuer_tekst_z_formatami()` |
 | **[9xgmea]** | bez formatów | — | `allowedFormats` pusta |
 
 - **[nwcsbu]** Formaty „Akcent", „Kolor marki" i akcent H1 Top visualu kontentowego (`feuer/tytul-duzy`, `span.tytul-duzy` — słowo większe; poza zestawami) rejestruje `src/wspolne/akcent.js` — raz, mimo importu w wielu blokach; dostępność w blokach core — [paleta-tresci.md](paleta-tresci.md), [7wwnuc], [ve4jan].
-- **[mdu3cy]** Format „Akcent" zmienia wygląd wyłącznie w polu lżejszym niż ExtraBold: w nagłówkach w całości ExtraBold (Terminy i ich stan pusty, Sekcja kontaktowa, Karty informacyjne w zwykłej odmianie) przycisk „Akcent" jest dostępny, ale nic nie zmienia — wyróżniają kolor marki, kursywa i podkreślenie.
+- **[mdu3cy]** Format „Akcent" (waga `--waga-najgrubsza`) nie ma widocznego efektu: obie wagi pogrubione serwisu są równe 700 (css.md, [sv8ud3]) — przycisk „Akcent" jest dostępny w każdym nagłówku, ale nic nie zmienia; wyróżniają kolor marki, kursywa i podkreślenie (decyzja użytkownika 2026-10-28).
 
 ## Linki i pola panelu
 
@@ -135,9 +135,11 @@ Zestaw = lista formatów inline pola tekstowego bloku (`allowedFormats`). Pole b
 
 ## Karuzele
 
-- **[d5anc2]** Karuzele kart — Swiper (architektura-kodu.md, [enwfdx]): Karty informacyjne na zdjęciu i Zobacz także — `slidesPerView: 'auto'`, wskaźnik z kresek (klikalny), bez pętli i autoplay, przewijanie poziome kółkiem albo trackpadem (pionowe przewija stronę); Karuzela szkoleń — README bloku.
+- **[d5anc2]** Karuzele kart — Swiper (architektura-kodu.md, [enwfdx]): Karty informacyjne na zdjęciu i Zobacz także — `slidesPerView: 'auto'`, wskaźnik z kresek (klikalny), bez pętli i autoplay, przewijanie poziome kółkiem albo trackpadem (pionowe przewija stronę); Karuzela szkoleń — README bloku. Od 1024 px i do 639 px karty ucięte na krawędzi kontenera treści (`.swiper` z `overflow: hidden`); do 639 px rząd kart na szerokość karty (20 rem) na środku, bez wystającej następnej karty (Karuzela szkoleń bez slajdu-wypełniacza), kreski na szerokość karty; tablet (640–1023 px) — następna karta wystaje poza kontener. Wygląd tylko na froncie (`css/strzalki-karuzeli.css` w `viewStyle` bloków): w edytorze karty za krawędzią kontenera widoczne.
+- **[m7r3tq]** Przyciski-strzałki — wszystkie trzy karuzele: dwa przyciski („Poprzednia karta", „Następna karta") w znacznikach za `.swiper`, w tym samym kontenerze (`feuer_strzalki_karuzeli()`, `includes/rama.php`); widoczne od 1024 px i do 639 px, na tablecie ukryte (atrybut `hidden`). Desktop: kafel-strzałka na marginesie po obu stronach rzędu (4,5 rem, 2 rem od kart, wysokość rzędu kart; tło `--kolor-tla-wyroznionego`, w Zobacz także `--kolor-tla`; strzałka 1,5 rem w kolorze tekstu; hover — tło `--kolor-marki`, strzałka biała). Mobile: pasy-strzałki od krawędzi ekranu do 0,5 rem przed kartą (strzałka 1,125 rem; naciśnięcie — tło marki). Przycisk nieaktywny — strzałka `--kolor-tekstu-pomocniczy`, bez hovera. Klik — karta w lewo albo w prawo (Karuzela szkoleń — krokiem jak przy przewijaniu); bez pętli na krańcu rzędu przycisk nieaktywny (`disabled`); gdy wszystkie karty mieszczą się w widoku (blokada Swipera) — oba przyciski schowane, jak kreski ([974r7r]). Obsługa — `src/wspolne/strzalki.js`: kliknięcia, stan nieaktywny, położenie w pionie (zmienne `--strzalki-gora` i `--strzalki-wysokosc` na kontenerze = rząd kart).
 - **[974r7r]** Karty informacyjne na zdjęciu i Zobacz także chowają wskaźnik, gdy wszystkie slajdy mieszczą się w widoku (także przy jednym slajdzie); Karuzela szkoleń z jedną kartą pokazuje jedną kreskę (styl wskaźnika z motywu przesłania ukrycie paginacji Swipera).
 - **[95e2p7]** Kreski wskaźnika (`<span>` paginacji) nie dostają fokusu; Tab wchodzi w niewidoczne slajdy.
+- **[b9mayu]** Odstęp między kartami wszystkich trzech karuzel: 2 rem, do 639 px — 1 rem. Po starcie Swipera daje go `spaceBetween` (przeliczany przy zmianie rozmiaru okna — rem skaluje się z oknem); przed startem (front, zanim skrypt się wczyta) i w edytorze — CSS (`gap`), więc karty stoją osobno od pierwszego wyświetlenia.
 
 ## Elementy wspólne
 
@@ -161,7 +163,7 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 - **[2s88n5]** Kategoria wstawiacza bloku — `category` w `block.json` (kolumna „Wstawiacz").
 - **[b4jwt5]** Żaden blok firmowy nie ma trybu edycji jako HTML (`supports.html: false`).
 - **[ecp7bd]** Bez zapisu jako blok wielokrotnego użytku (`supports.reusable: false`): bloki ramy i szablonowe, bloki zawartości sekcji (`belka-zapowiedzi-dane`, `dane-kontaktu`, `email-zapisu`, `klauzula-rodo`, `terminy-brak`, `zgoda`), bloki potomne (pozycja, krok, pytanie, karta, kolumna) i Lista artykułów; bloki potomne dodatkowo bez blokady (`supports.lock: false`).
-- **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`; bez `example` — `dane-kontaktu`, `email-zapisu`, `klauzula-rodo`, `terminy-brak`, `zgoda`.
+- **[ab85qy]** `block.json` bloku: schemat atrybutów, `parent`, `allowedBlocks` (strefom treści redakcyjnej nadaje je filtr palety), `description`, `example` z kanoniczną treścią (podgląd we wstawiaczu); `example` pusty (`{}`) — `artykul`, `baza-wiedzy`, `belka-zapowiedzi`, `branza`, `kategoria`, `lista-artykulow`, `okruszki`, `sprawdz-takze`, `wyniki-wyszukiwania`; bez `example` — `dane-kontaktu`, `email-zapisu`, `klauzula-rodo`, `terminy-brak`, `zgoda`.
 - **[7ws8qv]** Opis bloku — `README.md` w folderze bloku ([DOC-README-BLOCK], szablon „Blok": zasady-dokumentacji.md, „Szablony dokumentów").
 - **[sf9ue8]** Reguły bloków powtórzone w kodzie serwera MCP — obsługa treści z czatu (cms-z-czatu.md, [duh56w], [72sfmh]): liczba pozycji bloków z pozycjami ([4dtarj]) i pola wskazujące obiekty serwisu, rozpoznawane po nazwie atrybutu (obraz, film, wpisy, termy). Nowy blok z pozycjami i pole tego rodzaju o nowej nazwie wymagają dopisania tam.
 - **[nf2npd]** Pola zawartości bloków w dokumencie wpisu — nazwy pól, zestawy formatów, limity znaków, pola obowiązkowe i teksty domyślne — są powtórzone w kodzie serwera MCP (`feuer_mcp_dok_definicje_blokow()`; cms-z-czatu.md, [j92cq6]). Nowy blok, nowe pole zawartości albo zmiana nazwy, formatów czy limitu pola wymaga zmiany tam; bez niej blok stoi w dokumencie jako sekcja bez pól, a pole — bez wiersza.
@@ -210,8 +212,9 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 | **[nh7824]** | `feuer/terminy` — Terminy | D | treść | widgets | [README](blok-terminy.md) |
 | **[k38j8v]** | `feuer/terminy-brak` — Terminy — stan pusty | T | sekcja `terminy-brak`; jeden | ukryty | [README](blok-terminy-brak.md) |
 | **[fz9bd7]** | `feuer/terminy-otwarte` — Terminy szkoleń otwartych | D | treść; treść etapu Programu | widgets | [README](blok-terminy-otwarte.md) |
-| **[6k3kpy]** | `feuer/top-kontentowy` — Top visual kontentowy | T | wzorzec „Strona kontentowa", zestaw startowy sekcji branży, sekcja `baza-wiedzy`; jeden na stronę | ukryty | [README](blok-top-kontentowy.md) |
+| **[6k3kpy]** | `feuer/top-kontentowy` — Top visual kontentowy | T | wzorzec „Strona kontentowa", zestaw startowy sekcji branży, sekcje `baza-wiedzy` i `wyniki-wyszukiwania`; jeden na stronę | ukryty | [README](blok-top-kontentowy.md) |
 | **[vseg6m]** | `feuer/top-listingu` — Top visual listingu | T / D (sekcja kategorii) | treść; sekcja kategorii; jeden na stronę | design | [README](blok-top-listingu.md) |
 | **[kd3dww]** | `feuer/top-produktowy` — Top visual produktowy | D + T | wzorce produktu (pierwsza pozycja); jeden na stronę | ukryty | [README](blok-top-produktowy.md) |
 | **[t6shq5]** | `feuer/zgoda` — Zgoda RODO | T | sekcja `zgoda-rodo`; jeden | ukryty | [README](blok-zgoda.md) |
+| **[67v438]** | `feuer/wyniki-wyszukiwania` — Strona wyników wyszukiwania | S | szablon strony wyników (`search.html`) | ukryty | README |
 | **[7hvzed]** | `feuer/zobacz-takze` — Zobacz także | D | treść | widgets | [README](blok-zobacz-takze.md) |
