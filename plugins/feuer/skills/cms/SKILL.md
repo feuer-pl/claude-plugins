@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer 0.1.9, dokumentacja z commita 0136d62.
+Plugin feuer 0.1.10, dokumentacja z commita b1fca8c.
 
 ## Spis dokumentów
 
@@ -153,8 +153,8 @@ Plugin feuer 0.1.9, dokumentacja z commita 0136d62.
 - [seo.md](references/seo.md) — SEO: Mechanizm, Pola nadpisania, Title, Meta description, OG / Twitter, Canonical, hreflang, Indeksowanie, Sitemapa, Dane strukturalne
 - [strony.md](references/strony.md) — Strony: Typy stron i szablony, Rama strony, Adresy, Strona 404, Strona błędu serwera, Ikona witryny, Typy stron pominięte
 - [nawigacja.md](references/nawigacja.md) — Nawigacja: Header i menu, Elementy rozwijane, Okruszki i link wstecz, Strona lądowania
-- [strony-zbiorcze.md](references/strony-zbiorcze.md) — Strony zbiorcze: Strony, Karta produktu, Grupa produktów, Widoczność i kolejność, Strona „Oferta", Strona kategorii, Strona branży, Strony filarów, Wyszukiwarka katalogu
-- [baza-wiedzy.md](references/baza-wiedzy.md) — Baza wiedzy: Strona Bazy wiedzy, Lista artykułów, Wyszukiwarka listy, Strona artykułu, Link i CTA produktu artykułu, Spis treści
+- [strony-zbiorcze.md](references/strony-zbiorcze.md) — Strony zbiorcze: Strony, Karta produktu, Grupa produktów, Widoczność i kolejność, Strona „Oferta", Strona kategorii, Strona branży, Strony filarów
+- [baza-wiedzy.md](references/baza-wiedzy.md) — Baza wiedzy: Strona Bazy wiedzy, Lista artykułów, Strona artykułu, Link i CTA produktu artykułu, Spis treści
 - [wielojezycznosc.md](references/wielojezycznosc.md) — Wielojęzyczność: Stan, Mechanizm, Języki i adresy, Zakres tłumaczeń, Abstrakcja tłumaczeń, Przełącznik języka, Zasady redakcyjne, I18n
 
 ## Spis README bloków

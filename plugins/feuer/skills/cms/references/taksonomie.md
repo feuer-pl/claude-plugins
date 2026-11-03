@@ -38,7 +38,7 @@ Taksonomie produktu: kategorie oferty (`oferta`), branże (`branza`), grupy prod
 
 ## Branża (`branza`)
 
-- **[82fpks]** Produkt każdego rodzaju ma dowolną liczbę branż, także żadną. Produkt bez branży dotyczy wszystkich branż: jest na każdej stronie branży i w źródle „branża" Kafli produktowych; Lista artykułów ze źródłem „branża" bierze wyłącznie artykuły produktów z tą branżą przypisaną wprost.
+- **[82fpks]** Produkt każdego rodzaju ma dowolną liczbę branż, także żadną. Produkt jest wyłącznie na stronach przypisanych mu branż i w źródle „branża" Kafli produktowych tych branż; produkt bez branży — na żadnej; Lista artykułów ze źródłem „branża" bierze wyłącznie artykuły produktów z tą branżą przypisaną wprost.
 - **[wkeeu2]** Publiczna: strona branży pod `/branza/<slug-termu>/` (szablon „Strona branży"); w REST; kolumna „Branże" na liście produktów.
 - **[2ue5f6]** Pole „Kolejność" (`_feuer_kolejnosc`) — pole liczbowe w formularzu termu (krok 1); zapis jako tekst (pusta wartość liczbowa w REST byłaby 0): liczba całkowita, ułamek obcięty, wartość nienumeryczna → pusty tekst; pusty = bez ręcznej kolejności. W REST.
 - **[grmvr8]** Branża ma pole „Opis dla AI" (`_feuer_opis_ai`) — opis strony branży przy linku w `/llms.txt`: [seo.md](seo.md), [p9vapx]; kategoria oferty go nie ma.

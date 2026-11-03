@@ -64,6 +64,6 @@ Motyw blokowy `feuer-skorka`: szablony stron złożone z bloków (`templates/`),
 ## Typy stron pominięte
 
 - **[v6bs3c]** E-commerce poza zakresem ([model-tresci.md](model-tresci.md), [kr68kr]); koszyk w headerze i „Dodaj do koszyka" z projektu nie weszły do serwisu; „Sprawdź całą ofertę e-sklepu" — wyłącznie etykieta linku (bez adresu) drugiej Karuzeli szkoleń we wzorcu strony głównej.
-- **[wc5r4z]** Na stronę wyników wyszukiwania serwisu ([28vexr]) prowadzi pole wyszukiwania w headerze ([nawigacja.md](nawigacja.md), [g2zmd8]) i własne pole strony wyników. Wyszukiwarki katalogu i listy artykułów to osobny mechanizm ([strony-zbiorcze.md](strony-zbiorcze.md), [baza-wiedzy.md](baza-wiedzy.md)) — na ich stronach pole w headerze stoi obok nich bez zmian.
+- **[wc5r4z]** Na stronę wyników wyszukiwania serwisu ([28vexr]) prowadzi pole wyszukiwania w headerze ([nawigacja.md](nawigacja.md), [g2zmd8]) i własne pole strony wyników.
 - E-learning nie ma strony w serwisie: integracje.md, [8xu93a].
 - Studium przypadku jako osobny typ strony — pomysł: pomysly.md.
