@@ -12,7 +12,7 @@
 |---|---|---|---|---|---|---|
 | **[szw6as]** | Linki pomocnicze (wiersz górny desktop, dół menu mobile) | `linki` | panel „Linki pomocnicze" (rozwinięty): lista etykieta + link ([bloki.md](bloki.md), [9s9332], [4svhm3], [wawuac]) | wpis serwisu albo adres | — | pusta; pozycja bez etykiety pominięta; link z ID — adres tłumaczenia |
 | **[8um2q8]** | Przycisk (np. „E-learning") | `przycisk`: `etykieta`, adres | panel „Przycisk": pole „Etykieta" i kontrolka linku | wpis serwisu albo adres | — | pusty — bez etykiety przycisku nie ma; niska odmiana przycisku drugorzędnego |
-| **[t3etq2]** | Link „Sprawdź całą ofertę" (mega-panel) | `linkOferty` | panel „Link „Sprawdź całą ofertę"": kontrolka linku, podpowiedź „Pusty = strona kategorii otwartego panelu." | wpis serwisu albo adres | — | pusty — strona kategorii otwartego panelu |
+| **[t3etq2]** | Link „Sprawdź całą ofertę" (mega-panel) | `linkOferty` | panel „Link „Sprawdź całą ofertę"": kontrolka linku, podpowiedź „Pusty = strona „Oferta"." | wpis serwisu albo adres | — | pusty — strona „Oferta"; bez niej — bez linku ([nawigacja.md](nawigacja.md), [gnbehk]) |
 | **[qtgmdh]** | Blok „Branże" w panelu menu | `branzeWlaczone` | przełącznik „Pokaż blok „Branże"" (panel „Branże w panelu menu") | — | — | włączone |
 
 ## Warianty
