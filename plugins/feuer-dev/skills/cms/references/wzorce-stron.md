@@ -44,6 +44,7 @@ Wzorce stron wtyczki — gotowe składy bloków, które redaktor i agent wstawia
 | Dla kogo | 5 pozycji | tak | tak |
 | Karty informacyjne na zdjęciu | 4 karty | tak | tak |
 | Karta opisu produktu (Program) | 4 etapy, nadtytuły „1."–„4." | tak | tak |
+| Przycisk artykułu | bez atrybutów (tekst domyślny, adres — powiązany artykuł produktu) | tak | tak |
 | Belka informacyjna | odmiana 2 | tak | tak |
 | 2 × nagłówek H3 + akapit | zwykła treść z palety, na szerokości kontenera treści | tak | tak |
 | Proces współpracy | 4 kroki | tak | tak |
