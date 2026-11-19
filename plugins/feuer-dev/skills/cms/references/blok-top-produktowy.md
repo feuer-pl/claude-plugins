@@ -1,6 +1,6 @@
 # feuer/top-produktowy
 
-„Top visual produktowy" — sekcja otwierająca strony produktu: etykieta kategorii, H1, lead, rząd zamówienia (pola wyboru wariantu i terminu, przycisk „Zamów") i zdjęcie. Typ: D + T ([bloki.md](bloki.md), „Typy bloków"). Wzorce produktu: [wzorce-stron.md](wzorce-stron.md), [m9behp]; warianty i terminy produktu: [produkt.md](produkt.md), [779j8w], [vvvvng]; prewypełnienie layeru: formularz-kontaktu.md, [utzf8f]; okruszki: [nawigacja.md](nawigacja.md), [xmubhb]; przycisk do artykułu produktu — feuer/przycisk-artykulu.
+„Top visual produktowy" — sekcja otwierająca strony produktu: etykieta kategorii, H1, lead, rząd zamówienia (pola wyboru wariantu i terminu, przycisk „Zamów") i zdjęcie. Typ: D + T ([bloki.md](bloki.md), „Typy bloków"). Wzorce produktu: [wzorce-stron.md](wzorce-stron.md), [m9behp]; warianty i terminy produktu: [produkt.md](produkt.md), [779j8w], [vvvvng]; prewypełnienie layeru: formularz-kontaktu.md, [utzf8f]; okruszki: [nawigacja.md](nawigacja.md), [xmubhb]; przycisk do artykułu produktu — [feuer/przycisk-artykulu](blok-przycisk-artykulu.md).
 
 ## Gdzie
 

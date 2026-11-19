@@ -203,7 +203,7 @@ Typ: T, D, R, S (szablonowy) — „Typy bloków". Gdzie: „treść" = treść 
 | **[864r5q]** | `feuer/okruszki` — Okruszki / link wstecz | S | szablony stron, produktu, Bazy wiedzy, branży, `index.html` | ukryty | [README](blok-okruszki.md) |
 | **[mqctt2]** | `feuer/proces-wspolpracy` — Proces współpracy | T | treść | design | [README](blok-proces-wspolpracy.md) |
 | **[qan54x]** | `feuer/proces-wspolpracy-krok` — Krok | T | wewnątrz `feuer/proces-wspolpracy` | design | [README](blok-proces-wspolpracy-krok.md) |
-| **[8hx9gd]** | `feuer/przycisk-artykulu` — Przycisk artykułu | D | treść; wzorce produktu (przed Belką informacyjną odm. 2) | design | README |
+| **[8hx9gd]** | `feuer/przycisk-artykulu` — Przycisk artykułu | D | treść; wzorce produktu (przed Belką informacyjną odm. 2) | design | [README](blok-przycisk-artykulu.md) |
 | **[2xaue9]** | `feuer/sekcja` — Sekcja (po slugu) | S | części szablonu `naglowek`, `stopka` | ukryty | [README](blok-sekcja.md) |
 | **[kec496]** | `feuer/sekcja-kontaktowa` — Sekcja kontaktowa | T | treść | design | [README](blok-sekcja-kontaktowa.md) |
 | **[2n93dy]** | `feuer/sprawdz-takze` — Sprawdź także | T | treść; paleta | text | [README](blok-sprawdz-takze.md) |
