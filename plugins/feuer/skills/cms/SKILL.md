@@ -135,7 +135,7 @@ description: "Obsługa treści serwisu Feuer.pl przez konektor Feuer CMS — pro
 
 ## Dane wersji
 
-Plugin feuer 0.1.13, dokumentacja z commita ae70f8a.
+Plugin feuer 0.1.14, dokumentacja z commita c31e56d.
 
 ## Spis dokumentów
 
@@ -192,6 +192,7 @@ Plugin feuer 0.1.13, dokumentacja z commita ae70f8a.
 - [blok-okruszki.md](references/blok-okruszki.md) — feuer/okruszki „Okruszki / link wstecz"
 - [blok-proces-wspolpracy.md](references/blok-proces-wspolpracy.md) — feuer/proces-wspolpracy „Proces współpracy"
 - [blok-proces-wspolpracy-krok.md](references/blok-proces-wspolpracy-krok.md) — feuer/proces-wspolpracy-krok „Krok"
+- [blok-przycisk-artykulu.md](references/blok-przycisk-artykulu.md) — feuer/przycisk-artykulu „Przycisk artykułu"
 - [blok-sekcja.md](references/blok-sekcja.md) — feuer/sekcja „Sekcja (po slugu)"
 - [blok-sekcja-kontaktowa.md](references/blok-sekcja-kontaktowa.md) — feuer/sekcja-kontaktowa „Sekcja kontaktowa"
 - [blok-sprawdz-takze.md](references/blok-sprawdz-takze.md) — feuer/sprawdz-takze „Sprawdź także"

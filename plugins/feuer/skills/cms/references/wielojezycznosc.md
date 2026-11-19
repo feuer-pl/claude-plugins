@@ -35,7 +35,7 @@ Wersje językowe serwisu: mechanizm (Polylang), języki i adresy, zakres tłumac
 
 - **[kyvf24]** Kod bloków rozwiązuje wpisy i termy na wersję w bieżącym języku wyłącznie przez abstrakcję `includes/tlumaczenia.php` — bez wywołań Polylang wprost: `feuer_wpis_w_biezacym_jezyku()` (bez tłumaczenia — oryginał), `feuer_tlumaczenie_wpisu()` (bez fallbacku: 0 = brak; w podglądzie edytora bieżący język = język edytowanego wpisu), `feuer_term_w_biezacym_jezyku()` (bez tłumaczenia — oryginał). Użycie: sekcja po slugu, produkt i kategoria wskazane atrybutem, linki z ID ([bloki.md](bloki.md), [a4xc8h]), wybór ręczny pozycji ([bloki.md](bloki.md), [86nqk3]).
 - **[bacp9q]** Abstrakcja jest przechodnia: wszystkie trzy funkcje zwracają przekazane ID (oryginał), więc każdy wpis „ma tłumaczenie" — pozycje bez tłumaczenia nie odpadają. Rozwiązywanie tłumaczeń przez Polylang — stan planowany (wdrożenie wersji językowych).
-- **[b8tb5u]** Link do wpisu wskazanego ID, który nie ma tłumaczenia w bieżącym języku (np. powiązany artykuł Top visualu produktowego) — adres w języku strony, dalej fallback stron — stan planowany; dziś — adres oryginału.
+- **[b8tb5u]** Link do wpisu wskazanego ID, który nie ma tłumaczenia w bieżącym języku (np. powiązany artykuł bloku Przycisk artykułu) — adres w języku strony, dalej fallback stron — stan planowany; dziś — adres oryginału.
 - **[uu66fp]** Kod bieżącego języka (`feuer_biezacy_jezyk()`) — dwa pierwsze znaki `determine_locale()` (np. `pl`); służy do kluczy cache zależnych od języka (transient drzewa oferty — wariant na język).
 - **[52dzrm]** Edytor (REST bez parametru języka) pokazuje produkty wszystkich języków, front — tylko języka strony; produkt bez języka dawałby różną liczbę kart (dziś każdy produkt ma język).
 
