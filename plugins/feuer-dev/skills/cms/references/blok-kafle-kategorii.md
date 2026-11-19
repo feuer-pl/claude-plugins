@@ -16,16 +16,16 @@
 
 ## Dane
 
-- **[ccvafg]** Źródło „dzieci": podkategorie kategorii `rodzic` (0 — najwyższy poziom), kolejność jak w menu ([taksonomie.md](taksonomie.md), [xktvsv]); pomijana kategoria bez produktów widocznych w listingu — w niej i w podkategoriach ([strony-zbiorcze.md](strony-zbiorcze.md), [g62a6w]).
+- **[ccvafg]** Źródło „dzieci": podkategorie kategorii `rodzic` (0 — najwyższy poziom), kolejność jak w menu ([taksonomie.md](taksonomie.md), [xktvsv]); pomijana kategoria bez produktów widocznych w listingu — w niej i w podkategoriach ([strony-zbiorcze.md](strony-zbiorcze.md), [g62a6w]) — chyba że ma stronę z polem „Kategoria oferty"; po kaflach podkategorii — kafle stron z polem „Kategoria oferty" wskazującym `rodzic` ([nawigacja.md](nawigacja.md), [znvq96]; kafel strony — [strony-zbiorcze.md](strony-zbiorcze.md), [47wr84]).
 - **[amvmk9]** Wybór ręczny: kategorie z listy w jej kolejności, każda także bez produktów; term nieistniejący w taksonomii `oferta` — pominięty.
 
 ## Edytor
 
-- **[u86bhu]** Brak kafli — w ich miejscu komunikat: wybór ręczny — „Brak kategorii do pokazania — wybierz kategorie w ustawieniach bloku. Na stronie blok się nie wyświetla.", źródło „podkategorie" — „Wskazana kategoria nie ma podkategorii z produktami — wybierz inną w ustawieniach bloku. Na stronie blok się nie wyświetla."
+- **[u86bhu]** Brak kafli — w ich miejscu komunikat: wybór ręczny — „Brak kategorii do pokazania — wybierz kategorie w ustawieniach bloku. Na stronie blok się nie wyświetla.", źródło „podkategorie" (brak także kafli stron) — „Wskazana kategoria nie ma podkategorii z produktami — wybierz inną w ustawieniach bloku. Na stronie blok się nie wyświetla."
 
 ## Wielojęzyczność
 
-- **[7g8xdg]** Nazwa, zdjęcie i ikona kafla — z termu `oferta`, wspólnego dla języków (taksonomia nietłumaczona — [wielojezycznosc.md](wielojezycznosc.md), [7n3mcs]).
+- **[7g8xdg]** Nazwa, zdjęcie i ikona kafla — z termu `oferta`, wspólnego dla języków (taksonomia nietłumaczona — [wielojezycznosc.md](wielojezycznosc.md), [7n3mcs]); kafel strony — tytuł i obrazek wyróżniający strony w bieżącym języku ([nawigacja.md](nawigacja.md), [ra68q3]).
 
 ## Przykład
 
